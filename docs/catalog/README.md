@@ -3,28 +3,22 @@
 `mermaid-pretty` の `pretty` テーマで描画した全 12 種類のダイアグラムのギャラリー。
 各図は [`examples/`](../../examples) 配下の `.mmd` ソースから `mmp <file>.mmd` で生成したもの。
 
-| # | Diagram | Preview |
+## Gallery
+
+| | | |
 |---|---|---|
-| 1 | [Flowchart](#flowchart) | ![](images/flowchart.png) |
-| 2 | [Sequence](#sequence) | ![](images/sequence.png) |
-| 3 | [Class](#class) | ![](images/class.png) |
-| 4 | [State](#state) | ![](images/state.png) |
-| 5 | [ER](#er) | ![](images/er.png) |
-| 6 | [Gantt](#gantt) | ![](images/gantt.png) |
-| 7 | [Pie](#pie) | ![](images/pie.png) |
-| 8 | [Mindmap](#mindmap) | ![](images/mindmap.png) |
-| 9 | [Timeline](#timeline) | ![](images/timeline.png) |
-| 10 | [Journey](#journey) | ![](images/journey.png) |
-| 11 | [GitGraph](#gitgraph) | ![](images/gitgraph.png) |
-| 12 | [Quadrant](#quadrant) | ![](images/quadrant.png) |
+| **[Flowchart](#flowchart)**<br>![](images/flowchart.png) | **[Sequence](#sequence)**<br>![](images/sequence.png) | **[Class](#class)**<br>![](images/class.png) |
+| **[State](#state)**<br>![](images/state.png) | **[ER](#er)**<br>![](images/er.png) | **[Gantt](#gantt)**<br>![](images/gantt.png) |
+| **[Pie](#pie)**<br>![](images/pie.png) | **[Mindmap](#mindmap)**<br>![](images/mindmap.png) | **[Timeline](#timeline)**<br>![](images/timeline.png) |
+| **[Journey](#journey)**<br>![](images/journey.png) | **[GitGraph](#gitgraph)**<br>![](images/gitgraph.png) | **[Quadrant](#quadrant)**<br>![](images/quadrant.png) |
 
----
+## Sources
 
-## Flowchart
+各図の見出しから元の `.mmd` ソースと SVG に飛べます。
 
-![flowchart](images/flowchart.png)
+### Flowchart
 
-<details><summary>Source</summary>
+[`examples/flowchart.mmd`](../../examples/flowchart.mmd) · [SVG](images/flowchart.svg)
 
 ```mermaid
 flowchart LR
@@ -42,17 +36,9 @@ flowchart LR
     end
 ```
 
-</details>
+### Sequence
 
-Source: [`examples/flowchart.mmd`](../../examples/flowchart.mmd) · [SVG](images/flowchart.svg)
-
----
-
-## Sequence
-
-![sequence](images/sequence.png)
-
-<details><summary>Source</summary>
+[`examples/sequence.mmd`](../../examples/sequence.mmd) · [SVG](images/sequence.svg)
 
 ```mermaid
 sequenceDiagram
@@ -66,17 +52,9 @@ sequenceDiagram
     Note over U,A: Session established
 ```
 
-</details>
+### Class
 
-Source: [`examples/sequence.mmd`](../../examples/sequence.mmd) · [SVG](images/sequence.svg)
-
----
-
-## Class
-
-![class](images/class.png)
-
-<details><summary>Source</summary>
+[`examples/class.mmd`](../../examples/class.mmd) · [SVG](images/class.svg)
 
 ```mermaid
 classDiagram
@@ -101,17 +79,9 @@ classDiagram
     }
 ```
 
-</details>
+### State
 
-Source: [`examples/class.mmd`](../../examples/class.mmd) · [SVG](images/class.svg)
-
----
-
-## State
-
-![state](images/state.png)
-
-<details><summary>Source</summary>
+[`examples/state.mmd`](../../examples/state.mmd) · [SVG](images/state.svg)
 
 ```mermaid
 stateDiagram-v2
@@ -124,17 +94,9 @@ stateDiagram-v2
     Error --> [*]: abort
 ```
 
-</details>
+### ER
 
-Source: [`examples/state.mmd`](../../examples/state.mmd) · [SVG](images/state.svg)
-
----
-
-## ER
-
-![er](images/er.png)
-
-<details><summary>Source</summary>
+[`examples/er.mmd`](../../examples/er.mmd) · [SVG](images/er.svg)
 
 ```mermaid
 erDiagram
@@ -163,17 +125,9 @@ erDiagram
     }
 ```
 
-</details>
+### Gantt
 
-Source: [`examples/er.mmd`](../../examples/er.mmd) · [SVG](images/er.svg)
-
----
-
-## Gantt
-
-![gantt](images/gantt.png)
-
-<details><summary>Source</summary>
+[`examples/gantt.mmd`](../../examples/gantt.mmd) · [SVG](images/gantt.svg)
 
 ```mermaid
 gantt
@@ -191,17 +145,9 @@ gantt
     Release            :crit,    l2,   after l1, 2d
 ```
 
-</details>
+### Pie
 
-Source: [`examples/gantt.mmd`](../../examples/gantt.mmd) · [SVG](images/gantt.svg)
-
----
-
-## Pie
-
-![pie](images/pie.png)
-
-<details><summary>Source</summary>
+[`examples/pie.mmd`](../../examples/pie.mmd) · [SVG](images/pie.svg)
 
 ```mermaid
 pie showData
@@ -213,17 +159,9 @@ pie showData
     "Email"   : 6.2
 ```
 
-</details>
+### Mindmap
 
-Source: [`examples/pie.mmd`](../../examples/pie.mmd) · [SVG](images/pie.svg)
-
----
-
-## Mindmap
-
-![mindmap](images/mindmap.png)
-
-<details><summary>Source</summary>
+[`examples/mindmap.mmd`](../../examples/mindmap.mmd) · [SVG](images/mindmap.svg)
 
 ```mermaid
 mindmap
@@ -248,17 +186,9 @@ mindmap
       Pastel colors
 ```
 
-</details>
+### Timeline
 
-Source: [`examples/mindmap.mmd`](../../examples/mindmap.mmd) · [SVG](images/mindmap.svg)
-
----
-
-## Timeline
-
-![timeline](images/timeline.png)
-
-<details><summary>Source</summary>
+[`examples/timeline.mmd`](../../examples/timeline.mmd) · [SVG](images/timeline.svg)
 
 ```mermaid
 timeline
@@ -273,17 +203,9 @@ timeline
     2016 : TikTok
 ```
 
-</details>
+### Journey
 
-Source: [`examples/timeline.mmd`](../../examples/timeline.mmd) · [SVG](images/timeline.svg)
-
----
-
-## Journey
-
-![journey](images/journey.png)
-
-<details><summary>Source</summary>
+[`examples/journey.mmd`](../../examples/journey.mmd) · [SVG](images/journey.svg)
 
 ```mermaid
 journey
@@ -301,17 +223,9 @@ journey
       Relax: 5: Me
 ```
 
-</details>
+### GitGraph
 
-Source: [`examples/journey.mmd`](../../examples/journey.mmd) · [SVG](images/journey.svg)
-
----
-
-## GitGraph
-
-![gitgraph](images/gitgraph.png)
-
-<details><summary>Source</summary>
+[`examples/gitgraph.mmd`](../../examples/gitgraph.mmd) · [SVG](images/gitgraph.svg)
 
 ```mermaid
 gitGraph
@@ -326,17 +240,9 @@ gitGraph
     commit id: "hotfix"
 ```
 
-</details>
+### Quadrant
 
-Source: [`examples/gitgraph.mmd`](../../examples/gitgraph.mmd) · [SVG](images/gitgraph.svg)
-
----
-
-## Quadrant
-
-![quadrant](images/quadrant.png)
-
-<details><summary>Source</summary>
+[`examples/quadrant.mmd`](../../examples/quadrant.mmd) · [SVG](images/quadrant.svg)
 
 ```mermaid
 quadrantChart
@@ -355,16 +261,9 @@ quadrantChart
     Campaign F: [0.35, 0.78]
 ```
 
-</details>
-
-Source: [`examples/quadrant.mmd`](../../examples/quadrant.mmd) · [SVG](images/quadrant.svg)
-
----
-
 ## Regenerate
 
 ```bash
-# このカタログ全体を再生成
 for f in flowchart sequence class state er gantt pie mindmap timeline journey gitgraph quadrant; do
   mmp "examples/${f}.mmd" -o "docs/catalog/images/${f}"
 done

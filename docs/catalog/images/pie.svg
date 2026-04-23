@@ -1,228 +1,4 @@
-export type ThemeName = "pretty" | "dark" | "default" | "forest" | "neutral";
-
-const FONT_STACK =
-  '"Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
-
-export const prettyTheme = {
-  startOnLoad: false,
-  theme: "base" as const,
-  fontFamily: FONT_STACK,
-  themeVariables: {
-    fontFamily: FONT_STACK,
-    fontSize: "14px",
-    primaryColor: "#EEF2FF",
-    primaryTextColor: "#1E293B",
-    primaryBorderColor: "#C7D2FE",
-    lineColor: "#94A3B8",
-    secondaryColor: "#F1F5F9",
-    tertiaryColor: "#F8FAFC",
-    background: "#FFFFFF",
-    mainBkg: "#FFFFFF",
-    secondBkg: "#F8FAFC",
-    nodeBorder: "#CBD5E1",
-    clusterBkg: "#F8FAFC",
-    clusterBorder: "#E2E8F0",
-    titleColor: "#0F172A",
-    edgeLabelBackground: "#FFFFFF",
-    actorBkg: "#FFFFFF",
-    actorBorder: "#CBD5E1",
-    actorTextColor: "#1E293B",
-    actorLineColor: "#94A3B8",
-    signalColor: "#475569",
-    signalTextColor: "#1E293B",
-    labelBoxBkgColor: "#EEF2FF",
-    labelBoxBorderColor: "#C7D2FE",
-    labelTextColor: "#1E293B",
-    loopTextColor: "#1E293B",
-    noteBkgColor: "#FEF9C3",
-    noteBorderColor: "#FCD34D",
-    noteTextColor: "#713F12",
-    activationBkgColor: "#E0E7FF",
-    activationBorderColor: "#A5B4FC",
-    gridColor: "#E2E8F0",
-    // gantt
-    sectionBkgColor: "#FFFFFF",
-    altSectionBkgColor: "#F8FAFC",
-    sectionBkgColor2: "#F1F5F9",
-    excludeBkgColor: "#F8FAFC",
-    taskBkgColor: "#C7D2FE",
-    taskBorderColor: "#818CF8",
-    taskTextColor: "#0F172A",
-    taskTextLightColor: "#0F172A",
-    taskTextDarkColor: "#0F172A",
-    taskTextOutsideColor: "#334155",
-    taskTextClickableColor: "#4F46E5",
-    activeTaskBkgColor: "#A5B4FC",
-    activeTaskBorderColor: "#6366F1",
-    doneTaskBkgColor: "#A7F3D0",
-    doneTaskBorderColor: "#34D399",
-    critBkgColor: "#FECACA",
-    critBorderColor: "#F87171",
-    todayLineColor: "#F43F5E",
-    // gitgraph
-    git0: "#818CF8",
-    git1: "#F472B6",
-    git2: "#34D399",
-    git3: "#FBBF24",
-    git4: "#60A5FA",
-    git5: "#A78BFA",
-    git6: "#FB923C",
-    git7: "#2DD4BF",
-    gitBranchLabel0: "#FFFFFF",
-    gitBranchLabel1: "#FFFFFF",
-    gitBranchLabel2: "#FFFFFF",
-    gitBranchLabel3: "#FFFFFF",
-    gitBranchLabel4: "#FFFFFF",
-    gitBranchLabel5: "#FFFFFF",
-    gitBranchLabel6: "#FFFFFF",
-    gitBranchLabel7: "#FFFFFF",
-    tagLabelColor: "#0F172A",
-    tagLabelBackground: "#FDE68A",
-    tagLabelBorder: "#FBBF24",
-    commitLabelColor: "#334155",
-    commitLabelBackground: "#FFFFFF",
-    // quadrant
-    quadrant1Fill: "#EEF2FF",
-    quadrant2Fill: "#FDF2F8",
-    quadrant3Fill: "#ECFDF5",
-    quadrant4Fill: "#FFFBEB",
-    quadrant1TextFill: "#0F172A",
-    quadrant2TextFill: "#0F172A",
-    quadrant3TextFill: "#0F172A",
-    quadrant4TextFill: "#0F172A",
-    quadrantPointFill: "#6366F1",
-    quadrantPointTextFill: "#0F172A",
-    quadrantXAxisTextFill: "#1E293B",
-    quadrantYAxisTextFill: "#1E293B",
-    quadrantInternalBorderStrokeFill: "#CBD5E1",
-    quadrantExternalBorderStrokeFill: "#94A3B8",
-    quadrantTitleFill: "#0F172A",
-    pie1: "#818CF8",
-    pie2: "#A78BFA",
-    pie3: "#F472B6",
-    pie4: "#FBBF24",
-    pie5: "#34D399",
-    pie6: "#22D3EE",
-    pie7: "#60A5FA",
-    pie8: "#FB7185",
-    pie9: "#A3E635",
-    pie10: "#FB923C",
-    pie11: "#2DD4BF",
-    pie12: "#C084FC",
-    pieOpacity: "0.9",
-    pieStrokeColor: "#FFFFFF",
-    pieStrokeWidth: "2px",
-    pieOuterStrokeWidth: "0px",
-    pieOuterStrokeColor: "transparent",
-    pieTitleTextSize: "18px",
-    pieTitleTextColor: "#0F172A",
-    pieSectionTextSize: "13px",
-    pieSectionTextColor: "#FFFFFF",
-    pieLegendTextSize: "13px",
-    pieLegendTextColor: "#334155",
-    // mindmap / timeline / journey などで使われる cScale 系
-    // 彩度を揃えた 400 系で統一し、ビビッドすぎないようにする
-    cScale0: "#818CF8",
-    cScale1: "#A78BFA",
-    cScale2: "#F472B6",
-    cScale3: "#FBBF24",
-    cScale4: "#34D399",
-    cScale5: "#22D3EE",
-    cScale6: "#60A5FA",
-    cScale7: "#A3E635",
-    cScale8: "#FB923C",
-    cScale9: "#2DD4BF",
-    cScale10: "#C084FC",
-    cScale11: "#FB7185",
-    cScaleLabel0: "#FFFFFF",
-    cScaleLabel1: "#FFFFFF",
-    cScaleLabel2: "#FFFFFF",
-    cScaleLabel3: "#FFFFFF",
-    cScaleLabel4: "#FFFFFF",
-    cScaleLabel5: "#FFFFFF",
-    cScaleLabel6: "#FFFFFF",
-    cScaleLabel7: "#FFFFFF",
-    cScaleLabel8: "#FFFFFF",
-    cScaleLabel9: "#FFFFFF",
-    cScaleLabel10: "#FFFFFF",
-    cScaleLabel11: "#FFFFFF",
-    cScalePeer0: "#EEF2FF",
-    cScalePeer1: "#F5F3FF",
-    cScalePeer2: "#FDF2F8",
-    cScalePeer3: "#FFFBEB",
-    cScalePeer4: "#ECFDF5",
-    cScalePeer5: "#ECFEFF",
-    cScalePeer6: "#EFF6FF",
-    cScalePeer7: "#F7FEE7",
-    cScalePeer8: "#FFF7ED",
-    cScalePeer9: "#F0FDFA",
-    cScalePeer10: "#FAF5FF",
-    cScalePeer11: "#FEF2F2",
-  },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
-  gantt: { barHeight: 22, barGap: 6 },
-  mindmap: { padding: 14, maxNodeWidth: 200 },
-  timeline: { padding: 14, disableMulticolor: false },
-  journey: { useMaxWidth: false },
-};
-
-export const darkTheme = {
-  startOnLoad: false,
-  theme: "base" as const,
-  fontFamily: FONT_STACK,
-  themeVariables: {
-    fontFamily: FONT_STACK,
-    fontSize: "14px",
-    darkMode: true,
-    primaryColor: "#1E293B",
-    primaryTextColor: "#E2E8F0",
-    primaryBorderColor: "#475569",
-    lineColor: "#94A3B8",
-    secondaryColor: "#0F172A",
-    tertiaryColor: "#1E293B",
-    background: "#0F172A",
-    mainBkg: "#1E293B",
-    secondBkg: "#0F172A",
-    nodeBorder: "#475569",
-    clusterBkg: "#111827",
-    clusterBorder: "#334155",
-    titleColor: "#F1F5F9",
-    edgeLabelBackground: "#0F172A",
-    actorBkg: "#1E293B",
-    actorBorder: "#475569",
-    actorTextColor: "#E2E8F0",
-    actorLineColor: "#94A3B8",
-    signalColor: "#CBD5E1",
-    signalTextColor: "#E2E8F0",
-    labelBoxBkgColor: "#312E81",
-    labelBoxBorderColor: "#6366F1",
-    labelTextColor: "#E0E7FF",
-    loopTextColor: "#E2E8F0",
-    noteBkgColor: "#422006",
-    noteBorderColor: "#F59E0B",
-    noteTextColor: "#FDE68A",
-    activationBkgColor: "#312E81",
-    activationBorderColor: "#6366F1",
-    gridColor: "#334155",
-    pie1: "#818CF8",
-    pie2: "#A78BFA",
-    pie3: "#F472B6",
-    pie4: "#FBBF24",
-    pie5: "#34D399",
-    pie6: "#22D3EE",
-    pie7: "#60A5FA",
-    pie8: "#F87171",
-    pie9: "#A3E635",
-    pie10: "#FB923C",
-    pie11: "#2DD4BF",
-    pie12: "#C084FC",
-  },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
-};
-
-export const prettyCss = `
+<svg id="graph-pretty" width="603.40625" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 603.40625 450" style="max-width: none;" role="graphics-document document" aria-roledescription="pie" height="450"><style>#graph-pretty{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;fill:#1E293B;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#graph-pretty .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#graph-pretty .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#graph-pretty .error-icon{fill:#F8FAFC;}#graph-pretty .error-text{fill:#070503;stroke:#070503;}#graph-pretty .edge-thickness-normal{stroke-width:1px;}#graph-pretty .edge-thickness-thick{stroke-width:3.5px;}#graph-pretty .edge-pattern-solid{stroke-dasharray:0;}#graph-pretty .edge-thickness-invisible{stroke-width:0;fill:none;}#graph-pretty .edge-pattern-dashed{stroke-dasharray:3;}#graph-pretty .edge-pattern-dotted{stroke-dasharray:2;}#graph-pretty .marker{fill:#94A3B8;stroke:#94A3B8;}#graph-pretty .marker.cross{stroke:#94A3B8;}#graph-pretty svg{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;}#graph-pretty p{margin:0;}#graph-pretty .pieCircle{stroke:#FFFFFF;stroke-width:2px;opacity:0.9;}#graph-pretty .pieOuterCircle{stroke:transparent;stroke-width:0px;fill:none;}#graph-pretty .pieTitleText{text-anchor:middle;font-size:18px;fill:#0F172A;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .slice{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#FFFFFF;font-size:13px;}#graph-pretty .legend text{fill:#334155;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:13px;}#graph-pretty .node .neo-node{stroke:#CBD5E1;}#graph-pretty [data-look="neo"].node rect,#graph-pretty [data-look="neo"].cluster rect,#graph-pretty [data-look="neo"].node polygon{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node path{stroke:url(#graph-pretty-gradient);stroke-width:1px;}#graph-pretty [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node .neo-line path{stroke:#CBD5E1;filter:none;}#graph-pretty [data-look="neo"].node circle{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node circle .state-start{fill:#000000;}#graph-pretty [data-look="neo"].icon-shape .icon{fill:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].icon-shape .icon-neo path{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty :root{--mermaid-font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}</style><g></g><g transform="translate(225,225)"><circle cx="0" cy="0" r="185" class="pieOuterCircle"></circle><path d="M0,-185A185,185,0,0,1,83.988,164.836L0,0Z" fill="#818CF8" class="pieCircle"></path><path d="M83.988,164.836A185,185,0,0,1,-153.66,103.022L0,0Z" fill="#A78BFA" class="pieCircle"></path><path d="M-153.66,103.022A185,185,0,0,1,-156.201,-99.128L0,0Z" fill="#F472B6" class="pieCircle"></path><path d="M-156.201,-99.128A185,185,0,0,1,-70.259,-171.139L0,0Z" fill="#FBBF24" class="pieCircle"></path><path d="M-70.259,-171.139A185,185,0,0,1,0,-185L0,0Z" fill="#34D399" class="pieCircle"></path><text transform="translate(134.91632645517763,-32.39054423500684)" class="slice" style="text-anchor: middle;">43%</text><text transform="translate(-34.9277523777541,134.28184767063004)" class="slice" style="text-anchor: middle;">23%</text><text transform="translate(-138.7390448832795,1.7435380338150828)" class="slice" style="text-anchor: middle;">18%</text><text transform="translate(-89.11255562825103,-106.35090469479734)" class="slice" style="text-anchor: middle;">10%</text><text transform="translate(-26.85498869205669,-136.12630929526264)" class="slice" style="text-anchor: middle;">6%</text><text x="0" y="-200" class="pieTitleText">Traffic sources</text><g class="legend" transform="translate(216,-55)"><rect width="18" height="18" style="fill: rgb(129, 140, 248); stroke: rgb(129, 140, 248);"></rect><text x="22" y="14">Organic [42.5]</text></g><g class="legend" transform="translate(216,-33)"><rect width="18" height="18" style="fill: rgb(167, 139, 250); stroke: rgb(167, 139, 250);"></rect><text x="22" y="14">Direct [23.1]</text></g><g class="legend" transform="translate(216,-11)"><rect width="18" height="18" style="fill: rgb(244, 114, 182); stroke: rgb(244, 114, 182);"></rect><text x="22" y="14">Social [18.4]</text></g><g class="legend" transform="translate(216,11)"><rect width="18" height="18" style="fill: rgb(251, 191, 36); stroke: rgb(251, 191, 36);"></rect><text x="22" y="14">Referral [9.8]</text></g><g class="legend" transform="translate(216,33)"><rect width="18" height="18" style="fill: rgb(52, 211, 153); stroke: rgb(52, 211, 153);"></rect><text x="22" y="14">Email [6.2]</text></g></g><style>
   .mp-root svg { overflow: visible; }
 
   /* ノード: 柔らかい影 + 繊細な枠線 */
@@ -288,7 +64,7 @@ export const prettyCss = `
   .edgeLabel,
   .cluster text,
   .actor,
-  text.actor > tspan,
+  text.actor &gt; tspan,
   .messageText,
   .loopText,
   .noteText,
@@ -356,8 +132,8 @@ export const prettyCss = `
   .node.statediagram-state rect,
   .node rect.state,
   rect.state,
-  g.node.statediagram-state > rect,
-  .statediagram-state > rect {
+  g.node.statediagram-state &gt; rect,
+  .statediagram-state &gt; rect {
     rx: 12 !important;
     ry: 12 !important;
     fill: #EEF2FF !important;
@@ -379,7 +155,7 @@ export const prettyCss = `
   g.node.statediagram-state circle.start,
   g.statediagram-cluster circle.start,
   [id$="-start"] circle,
-  g.node[id*="start"] > circle {
+  g.node[id*="start"] &gt; circle {
     fill: #6366F1 !important;
     stroke: #FFFFFF !important;
     stroke-width: 3px !important;
@@ -390,7 +166,7 @@ export const prettyCss = `
   circle.end,
   .node circle.end,
   [id$="-end"] circle,
-  g.node[id*="end"] > circle {
+  g.node[id*="end"] &gt; circle {
     fill: #FFFFFF !important;
     stroke: #475569 !important;
     stroke-width: 2px !important;
@@ -531,11 +307,11 @@ export const prettyCss = `
   }
 
   /* ===== mindmap ===== */
-  .mindmap-node > rect,
-  .mindmap-node > circle,
-  .mindmap-node > ellipse,
-  .mindmap-node > polygon,
-  .mindmap-node > path {
+  .mindmap-node &gt; rect,
+  .mindmap-node &gt; circle,
+  .mindmap-node &gt; ellipse,
+  .mindmap-node &gt; polygon,
+  .mindmap-node &gt; path {
     stroke-width: 0 !important;
     filter:
       drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06))
@@ -574,7 +350,7 @@ export const prettyCss = `
 
   /* ===== timeline ===== */
   .timeline-node rect,
-  g.timeline-node > rect,
+  g.timeline-node &gt; rect,
   g.timeline-node foreignObject {
     filter: drop-shadow(0 3px 10px rgba(15, 23, 42, 0.10));
   }
@@ -635,7 +411,7 @@ export const prettyCss = `
     stroke-linecap: round !important;
   }
   .task rect,
-  g.task > rect {
+  g.task &gt; rect {
     rx: 14 !important;
     ry: 14 !important;
     filter:
@@ -702,7 +478,7 @@ export const prettyCss = `
   .task-type-3 { fill: #FFFBEB !important; }
   .task-type-4 { fill: #ECFDF5 !important; }
   .task-type-5 { fill: #ECFEFF !important; }
-  g[class*="section-type"] > rect,
+  g[class*="section-type"] &gt; rect,
   .section-type-0, .section-type-1, .section-type-2,
   .section-type-3, .section-type-4, .section-type-5 {
     stroke-width: 0 !important;
@@ -716,7 +492,7 @@ export const prettyCss = `
 
   /* ===== gantt ===== */
   /* 背景の暗いグレーを消す */
-  .mermaid > svg > g > rect:first-child,
+  .mermaid &gt; svg &gt; g &gt; rect:first-child,
   rect.background,
   rect.section,
   rect.sectionBar {
@@ -802,74 +578,4 @@ export const prettyCss = `
     stroke-width: 3px !important;
     stroke: #FFFFFF !important;
   }
-`;
-
-export const darkCss = `
-  .mp-root svg { overflow: visible; }
-
-  .node rect,
-  .node polygon,
-  .node circle,
-  .node ellipse,
-  .node path {
-    filter:
-      drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
-      drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
-    stroke-width: 1.2px !important;
-  }
-  .node rect { rx: 10; ry: 10; }
-
-  .edgePath path.path,
-  .flowchart-link {
-    stroke-width: 1.5px !important;
-    stroke-linecap: round !important;
-    stroke-linejoin: round !important;
-  }
-
-  .edgeLabel,
-  .edgeLabel div,
-  .edgeLabel span {
-    background-color: rgba(15, 23, 42, 0.96) !important;
-    color: #CBD5E1 !important;
-    font-size: 12px !important;
-  }
-  .edgeLabel {
-    padding: 2px 8px !important;
-    border-radius: 999px !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  }
-
-  .cluster rect {
-    rx: 14 !important;
-    ry: 14 !important;
-    stroke-width: 1px !important;
-  }
-  .cluster-label .nodeLabel,
-  .cluster text {
-    font-weight: 600 !important;
-    fill: #F1F5F9 !important;
-    color: #F1F5F9 !important;
-  }
-
-  .nodeLabel,
-  .edgeLabel,
-  .cluster text,
-  .actor,
-  text.actor > tspan,
-  .messageText,
-  .loopText,
-  .noteText,
-  .labelText,
-  .sectionTitle,
-  .titleText,
-  .taskText,
-  .grid text {
-    font-family: "Inter", system-ui, sans-serif !important;
-  }
-
-  .actor {
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
-    stroke-width: 1.2px !important;
-  }
-  .actor-line { stroke-width: 1px !important; stroke-dasharray: 2 4 !important; }
-`;
+</style></svg>

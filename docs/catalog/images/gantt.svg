@@ -1,228 +1,4 @@
-export type ThemeName = "pretty" | "dark" | "default" | "forest" | "neutral";
-
-const FONT_STACK =
-  '"Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
-
-export const prettyTheme = {
-  startOnLoad: false,
-  theme: "base" as const,
-  fontFamily: FONT_STACK,
-  themeVariables: {
-    fontFamily: FONT_STACK,
-    fontSize: "14px",
-    primaryColor: "#EEF2FF",
-    primaryTextColor: "#1E293B",
-    primaryBorderColor: "#C7D2FE",
-    lineColor: "#94A3B8",
-    secondaryColor: "#F1F5F9",
-    tertiaryColor: "#F8FAFC",
-    background: "#FFFFFF",
-    mainBkg: "#FFFFFF",
-    secondBkg: "#F8FAFC",
-    nodeBorder: "#CBD5E1",
-    clusterBkg: "#F8FAFC",
-    clusterBorder: "#E2E8F0",
-    titleColor: "#0F172A",
-    edgeLabelBackground: "#FFFFFF",
-    actorBkg: "#FFFFFF",
-    actorBorder: "#CBD5E1",
-    actorTextColor: "#1E293B",
-    actorLineColor: "#94A3B8",
-    signalColor: "#475569",
-    signalTextColor: "#1E293B",
-    labelBoxBkgColor: "#EEF2FF",
-    labelBoxBorderColor: "#C7D2FE",
-    labelTextColor: "#1E293B",
-    loopTextColor: "#1E293B",
-    noteBkgColor: "#FEF9C3",
-    noteBorderColor: "#FCD34D",
-    noteTextColor: "#713F12",
-    activationBkgColor: "#E0E7FF",
-    activationBorderColor: "#A5B4FC",
-    gridColor: "#E2E8F0",
-    // gantt
-    sectionBkgColor: "#FFFFFF",
-    altSectionBkgColor: "#F8FAFC",
-    sectionBkgColor2: "#F1F5F9",
-    excludeBkgColor: "#F8FAFC",
-    taskBkgColor: "#C7D2FE",
-    taskBorderColor: "#818CF8",
-    taskTextColor: "#0F172A",
-    taskTextLightColor: "#0F172A",
-    taskTextDarkColor: "#0F172A",
-    taskTextOutsideColor: "#334155",
-    taskTextClickableColor: "#4F46E5",
-    activeTaskBkgColor: "#A5B4FC",
-    activeTaskBorderColor: "#6366F1",
-    doneTaskBkgColor: "#A7F3D0",
-    doneTaskBorderColor: "#34D399",
-    critBkgColor: "#FECACA",
-    critBorderColor: "#F87171",
-    todayLineColor: "#F43F5E",
-    // gitgraph
-    git0: "#818CF8",
-    git1: "#F472B6",
-    git2: "#34D399",
-    git3: "#FBBF24",
-    git4: "#60A5FA",
-    git5: "#A78BFA",
-    git6: "#FB923C",
-    git7: "#2DD4BF",
-    gitBranchLabel0: "#FFFFFF",
-    gitBranchLabel1: "#FFFFFF",
-    gitBranchLabel2: "#FFFFFF",
-    gitBranchLabel3: "#FFFFFF",
-    gitBranchLabel4: "#FFFFFF",
-    gitBranchLabel5: "#FFFFFF",
-    gitBranchLabel6: "#FFFFFF",
-    gitBranchLabel7: "#FFFFFF",
-    tagLabelColor: "#0F172A",
-    tagLabelBackground: "#FDE68A",
-    tagLabelBorder: "#FBBF24",
-    commitLabelColor: "#334155",
-    commitLabelBackground: "#FFFFFF",
-    // quadrant
-    quadrant1Fill: "#EEF2FF",
-    quadrant2Fill: "#FDF2F8",
-    quadrant3Fill: "#ECFDF5",
-    quadrant4Fill: "#FFFBEB",
-    quadrant1TextFill: "#0F172A",
-    quadrant2TextFill: "#0F172A",
-    quadrant3TextFill: "#0F172A",
-    quadrant4TextFill: "#0F172A",
-    quadrantPointFill: "#6366F1",
-    quadrantPointTextFill: "#0F172A",
-    quadrantXAxisTextFill: "#1E293B",
-    quadrantYAxisTextFill: "#1E293B",
-    quadrantInternalBorderStrokeFill: "#CBD5E1",
-    quadrantExternalBorderStrokeFill: "#94A3B8",
-    quadrantTitleFill: "#0F172A",
-    pie1: "#818CF8",
-    pie2: "#A78BFA",
-    pie3: "#F472B6",
-    pie4: "#FBBF24",
-    pie5: "#34D399",
-    pie6: "#22D3EE",
-    pie7: "#60A5FA",
-    pie8: "#FB7185",
-    pie9: "#A3E635",
-    pie10: "#FB923C",
-    pie11: "#2DD4BF",
-    pie12: "#C084FC",
-    pieOpacity: "0.9",
-    pieStrokeColor: "#FFFFFF",
-    pieStrokeWidth: "2px",
-    pieOuterStrokeWidth: "0px",
-    pieOuterStrokeColor: "transparent",
-    pieTitleTextSize: "18px",
-    pieTitleTextColor: "#0F172A",
-    pieSectionTextSize: "13px",
-    pieSectionTextColor: "#FFFFFF",
-    pieLegendTextSize: "13px",
-    pieLegendTextColor: "#334155",
-    // mindmap / timeline / journey などで使われる cScale 系
-    // 彩度を揃えた 400 系で統一し、ビビッドすぎないようにする
-    cScale0: "#818CF8",
-    cScale1: "#A78BFA",
-    cScale2: "#F472B6",
-    cScale3: "#FBBF24",
-    cScale4: "#34D399",
-    cScale5: "#22D3EE",
-    cScale6: "#60A5FA",
-    cScale7: "#A3E635",
-    cScale8: "#FB923C",
-    cScale9: "#2DD4BF",
-    cScale10: "#C084FC",
-    cScale11: "#FB7185",
-    cScaleLabel0: "#FFFFFF",
-    cScaleLabel1: "#FFFFFF",
-    cScaleLabel2: "#FFFFFF",
-    cScaleLabel3: "#FFFFFF",
-    cScaleLabel4: "#FFFFFF",
-    cScaleLabel5: "#FFFFFF",
-    cScaleLabel6: "#FFFFFF",
-    cScaleLabel7: "#FFFFFF",
-    cScaleLabel8: "#FFFFFF",
-    cScaleLabel9: "#FFFFFF",
-    cScaleLabel10: "#FFFFFF",
-    cScaleLabel11: "#FFFFFF",
-    cScalePeer0: "#EEF2FF",
-    cScalePeer1: "#F5F3FF",
-    cScalePeer2: "#FDF2F8",
-    cScalePeer3: "#FFFBEB",
-    cScalePeer4: "#ECFDF5",
-    cScalePeer5: "#ECFEFF",
-    cScalePeer6: "#EFF6FF",
-    cScalePeer7: "#F7FEE7",
-    cScalePeer8: "#FFF7ED",
-    cScalePeer9: "#F0FDFA",
-    cScalePeer10: "#FAF5FF",
-    cScalePeer11: "#FEF2F2",
-  },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
-  gantt: { barHeight: 22, barGap: 6 },
-  mindmap: { padding: 14, maxNodeWidth: 200 },
-  timeline: { padding: 14, disableMulticolor: false },
-  journey: { useMaxWidth: false },
-};
-
-export const darkTheme = {
-  startOnLoad: false,
-  theme: "base" as const,
-  fontFamily: FONT_STACK,
-  themeVariables: {
-    fontFamily: FONT_STACK,
-    fontSize: "14px",
-    darkMode: true,
-    primaryColor: "#1E293B",
-    primaryTextColor: "#E2E8F0",
-    primaryBorderColor: "#475569",
-    lineColor: "#94A3B8",
-    secondaryColor: "#0F172A",
-    tertiaryColor: "#1E293B",
-    background: "#0F172A",
-    mainBkg: "#1E293B",
-    secondBkg: "#0F172A",
-    nodeBorder: "#475569",
-    clusterBkg: "#111827",
-    clusterBorder: "#334155",
-    titleColor: "#F1F5F9",
-    edgeLabelBackground: "#0F172A",
-    actorBkg: "#1E293B",
-    actorBorder: "#475569",
-    actorTextColor: "#E2E8F0",
-    actorLineColor: "#94A3B8",
-    signalColor: "#CBD5E1",
-    signalTextColor: "#E2E8F0",
-    labelBoxBkgColor: "#312E81",
-    labelBoxBorderColor: "#6366F1",
-    labelTextColor: "#E0E7FF",
-    loopTextColor: "#E2E8F0",
-    noteBkgColor: "#422006",
-    noteBorderColor: "#F59E0B",
-    noteTextColor: "#FDE68A",
-    activationBkgColor: "#312E81",
-    activationBorderColor: "#6366F1",
-    gridColor: "#334155",
-    pie1: "#818CF8",
-    pie2: "#A78BFA",
-    pie3: "#F472B6",
-    pie4: "#FBBF24",
-    pie5: "#34D399",
-    pie6: "#22D3EE",
-    pie7: "#60A5FA",
-    pie8: "#F87171",
-    pie9: "#A3E635",
-    pie10: "#FB923C",
-    pie11: "#2DD4BF",
-    pie12: "#C084FC",
-  },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
-};
-
-export const prettyCss = `
+<svg id="graph-pretty" width="1400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 296" style="max-width: none;" role="graphics-document document" aria-roledescription="gantt" height="296"><style>#graph-pretty{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;fill:#1E293B;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#graph-pretty .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#graph-pretty .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#graph-pretty .error-icon{fill:#F8FAFC;}#graph-pretty .error-text{fill:#070503;stroke:#070503;}#graph-pretty .edge-thickness-normal{stroke-width:1px;}#graph-pretty .edge-thickness-thick{stroke-width:3.5px;}#graph-pretty .edge-pattern-solid{stroke-dasharray:0;}#graph-pretty .edge-thickness-invisible{stroke-width:0;fill:none;}#graph-pretty .edge-pattern-dashed{stroke-dasharray:3;}#graph-pretty .edge-pattern-dotted{stroke-dasharray:2;}#graph-pretty .marker{fill:#94A3B8;stroke:#94A3B8;}#graph-pretty .marker.cross{stroke:#94A3B8;}#graph-pretty svg{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;}#graph-pretty p{margin:0;}#graph-pretty .mermaid-main-font{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .exclude-range{fill:#F8FAFC;}#graph-pretty .section{stroke:none;opacity:0.2;}#graph-pretty .section0{fill:#FFFFFF;}#graph-pretty .section2{fill:#F1F5F9;}#graph-pretty .section1,#graph-pretty .section3{fill:#F8FAFC;opacity:0.2;}#graph-pretty .sectionTitle0{fill:#0F172A;}#graph-pretty .sectionTitle1{fill:#0F172A;}#graph-pretty .sectionTitle2{fill:#0F172A;}#graph-pretty .sectionTitle3{fill:#0F172A;}#graph-pretty .sectionTitle{text-anchor:start;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .grid .tick{stroke:#E2E8F0;opacity:0.8;shape-rendering:crispEdges;}#graph-pretty .grid .tick text{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#1E293B;}#graph-pretty .grid path{stroke-width:0;}#graph-pretty .today{fill:none;stroke:#F43F5E;stroke-width:2px;}#graph-pretty .task{stroke-width:2;}#graph-pretty .taskText{text-anchor:middle;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .taskTextOutsideRight{fill:#0F172A;text-anchor:start;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .taskTextOutsideLeft{fill:#0F172A;text-anchor:end;}#graph-pretty .task.clickable{cursor:pointer;}#graph-pretty .taskText.clickable{cursor:pointer;fill:#4F46E5!important;font-weight:bold;}#graph-pretty .taskTextOutsideLeft.clickable{cursor:pointer;fill:#4F46E5!important;font-weight:bold;}#graph-pretty .taskTextOutsideRight.clickable{cursor:pointer;fill:#4F46E5!important;font-weight:bold;}#graph-pretty .taskText0,#graph-pretty .taskText1,#graph-pretty .taskText2,#graph-pretty .taskText3{fill:#0F172A;}#graph-pretty .task0,#graph-pretty .task1,#graph-pretty .task2,#graph-pretty .task3{fill:#C7D2FE;stroke:#818CF8;}#graph-pretty .taskTextOutside0,#graph-pretty .taskTextOutside2{fill:#334155;}#graph-pretty .taskTextOutside1,#graph-pretty .taskTextOutside3{fill:#334155;}#graph-pretty .active0,#graph-pretty .active1,#graph-pretty .active2,#graph-pretty .active3{fill:#A5B4FC;stroke:#6366F1;}#graph-pretty .activeText0,#graph-pretty .activeText1,#graph-pretty .activeText2,#graph-pretty .activeText3{fill:#0F172A!important;}#graph-pretty .done0,#graph-pretty .done1,#graph-pretty .done2,#graph-pretty .done3{stroke:#34D399;fill:#A7F3D0;stroke-width:2;}#graph-pretty .doneText0,#graph-pretty .doneText1,#graph-pretty .doneText2,#graph-pretty .doneText3{fill:#0F172A!important;}#graph-pretty .doneText0.taskTextOutsideLeft,#graph-pretty .doneText0.taskTextOutsideRight,#graph-pretty .doneText1.taskTextOutsideLeft,#graph-pretty .doneText1.taskTextOutsideRight,#graph-pretty .doneText2.taskTextOutsideLeft,#graph-pretty .doneText2.taskTextOutsideRight,#graph-pretty .doneText3.taskTextOutsideLeft,#graph-pretty .doneText3.taskTextOutsideRight{fill:#334155!important;}#graph-pretty .crit0,#graph-pretty .crit1,#graph-pretty .crit2,#graph-pretty .crit3{stroke:#F87171;fill:#FECACA;stroke-width:2;}#graph-pretty .activeCrit0,#graph-pretty .activeCrit1,#graph-pretty .activeCrit2,#graph-pretty .activeCrit3{stroke:#F87171;fill:#A5B4FC;stroke-width:2;}#graph-pretty .doneCrit0,#graph-pretty .doneCrit1,#graph-pretty .doneCrit2,#graph-pretty .doneCrit3{stroke:#F87171;fill:#A7F3D0;stroke-width:2;cursor:pointer;shape-rendering:crispEdges;}#graph-pretty .milestone{transform:rotate(45deg) scale(0.8,0.8);}#graph-pretty .milestoneText{font-style:italic;}#graph-pretty .doneCritText0,#graph-pretty .doneCritText1,#graph-pretty .doneCritText2,#graph-pretty .doneCritText3{fill:#0F172A!important;}#graph-pretty .doneCritText0.taskTextOutsideLeft,#graph-pretty .doneCritText0.taskTextOutsideRight,#graph-pretty .doneCritText1.taskTextOutsideLeft,#graph-pretty .doneCritText1.taskTextOutsideRight,#graph-pretty .doneCritText2.taskTextOutsideLeft,#graph-pretty .doneCritText2.taskTextOutsideRight,#graph-pretty .doneCritText3.taskTextOutsideLeft,#graph-pretty .doneCritText3.taskTextOutsideRight{fill:#334155!important;}#graph-pretty .vert{stroke:navy;}#graph-pretty .vertText{font-size:15px;text-anchor:middle;fill:navy!important;}#graph-pretty .activeCritText0,#graph-pretty .activeCritText1,#graph-pretty .activeCritText2,#graph-pretty .activeCritText3{fill:#0F172A!important;}#graph-pretty .titleText{text-anchor:middle;font-size:18px;fill:#0F172A;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .node .neo-node{stroke:#CBD5E1;}#graph-pretty [data-look="neo"].node rect,#graph-pretty [data-look="neo"].cluster rect,#graph-pretty [data-look="neo"].node polygon{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node path{stroke:url(#graph-pretty-gradient);stroke-width:1px;}#graph-pretty [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node .neo-line path{stroke:#CBD5E1;filter:none;}#graph-pretty [data-look="neo"].node circle{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node circle .state-start{fill:#000000;}#graph-pretty [data-look="neo"].icon-shape .icon{fill:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].icon-shape .icon-neo path{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty :root{--mermaid-font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}</style><g></g><g class="grid" transform="translate(75, 246)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M0,-211V0H1250V-211"></path><g class="tick" opacity="1" transform="translate(93,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-05</text></g><g class="tick" opacity="1" transform="translate(255,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-12</text></g><g class="tick" opacity="1" transform="translate(417,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-19</text></g><g class="tick" opacity="1" transform="translate(579,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-26</text></g><g class="tick" opacity="1" transform="translate(741,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-03</text></g><g class="tick" opacity="1" transform="translate(903,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-10</text></g><g class="tick" opacity="1" transform="translate(1065,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-17</text></g><g class="tick" opacity="1" transform="translate(1227,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-24</text></g></g><g><rect x="0" y="48" width="1362.5" height="28" class="section section0"></rect><rect x="0" y="76" width="1362.5" height="28" class="section section0"></rect><rect x="0" y="104" width="1362.5" height="28" class="section section0"></rect><rect x="0" y="132" width="1362.5" height="28" class="section section1"></rect><rect x="0" y="160" width="1362.5" height="28" class="section section1"></rect><rect x="0" y="188" width="1362.5" height="28" class="section section2"></rect><rect x="0" y="216" width="1362.5" height="28" class="section section2"></rect></g><g><rect id="graph-pretty-des1" rx="3" ry="3" x="75" y="50" width="139" height="22" transform-origin="144.5px 61px" class="task done0"></rect><rect id="graph-pretty-des2" rx="3" ry="3" x="237" y="78" width="116" height="22" transform-origin="295px 89px" class="task done0"></rect><rect id="graph-pretty-des3" rx="3" ry="3" x="399" y="106" width="162" height="22" transform-origin="480px 117px" class="task active0"></rect><rect id="graph-pretty-b1" rx="3" ry="3" x="515" y="134" width="324" height="22" transform-origin="677px 145px" class="task task1"></rect><rect id="graph-pretty-b2" rx="3" ry="3" x="839" y="162" width="324" height="22" transform-origin="1001px 173px" class="task task1"></rect><rect id="graph-pretty-l1" rx="3" ry="3" x="1163" y="190" width="116" height="22" transform-origin="1221px 201px" class="task task2"></rect><rect id="graph-pretty-l2" rx="3" ry="3" x="1279" y="218" width="46" height="22" transform-origin="1302px 229px" class="task crit2"></rect><text id="graph-pretty-des1-text" font-size="11" x="144.5" y="64.5" class="taskText taskText0  doneText0 width-48.59375">Research           </text><text id="graph-pretty-des2-text" font-size="11" x="295" y="92.5" class="taskText taskText0  doneText0 width-60.125">Wireframes         </text><text id="graph-pretty-des3-text" font-size="11" x="480" y="120.5" class="taskText taskText0 activeText0 width-69.375">Visual design      </text><text id="graph-pretty-b1-text" font-size="11" x="677" y="148.5" class="taskText taskText1  width-17.578125">API                </text><text id="graph-pretty-b2-text" font-size="11" x="1001" y="176.5" class="taskText taskText1  width-46.375">Frontend           </text><text id="graph-pretty-l1-text" font-size="11" x="1221" y="204.5" class="taskText taskText2  width-15.625">QA                 </text><text id="graph-pretty-l2-text" font-size="11" x="1302" y="232.5" class="taskText taskText2  critText2 width-40.921875">Release            </text></g><g><text dy="0em" x="10" y="92" font-size="11" class="sectionTitle sectionTitle0"><tspan alignment-baseline="central" x="10">Design</tspan></text><text dy="0em" x="10" y="162" font-size="11" class="sectionTitle sectionTitle1"><tspan alignment-baseline="central" x="10">Build</tspan></text><text dy="0em" x="10" y="218" font-size="11" class="sectionTitle sectionTitle2"><tspan alignment-baseline="central" x="10">Launch</tspan></text></g><g class="today"><line x1="607" x2="607" y1="25" y2="271" class="today"></line></g><text x="700" y="25" class="titleText">Product Roadmap Q2</text><style>
   .mp-root svg { overflow: visible; }
 
   /* ノード: 柔らかい影 + 繊細な枠線 */
@@ -288,7 +64,7 @@ export const prettyCss = `
   .edgeLabel,
   .cluster text,
   .actor,
-  text.actor > tspan,
+  text.actor &gt; tspan,
   .messageText,
   .loopText,
   .noteText,
@@ -356,8 +132,8 @@ export const prettyCss = `
   .node.statediagram-state rect,
   .node rect.state,
   rect.state,
-  g.node.statediagram-state > rect,
-  .statediagram-state > rect {
+  g.node.statediagram-state &gt; rect,
+  .statediagram-state &gt; rect {
     rx: 12 !important;
     ry: 12 !important;
     fill: #EEF2FF !important;
@@ -379,7 +155,7 @@ export const prettyCss = `
   g.node.statediagram-state circle.start,
   g.statediagram-cluster circle.start,
   [id$="-start"] circle,
-  g.node[id*="start"] > circle {
+  g.node[id*="start"] &gt; circle {
     fill: #6366F1 !important;
     stroke: #FFFFFF !important;
     stroke-width: 3px !important;
@@ -390,7 +166,7 @@ export const prettyCss = `
   circle.end,
   .node circle.end,
   [id$="-end"] circle,
-  g.node[id*="end"] > circle {
+  g.node[id*="end"] &gt; circle {
     fill: #FFFFFF !important;
     stroke: #475569 !important;
     stroke-width: 2px !important;
@@ -531,11 +307,11 @@ export const prettyCss = `
   }
 
   /* ===== mindmap ===== */
-  .mindmap-node > rect,
-  .mindmap-node > circle,
-  .mindmap-node > ellipse,
-  .mindmap-node > polygon,
-  .mindmap-node > path {
+  .mindmap-node &gt; rect,
+  .mindmap-node &gt; circle,
+  .mindmap-node &gt; ellipse,
+  .mindmap-node &gt; polygon,
+  .mindmap-node &gt; path {
     stroke-width: 0 !important;
     filter:
       drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06))
@@ -574,7 +350,7 @@ export const prettyCss = `
 
   /* ===== timeline ===== */
   .timeline-node rect,
-  g.timeline-node > rect,
+  g.timeline-node &gt; rect,
   g.timeline-node foreignObject {
     filter: drop-shadow(0 3px 10px rgba(15, 23, 42, 0.10));
   }
@@ -635,7 +411,7 @@ export const prettyCss = `
     stroke-linecap: round !important;
   }
   .task rect,
-  g.task > rect {
+  g.task &gt; rect {
     rx: 14 !important;
     ry: 14 !important;
     filter:
@@ -702,7 +478,7 @@ export const prettyCss = `
   .task-type-3 { fill: #FFFBEB !important; }
   .task-type-4 { fill: #ECFDF5 !important; }
   .task-type-5 { fill: #ECFEFF !important; }
-  g[class*="section-type"] > rect,
+  g[class*="section-type"] &gt; rect,
   .section-type-0, .section-type-1, .section-type-2,
   .section-type-3, .section-type-4, .section-type-5 {
     stroke-width: 0 !important;
@@ -716,7 +492,7 @@ export const prettyCss = `
 
   /* ===== gantt ===== */
   /* 背景の暗いグレーを消す */
-  .mermaid > svg > g > rect:first-child,
+  .mermaid &gt; svg &gt; g &gt; rect:first-child,
   rect.background,
   rect.section,
   rect.sectionBar {
@@ -802,74 +578,4 @@ export const prettyCss = `
     stroke-width: 3px !important;
     stroke: #FFFFFF !important;
   }
-`;
-
-export const darkCss = `
-  .mp-root svg { overflow: visible; }
-
-  .node rect,
-  .node polygon,
-  .node circle,
-  .node ellipse,
-  .node path {
-    filter:
-      drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
-      drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
-    stroke-width: 1.2px !important;
-  }
-  .node rect { rx: 10; ry: 10; }
-
-  .edgePath path.path,
-  .flowchart-link {
-    stroke-width: 1.5px !important;
-    stroke-linecap: round !important;
-    stroke-linejoin: round !important;
-  }
-
-  .edgeLabel,
-  .edgeLabel div,
-  .edgeLabel span {
-    background-color: rgba(15, 23, 42, 0.96) !important;
-    color: #CBD5E1 !important;
-    font-size: 12px !important;
-  }
-  .edgeLabel {
-    padding: 2px 8px !important;
-    border-radius: 999px !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  }
-
-  .cluster rect {
-    rx: 14 !important;
-    ry: 14 !important;
-    stroke-width: 1px !important;
-  }
-  .cluster-label .nodeLabel,
-  .cluster text {
-    font-weight: 600 !important;
-    fill: #F1F5F9 !important;
-    color: #F1F5F9 !important;
-  }
-
-  .nodeLabel,
-  .edgeLabel,
-  .cluster text,
-  .actor,
-  text.actor > tspan,
-  .messageText,
-  .loopText,
-  .noteText,
-  .labelText,
-  .sectionTitle,
-  .titleText,
-  .taskText,
-  .grid text {
-    font-family: "Inter", system-ui, sans-serif !important;
-  }
-
-  .actor {
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
-    stroke-width: 1.2px !important;
-  }
-  .actor-line { stroke-width: 1px !important; stroke-dasharray: 2 4 !important; }
-`;
+</style></svg>

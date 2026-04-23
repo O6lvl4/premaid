@@ -2,18 +2,33 @@
 
 Render beautiful Mermaid diagrams from the command line. Paste your Mermaid source and get a refined SVG and PNG with a custom `pretty` theme inspired by mermaid.ai.
 
+**See [`docs/catalog/README.md`](docs/catalog/README.md) for a gallery of all 12 diagram types rendered with the `pretty` theme.**
+
 ## Install
 
-```bash
-npm install -g mermaid-pretty
-```
-
-Or run locally from a clone:
+This package is not published to npm yet. Install from this repository:
 
 ```bash
+# Clone + install + link globally
+git clone https://github.com/O6lvl4/mermaid-pretty.git
+cd mermaid-pretty
 npm install
 npm run build
+npm link   # exposes `mermaid-pretty` and `mmp` on your PATH
+```
+
+You can also run without linking:
+
+```bash
 node dist/cli.js examples/flowchart.mmd
+# or with tsx, no build required
+npx tsx src/cli.ts examples/flowchart.mmd
+```
+
+To install directly from GitHub (no clone):
+
+```bash
+npm install -g github:O6lvl4/mermaid-pretty
 ```
 
 ## Usage
@@ -61,7 +76,8 @@ mmp diagram.mmd -o ./out/my-diagram
 All current Mermaid diagram types render through the `pretty` theme:
 flowchart · sequence · class · state · ER · gantt · pie · mindmap · timeline · journey · gitGraph · quadrantChart.
 
-See [`examples/`](./examples) for one `.mmd` file per diagram type.
+- [`examples/`](./examples) — one `.mmd` source file per diagram type
+- [`docs/catalog/README.md`](./docs/catalog/README.md) — visual gallery of all 12 rendered outputs
 
 ## How it works
 

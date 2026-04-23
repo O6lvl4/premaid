@@ -1,228 +1,4 @@
-export type ThemeName = "pretty" | "dark" | "default" | "forest" | "neutral";
-
-const FONT_STACK =
-  '"Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
-
-export const prettyTheme = {
-  startOnLoad: false,
-  theme: "base" as const,
-  fontFamily: FONT_STACK,
-  themeVariables: {
-    fontFamily: FONT_STACK,
-    fontSize: "14px",
-    primaryColor: "#EEF2FF",
-    primaryTextColor: "#1E293B",
-    primaryBorderColor: "#C7D2FE",
-    lineColor: "#94A3B8",
-    secondaryColor: "#F1F5F9",
-    tertiaryColor: "#F8FAFC",
-    background: "#FFFFFF",
-    mainBkg: "#FFFFFF",
-    secondBkg: "#F8FAFC",
-    nodeBorder: "#CBD5E1",
-    clusterBkg: "#F8FAFC",
-    clusterBorder: "#E2E8F0",
-    titleColor: "#0F172A",
-    edgeLabelBackground: "#FFFFFF",
-    actorBkg: "#FFFFFF",
-    actorBorder: "#CBD5E1",
-    actorTextColor: "#1E293B",
-    actorLineColor: "#94A3B8",
-    signalColor: "#475569",
-    signalTextColor: "#1E293B",
-    labelBoxBkgColor: "#EEF2FF",
-    labelBoxBorderColor: "#C7D2FE",
-    labelTextColor: "#1E293B",
-    loopTextColor: "#1E293B",
-    noteBkgColor: "#FEF9C3",
-    noteBorderColor: "#FCD34D",
-    noteTextColor: "#713F12",
-    activationBkgColor: "#E0E7FF",
-    activationBorderColor: "#A5B4FC",
-    gridColor: "#E2E8F0",
-    // gantt
-    sectionBkgColor: "#FFFFFF",
-    altSectionBkgColor: "#F8FAFC",
-    sectionBkgColor2: "#F1F5F9",
-    excludeBkgColor: "#F8FAFC",
-    taskBkgColor: "#C7D2FE",
-    taskBorderColor: "#818CF8",
-    taskTextColor: "#0F172A",
-    taskTextLightColor: "#0F172A",
-    taskTextDarkColor: "#0F172A",
-    taskTextOutsideColor: "#334155",
-    taskTextClickableColor: "#4F46E5",
-    activeTaskBkgColor: "#A5B4FC",
-    activeTaskBorderColor: "#6366F1",
-    doneTaskBkgColor: "#A7F3D0",
-    doneTaskBorderColor: "#34D399",
-    critBkgColor: "#FECACA",
-    critBorderColor: "#F87171",
-    todayLineColor: "#F43F5E",
-    // gitgraph
-    git0: "#818CF8",
-    git1: "#F472B6",
-    git2: "#34D399",
-    git3: "#FBBF24",
-    git4: "#60A5FA",
-    git5: "#A78BFA",
-    git6: "#FB923C",
-    git7: "#2DD4BF",
-    gitBranchLabel0: "#FFFFFF",
-    gitBranchLabel1: "#FFFFFF",
-    gitBranchLabel2: "#FFFFFF",
-    gitBranchLabel3: "#FFFFFF",
-    gitBranchLabel4: "#FFFFFF",
-    gitBranchLabel5: "#FFFFFF",
-    gitBranchLabel6: "#FFFFFF",
-    gitBranchLabel7: "#FFFFFF",
-    tagLabelColor: "#0F172A",
-    tagLabelBackground: "#FDE68A",
-    tagLabelBorder: "#FBBF24",
-    commitLabelColor: "#334155",
-    commitLabelBackground: "#FFFFFF",
-    // quadrant
-    quadrant1Fill: "#EEF2FF",
-    quadrant2Fill: "#FDF2F8",
-    quadrant3Fill: "#ECFDF5",
-    quadrant4Fill: "#FFFBEB",
-    quadrant1TextFill: "#0F172A",
-    quadrant2TextFill: "#0F172A",
-    quadrant3TextFill: "#0F172A",
-    quadrant4TextFill: "#0F172A",
-    quadrantPointFill: "#6366F1",
-    quadrantPointTextFill: "#0F172A",
-    quadrantXAxisTextFill: "#1E293B",
-    quadrantYAxisTextFill: "#1E293B",
-    quadrantInternalBorderStrokeFill: "#CBD5E1",
-    quadrantExternalBorderStrokeFill: "#94A3B8",
-    quadrantTitleFill: "#0F172A",
-    pie1: "#818CF8",
-    pie2: "#A78BFA",
-    pie3: "#F472B6",
-    pie4: "#FBBF24",
-    pie5: "#34D399",
-    pie6: "#22D3EE",
-    pie7: "#60A5FA",
-    pie8: "#FB7185",
-    pie9: "#A3E635",
-    pie10: "#FB923C",
-    pie11: "#2DD4BF",
-    pie12: "#C084FC",
-    pieOpacity: "0.9",
-    pieStrokeColor: "#FFFFFF",
-    pieStrokeWidth: "2px",
-    pieOuterStrokeWidth: "0px",
-    pieOuterStrokeColor: "transparent",
-    pieTitleTextSize: "18px",
-    pieTitleTextColor: "#0F172A",
-    pieSectionTextSize: "13px",
-    pieSectionTextColor: "#FFFFFF",
-    pieLegendTextSize: "13px",
-    pieLegendTextColor: "#334155",
-    // mindmap / timeline / journey などで使われる cScale 系
-    // 彩度を揃えた 400 系で統一し、ビビッドすぎないようにする
-    cScale0: "#818CF8",
-    cScale1: "#A78BFA",
-    cScale2: "#F472B6",
-    cScale3: "#FBBF24",
-    cScale4: "#34D399",
-    cScale5: "#22D3EE",
-    cScale6: "#60A5FA",
-    cScale7: "#A3E635",
-    cScale8: "#FB923C",
-    cScale9: "#2DD4BF",
-    cScale10: "#C084FC",
-    cScale11: "#FB7185",
-    cScaleLabel0: "#FFFFFF",
-    cScaleLabel1: "#FFFFFF",
-    cScaleLabel2: "#FFFFFF",
-    cScaleLabel3: "#FFFFFF",
-    cScaleLabel4: "#FFFFFF",
-    cScaleLabel5: "#FFFFFF",
-    cScaleLabel6: "#FFFFFF",
-    cScaleLabel7: "#FFFFFF",
-    cScaleLabel8: "#FFFFFF",
-    cScaleLabel9: "#FFFFFF",
-    cScaleLabel10: "#FFFFFF",
-    cScaleLabel11: "#FFFFFF",
-    cScalePeer0: "#EEF2FF",
-    cScalePeer1: "#F5F3FF",
-    cScalePeer2: "#FDF2F8",
-    cScalePeer3: "#FFFBEB",
-    cScalePeer4: "#ECFDF5",
-    cScalePeer5: "#ECFEFF",
-    cScalePeer6: "#EFF6FF",
-    cScalePeer7: "#F7FEE7",
-    cScalePeer8: "#FFF7ED",
-    cScalePeer9: "#F0FDFA",
-    cScalePeer10: "#FAF5FF",
-    cScalePeer11: "#FEF2F2",
-  },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
-  gantt: { barHeight: 22, barGap: 6 },
-  mindmap: { padding: 14, maxNodeWidth: 200 },
-  timeline: { padding: 14, disableMulticolor: false },
-  journey: { useMaxWidth: false },
-};
-
-export const darkTheme = {
-  startOnLoad: false,
-  theme: "base" as const,
-  fontFamily: FONT_STACK,
-  themeVariables: {
-    fontFamily: FONT_STACK,
-    fontSize: "14px",
-    darkMode: true,
-    primaryColor: "#1E293B",
-    primaryTextColor: "#E2E8F0",
-    primaryBorderColor: "#475569",
-    lineColor: "#94A3B8",
-    secondaryColor: "#0F172A",
-    tertiaryColor: "#1E293B",
-    background: "#0F172A",
-    mainBkg: "#1E293B",
-    secondBkg: "#0F172A",
-    nodeBorder: "#475569",
-    clusterBkg: "#111827",
-    clusterBorder: "#334155",
-    titleColor: "#F1F5F9",
-    edgeLabelBackground: "#0F172A",
-    actorBkg: "#1E293B",
-    actorBorder: "#475569",
-    actorTextColor: "#E2E8F0",
-    actorLineColor: "#94A3B8",
-    signalColor: "#CBD5E1",
-    signalTextColor: "#E2E8F0",
-    labelBoxBkgColor: "#312E81",
-    labelBoxBorderColor: "#6366F1",
-    labelTextColor: "#E0E7FF",
-    loopTextColor: "#E2E8F0",
-    noteBkgColor: "#422006",
-    noteBorderColor: "#F59E0B",
-    noteTextColor: "#FDE68A",
-    activationBkgColor: "#312E81",
-    activationBorderColor: "#6366F1",
-    gridColor: "#334155",
-    pie1: "#818CF8",
-    pie2: "#A78BFA",
-    pie3: "#F472B6",
-    pie4: "#FBBF24",
-    pie5: "#34D399",
-    pie6: "#22D3EE",
-    pie7: "#60A5FA",
-    pie8: "#F87171",
-    pie9: "#A3E635",
-    pie10: "#FB923C",
-    pie11: "#2DD4BF",
-    pie12: "#C084FC",
-  },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
-};
-
-export const prettyCss = `
+<svg id="graph-pretty" width="500" xmlns="http://www.w3.org/2000/svg" style="max-width: none;" viewBox="0 0 500 500" role="graphics-document document" aria-roledescription="quadrantChart" height="500"><style>#graph-pretty{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;fill:#1E293B;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#graph-pretty .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#graph-pretty .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#graph-pretty .error-icon{fill:#F8FAFC;}#graph-pretty .error-text{fill:#070503;stroke:#070503;}#graph-pretty .edge-thickness-normal{stroke-width:1px;}#graph-pretty .edge-thickness-thick{stroke-width:3.5px;}#graph-pretty .edge-pattern-solid{stroke-dasharray:0;}#graph-pretty .edge-thickness-invisible{stroke-width:0;fill:none;}#graph-pretty .edge-pattern-dashed{stroke-dasharray:3;}#graph-pretty .edge-pattern-dotted{stroke-dasharray:2;}#graph-pretty .marker{fill:#94A3B8;stroke:#94A3B8;}#graph-pretty .marker.cross{stroke:#94A3B8;}#graph-pretty svg{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;}#graph-pretty p{margin:0;}#graph-pretty .node .neo-node{stroke:#CBD5E1;}#graph-pretty [data-look="neo"].node rect,#graph-pretty [data-look="neo"].cluster rect,#graph-pretty [data-look="neo"].node polygon{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node path{stroke:url(#graph-pretty-gradient);stroke-width:1px;}#graph-pretty [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node .neo-line path{stroke:#CBD5E1;filter:none;}#graph-pretty [data-look="neo"].node circle{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node circle .state-start{fill:#000000;}#graph-pretty [data-look="neo"].icon-shape .icon{fill:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].icon-shape .icon-neo path{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty :root{--mermaid-font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}</style><g></g><g class="main"><g class="quadrants"><g class="quadrant"><rect x="263" y="45" width="232" height="212" fill="#EEF2FF"></rect><text x="0" y="0" fill="#0F172A" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(379, 50) rotate(0)">Expand</text></g><g class="quadrant"><rect x="31" y="45" width="232" height="212" fill="#FDF2F8"></rect><text x="0" y="0" fill="#0F172A" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(147, 50) rotate(0)">Double down</text></g><g class="quadrant"><rect x="31" y="257" width="232" height="212" fill="#ECFDF5"></rect><text x="0" y="0" fill="#0F172A" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(147, 262) rotate(0)">Re-evaluate</text></g><g class="quadrant"><rect x="263" y="257" width="232" height="212" fill="#FFFBEB"></rect><text x="0" y="0" fill="#0F172A" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(379, 262) rotate(0)">Improve reach</text></g></g><g class="border"><line x1="30" y1="45" x2="496" y2="45" style="stroke: rgb(148, 163, 184); stroke-width: 2;"></line><line x1="495" y1="46" x2="495" y2="468" style="stroke: rgb(148, 163, 184); stroke-width: 2;"></line><line x1="30" y1="469" x2="496" y2="469" style="stroke: rgb(148, 163, 184); stroke-width: 2;"></line><line x1="31" y1="46" x2="31" y2="468" style="stroke: rgb(148, 163, 184); stroke-width: 2;"></line><line x1="263" y1="46" x2="263" y2="468" style="stroke: rgb(203, 213, 225); stroke-width: 1;"></line><line x1="32" y1="257" x2="494" y2="257" style="stroke: rgb(203, 213, 225); stroke-width: 1;"></line></g><g class="data-points"><g class="data-point"><circle cx="193.4" cy="138.28" r="5" fill="#6366F1" stroke="#6366F1" stroke-width="0px"></circle><text x="0" y="0" fill="#0F172A" font-size="12" dominant-baseline="hanging" text-anchor="middle" transform="translate(193.4, 143.28) rotate(0)">Campaign F</text></g><g class="data-point"><circle cx="216.6" cy="324.84" r="5" fill="#6366F1" stroke="#6366F1" stroke-width="0px"></circle><text x="0" y="0" fill="#0F172A" font-size="12" dominant-baseline="hanging" text-anchor="middle" transform="translate(216.6, 329.84) rotate(0)">Campaign E</text></g><g class="data-point"><circle cx="392.92" cy="324.84" r="5" fill="#6366F1" stroke="#6366F1" stroke-width="0px"></circle><text x="0" y="0" fill="#0F172A" font-size="12" dominant-baseline="hanging" text-anchor="middle" transform="translate(392.92, 329.84) rotate(0)">Campaign D</text></g><g class="data-point"><circle cx="295.47999999999996" cy="176.44" r="5" fill="#6366F1" stroke="#6366F1" stroke-width="0px"></circle><text x="0" y="0" fill="#0F172A" font-size="12" dominant-baseline="hanging" text-anchor="middle" transform="translate(295.47999999999996, 181.44) rotate(0)">Campaign C</text></g><g class="data-point"><circle cx="239.8" cy="371.48" r="5" fill="#6366F1" stroke="#6366F1" stroke-width="0px"></circle><text x="0" y="0" fill="#0F172A" font-size="12" dominant-baseline="hanging" text-anchor="middle" transform="translate(239.8, 376.48) rotate(0)">Campaign B</text></g><g class="data-point"><circle cx="170.2" cy="214.60000000000002" r="5" fill="#6366F1" stroke="#6366F1" stroke-width="0px"></circle><text x="0" y="0" fill="#0F172A" font-size="12" dominant-baseline="hanging" text-anchor="middle" transform="translate(170.2, 219.60000000000002) rotate(0)">Campaign A</text></g></g><g class="labels"><g class="label"><text x="0" y="0" fill="#1E293B" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(147, 479) rotate(0)">Low Reach</text></g><g class="label"><text x="0" y="0" fill="#1E293B" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(379, 479) rotate(0)">High Reach</text></g><g class="label"><text x="0" y="0" fill="#1E293B" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(5, 363) rotate(-90)">Low Engagement</text></g><g class="label"><text x="0" y="0" fill="#1E293B" font-size="16" dominant-baseline="hanging" text-anchor="middle" transform="translate(5, 151) rotate(-90)">High Engagement</text></g></g><g class="title"><text x="0" y="0" fill="#0F172A" font-size="20" dominant-baseline="hanging" text-anchor="middle" transform="translate(250, 10) rotate(0)">Reach vs Engagement</text></g></g><style>
   .mp-root svg { overflow: visible; }
 
   /* ノード: 柔らかい影 + 繊細な枠線 */
@@ -288,7 +64,7 @@ export const prettyCss = `
   .edgeLabel,
   .cluster text,
   .actor,
-  text.actor > tspan,
+  text.actor &gt; tspan,
   .messageText,
   .loopText,
   .noteText,
@@ -356,8 +132,8 @@ export const prettyCss = `
   .node.statediagram-state rect,
   .node rect.state,
   rect.state,
-  g.node.statediagram-state > rect,
-  .statediagram-state > rect {
+  g.node.statediagram-state &gt; rect,
+  .statediagram-state &gt; rect {
     rx: 12 !important;
     ry: 12 !important;
     fill: #EEF2FF !important;
@@ -379,7 +155,7 @@ export const prettyCss = `
   g.node.statediagram-state circle.start,
   g.statediagram-cluster circle.start,
   [id$="-start"] circle,
-  g.node[id*="start"] > circle {
+  g.node[id*="start"] &gt; circle {
     fill: #6366F1 !important;
     stroke: #FFFFFF !important;
     stroke-width: 3px !important;
@@ -390,7 +166,7 @@ export const prettyCss = `
   circle.end,
   .node circle.end,
   [id$="-end"] circle,
-  g.node[id*="end"] > circle {
+  g.node[id*="end"] &gt; circle {
     fill: #FFFFFF !important;
     stroke: #475569 !important;
     stroke-width: 2px !important;
@@ -531,11 +307,11 @@ export const prettyCss = `
   }
 
   /* ===== mindmap ===== */
-  .mindmap-node > rect,
-  .mindmap-node > circle,
-  .mindmap-node > ellipse,
-  .mindmap-node > polygon,
-  .mindmap-node > path {
+  .mindmap-node &gt; rect,
+  .mindmap-node &gt; circle,
+  .mindmap-node &gt; ellipse,
+  .mindmap-node &gt; polygon,
+  .mindmap-node &gt; path {
     stroke-width: 0 !important;
     filter:
       drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06))
@@ -574,7 +350,7 @@ export const prettyCss = `
 
   /* ===== timeline ===== */
   .timeline-node rect,
-  g.timeline-node > rect,
+  g.timeline-node &gt; rect,
   g.timeline-node foreignObject {
     filter: drop-shadow(0 3px 10px rgba(15, 23, 42, 0.10));
   }
@@ -635,7 +411,7 @@ export const prettyCss = `
     stroke-linecap: round !important;
   }
   .task rect,
-  g.task > rect {
+  g.task &gt; rect {
     rx: 14 !important;
     ry: 14 !important;
     filter:
@@ -702,7 +478,7 @@ export const prettyCss = `
   .task-type-3 { fill: #FFFBEB !important; }
   .task-type-4 { fill: #ECFDF5 !important; }
   .task-type-5 { fill: #ECFEFF !important; }
-  g[class*="section-type"] > rect,
+  g[class*="section-type"] &gt; rect,
   .section-type-0, .section-type-1, .section-type-2,
   .section-type-3, .section-type-4, .section-type-5 {
     stroke-width: 0 !important;
@@ -716,7 +492,7 @@ export const prettyCss = `
 
   /* ===== gantt ===== */
   /* 背景の暗いグレーを消す */
-  .mermaid > svg > g > rect:first-child,
+  .mermaid &gt; svg &gt; g &gt; rect:first-child,
   rect.background,
   rect.section,
   rect.sectionBar {
@@ -802,74 +578,4 @@ export const prettyCss = `
     stroke-width: 3px !important;
     stroke: #FFFFFF !important;
   }
-`;
-
-export const darkCss = `
-  .mp-root svg { overflow: visible; }
-
-  .node rect,
-  .node polygon,
-  .node circle,
-  .node ellipse,
-  .node path {
-    filter:
-      drop-shadow(0 1px 2px rgba(0, 0, 0, 0.4))
-      drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
-    stroke-width: 1.2px !important;
-  }
-  .node rect { rx: 10; ry: 10; }
-
-  .edgePath path.path,
-  .flowchart-link {
-    stroke-width: 1.5px !important;
-    stroke-linecap: round !important;
-    stroke-linejoin: round !important;
-  }
-
-  .edgeLabel,
-  .edgeLabel div,
-  .edgeLabel span {
-    background-color: rgba(15, 23, 42, 0.96) !important;
-    color: #CBD5E1 !important;
-    font-size: 12px !important;
-  }
-  .edgeLabel {
-    padding: 2px 8px !important;
-    border-radius: 999px !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  }
-
-  .cluster rect {
-    rx: 14 !important;
-    ry: 14 !important;
-    stroke-width: 1px !important;
-  }
-  .cluster-label .nodeLabel,
-  .cluster text {
-    font-weight: 600 !important;
-    fill: #F1F5F9 !important;
-    color: #F1F5F9 !important;
-  }
-
-  .nodeLabel,
-  .edgeLabel,
-  .cluster text,
-  .actor,
-  text.actor > tspan,
-  .messageText,
-  .loopText,
-  .noteText,
-  .labelText,
-  .sectionTitle,
-  .titleText,
-  .taskText,
-  .grid text {
-    font-family: "Inter", system-ui, sans-serif !important;
-  }
-
-  .actor {
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
-    stroke-width: 1.2px !important;
-  }
-  .actor-line { stroke-width: 1px !important; stroke-dasharray: 2 4 !important; }
-`;
+</style></svg>

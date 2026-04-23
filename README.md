@@ -47,6 +47,31 @@ premaid
 premaid diagram.mmd -o ./out/my-diagram
 ```
 
+## Lint & auto-fix
+
+`premaid lint` checks Mermaid sources for common mistakes and can repair them in place.
+
+```bash
+premaid lint diagram.mmd                      # report
+premaid lint --fix diagram.mmd                # fix in place
+premaid lint docs/                            # recurse *.mmd / *.md
+premaid lint -                                # stdin
+cat diagram.mmd | premaid lint --fix -        # read stdin, write fixed to stdout
+```
+
+Exit code is `0` when clean (or when every detected issue was auto-fixed), `1` otherwise — drop it into CI.
+
+Rules (applied inside `flowchart` / `graph`; the contrast rule applies everywhere):
+
+| Rule | Detects | Auto-fix |
+| --- | --- | --- |
+| `literal-newline` | `\n` literal inside labels (Mermaid renders it as text) | replace with `<br/>` |
+| `unquoted-special` | Unquoted labels containing `<`, `>`, `/`, `(`, `)`, `:` + space, `\`, `"` | wrap in `"..."`, escape inner `"` as `&quot;` |
+| `unbalanced-brackets` | Mismatched `[ ]` / `{ }` on a line | — (warn only) |
+| `low-contrast` | `style X fill:#… color:#…` with WCAG contrast < 4.5:1 (`#333` assumed when `color:` is absent) | inject `color:#ffffff` or `#000000` based on luminance |
+
+Markdown files are scanned for ```` ```mermaid ```` fences; fixes are applied inside each block, preserving the rest of the document.
+
 ## Options
 
 | Flag | Description | Default |

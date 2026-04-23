@@ -9,7 +9,9 @@
   "scripts": {
     "build": "tsc && chmod +x dist/cli.js",
     "dev": "tsx src/cli.ts",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "install-skill": "node dist/cli.js install-skill",
+    "link-skill": "node dist/cli.js install-skill --link"
   },
   "engines": {
     "node": ">=20"
@@ -27,6 +29,7 @@
   },
   "files": [
     "dist",
+    "skills",
     "README.md"
   ]
 }

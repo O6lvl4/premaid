@@ -72,6 +72,22 @@ Rules (applied inside `flowchart` / `graph`; the contrast rule applies everywher
 
 Markdown files are scanned for ```` ```mermaid ```` fences; fixes are applied inside each block, preserving the rest of the document.
 
+## Claude Code skill
+
+premaid ships a [Claude Code](https://docs.claude.com/en/docs/claude-code) skill at `skills/premaid/SKILL.md` that drives both workflows (draw a diagram from user intent; audit & repair existing docs). Install it with:
+
+```bash
+# After a global install
+premaid install-skill                  # copy
+premaid install-skill --link           # symlink (auto-updates with git pull)
+
+# After a local clone
+npm install && npm run install-skill   # copy
+npm install && npm run link-skill      # symlink
+```
+
+Then invoke with `/premaid` inside Claude Code.
+
 ## Options
 
 | Flag | Description | Default |

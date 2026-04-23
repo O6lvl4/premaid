@@ -1,13 +1,19 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import {
+  cpSync,
   existsSync,
+  mkdirSync,
   readFileSync,
   readdirSync,
+  rmSync,
   statSync,
+  symlinkSync,
   writeFileSync,
 } from "node:fs";
-import { extname, join, resolve } from "node:path";
+import { homedir } from "node:os";
+import { dirname, extname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import pc from "picocolors";
 import {
   lintMarkdown,
@@ -328,6 +334,81 @@ function writeLintSummary(s: {
       `${s.totalIssues} issue(s) in ${s.filesWithIssues} file(s)\n`
   );
 }
+
+// --- install-skill subcommand ------------------------------------------------
+
+interface InstallSkillOptions {
+  link?: boolean;
+  force?: boolean;
+  dir?: string;
+}
+
+program
+  .command("install-skill")
+  .description(
+    "Install the premaid skill for Claude Code into ~/.claude/skills/premaid"
+  )
+  .option(
+    "--link",
+    "Symlink instead of copy (auto-updates on git pull; breaks if the source path moves)"
+  )
+  .option("--force", "Overwrite an existing skill at the destination")
+  .option(
+    "--dir <path>",
+    "Claude Code user dir (default: $CLAUDE_CONFIG_DIR or ~/.claude)"
+  )
+  .action((opts: InstallSkillOptions) => {
+    const pkgRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+    const src = join(pkgRoot, "skills", "premaid");
+    if (!existsSync(join(src, "SKILL.md"))) {
+      fail(
+        `Skill source not found at ${src}. Reinstall premaid or clone the repo fresh.`
+      );
+    }
+
+    const userDir =
+      opts.dir ?? process.env.CLAUDE_CONFIG_DIR ?? join(homedir(), ".claude");
+    const dst = join(userDir, "skills", "premaid");
+
+    if (existsSync(dst)) {
+      if (!opts.force) {
+        fail(
+          `Skill already installed at ${dst}. Re-run with --force to overwrite.`
+        );
+      }
+      rmSync(dst, { recursive: true, force: true });
+    }
+
+    mkdirSync(dirname(dst), { recursive: true });
+
+    if (opts.link) {
+      symlinkSync(src, dst, "dir");
+      process.stderr.write(
+        pc.green("  ✓ ") + `Symlinked ${pc.bold(dst)} → ${src}\n`
+      );
+      process.stderr.write(
+        pc.dim(
+          "    Updates in the premaid repo propagate automatically (git pull).\n"
+        )
+      );
+    } else {
+      cpSync(src, dst, { recursive: true });
+      process.stderr.write(
+        pc.green("  ✓ ") + `Copied skill to ${pc.bold(dst)}\n`
+      );
+      process.stderr.write(
+        pc.dim(
+          "    Re-run `premaid install-skill --force` after upgrading premaid.\n"
+        )
+      );
+    }
+
+    process.stderr.write(
+      pc.dim(
+        "    Invoke with /premaid in Claude Code (restart the session if it doesn't appear).\n"
+      )
+    );
+  });
 
 program.parseAsync().catch((e: Error) => {
   fail(e.message);

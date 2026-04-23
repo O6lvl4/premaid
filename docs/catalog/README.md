@@ -1,9 +1,9 @@
 # Catalog
 
-`mermaid-pretty` の `pretty` テーマと素の Mermaid を並べた before/after カタログ。
-各セクションの上は ```` ```mermaid ```` ブロック（GitHub が素の Mermaid で描画）、下は `mmp` が出力した PNG。
+`premaid` の `pretty` テーマと素の Mermaid を並べた before/after カタログ。
+各セクションの上は ```` ```mermaid ```` ブロック（GitHub が素の Mermaid で描画）、下は `premaid` が出力した PNG。
 
-> `pretty` テーマは `mmp file.mmd` の既定。素の Mermaid は `mmp file.mmd -t default` に相当。
+> `pretty` テーマは `premaid file.mmd` の既定。素の Mermaid は `premaid file.mmd -t default` に相当。
 
 ---
 
@@ -212,7 +212,7 @@ Source: [`examples/pie.mmd`](../../examples/pie.mmd) · [SVG](images/pie.svg)
 
 ```mermaid
 mindmap
-  root((mermaid-pretty))
+  root((premaid))
     Input
       File
       Stdin
@@ -352,6 +352,6 @@ Source: [`examples/quadrant.mmd`](../../examples/quadrant.mmd) · [SVG](images/q
 
 ```bash
 for f in flowchart sequence class state er gantt pie mindmap timeline journey gitgraph quadrant; do
-  mmp "examples/${f}.mmd" -o "docs/catalog/images/${f}"
+  premaid "examples/${f}.mmd" -o "docs/catalog/images/${f}"
 done
 ```

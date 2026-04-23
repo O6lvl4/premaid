@@ -28,7 +28,7 @@ function resolveMermaidPath(): string {
     }
   }
   throw new Error(
-    "mermaid.min.js not found. Please run `npm install` in the mermaid-pretty package."
+    "mermaid.min.js not found. Please run `npm install` in the premaid package."
   );
 }
 

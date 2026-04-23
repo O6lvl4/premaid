@@ -1,4 +1,4 @@
-# mermaid-pretty
+# premaid
 
 Render beautiful Mermaid diagrams from the command line. Paste your Mermaid source and get a refined SVG and PNG with a custom `pretty` theme inspired by mermaid.ai.
 
@@ -14,7 +14,7 @@ git clone https://github.com/O6lvl4/mermaid-pretty.git
 cd mermaid-pretty
 npm install
 npm run build
-npm link   # exposes `mermaid-pretty` and `mmp` on your PATH
+npm link   # exposes `premaid` on your PATH
 ```
 
 You can also run without linking:
@@ -35,16 +35,16 @@ npm install -g github:O6lvl4/mermaid-pretty
 
 ```bash
 # From a file (writes both .svg and .png to cwd)
-mmp examples/flowchart.mmd
+premaid examples/flowchart.mmd
 
 # From stdin
-cat examples/pie.mmd | mmp
+cat examples/pie.mmd | premaid
 
 # Paste interactively, then Ctrl-D
-mmp
+premaid
 
 # Custom output path (extension optional)
-mmp diagram.mmd -o ./out/my-diagram
+premaid diagram.mmd -o ./out/my-diagram
 ```
 
 ## Options

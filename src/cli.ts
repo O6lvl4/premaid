@@ -27,7 +27,7 @@ interface CliOptions {
 const program = new Command();
 
 program
-  .name("mermaid-pretty")
+  .name("premaid")
   .description("Render beautiful Mermaid diagrams from the command line")
   .version("0.1.0")
   .argument(

@@ -1,11 +1,10 @@
 {
-  "name": "mermaid-pretty",
+  "name": "premaid",
   "version": "0.1.0",
   "description": "Render beautiful Mermaid diagrams from the command line",
   "type": "module",
   "bin": {
-    "mermaid-pretty": "dist/cli.js",
-    "mmp": "dist/cli.js"
+    "premaid": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc && chmod +x dist/cli.js",

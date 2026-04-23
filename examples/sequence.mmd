@@ -1,0 +1,9 @@
+sequenceDiagram
+    participant U as User
+    participant A as API
+    participant DB as Database
+    U->>A: POST /login
+    A->>DB: SELECT user
+    DB-->>A: user record
+    A-->>U: JWT token
+    Note over U,A: Session established

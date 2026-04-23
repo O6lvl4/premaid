@@ -1,0 +1,33 @@
+{
+  "name": "mermaid-pretty",
+  "version": "0.1.0",
+  "description": "Render beautiful Mermaid diagrams from the command line",
+  "type": "module",
+  "bin": {
+    "mermaid-pretty": "dist/cli.js",
+    "mmp": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "mermaid": "^11.4.1",
+    "picocolors": "^1.1.1",
+    "puppeteer": "^23.10.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

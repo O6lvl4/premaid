@@ -1,0 +1,13 @@
+flowchart LR
+    A[User] -->|Request| B(API Gateway)
+    B --> C{Auth?}
+    C -->|Yes| D[Service]
+    C -->|No| E[401]
+    D --> F[(Database)]
+    D --> G[Cache]
+
+    subgraph Backend
+        D
+        F
+        G
+    end

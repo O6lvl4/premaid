@@ -1,0 +1,743 @@
+<svg id="graph-pretty" width="825.724365234375" xmlns="http://www.w3.org/2000/svg" class="mindmapDiagram" style="max-width: none;" viewBox="-18 -19 825.724365234375 467.4304504394531" role="graphics-document document" aria-roledescription="mindmap" height="467.4304504394531"><style>#graph-pretty{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#graph-pretty .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#graph-pretty .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#graph-pretty .error-icon{fill:#552222;}#graph-pretty .error-text{fill:#552222;stroke:#552222;}#graph-pretty .edge-thickness-normal{stroke-width:1px;}#graph-pretty .edge-thickness-thick{stroke-width:3.5px;}#graph-pretty .edge-pattern-solid{stroke-dasharray:0;}#graph-pretty .edge-thickness-invisible{stroke-width:0;fill:none;}#graph-pretty .edge-pattern-dashed{stroke-dasharray:3;}#graph-pretty .edge-pattern-dotted{stroke-dasharray:2;}#graph-pretty .marker{fill:#333333;stroke:#333333;}#graph-pretty .marker.cross{stroke:#333333;}#graph-pretty svg{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;}#graph-pretty p{margin:0;}#graph-pretty .edge{stroke-width:3;}#graph-pretty .section--1 rect,#graph-pretty .section--1 path,#graph-pretty .section--1 circle,#graph-pretty .section--1 polygon,#graph-pretty .section--1 path{fill:hsl(240, 100%, 76.2745098039%);}#graph-pretty .section--1 text{fill:#ffffff;}#graph-pretty .section--1 span{color:#ffffff;}#graph-pretty .node-icon--1{font-size:40px;color:#ffffff;}#graph-pretty .section-edge--1{stroke:hsl(240, 100%, 76.2745098039%);}#graph-pretty .edge-depth--1{stroke-width:17;}#graph-pretty .section--1 line{stroke:hsl(60, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section--1 rect,#graph-pretty [data-look="neo"].mindmap-node.section--1 path,#graph-pretty [data-look="neo"].mindmap-node.section--1 circle,#graph-pretty [data-look="neo"].mindmap-node.section--1 polygon{fill:hsl(240, 100%, 76.2745098039%);stroke:hsl(240, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge--1{stroke:hsl(240, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section--1 text{fill:#ffffff;}#graph-pretty .section-0 rect,#graph-pretty .section-0 path,#graph-pretty .section-0 circle,#graph-pretty .section-0 polygon,#graph-pretty .section-0 path{fill:hsl(60, 100%, 73.5294117647%);}#graph-pretty .section-0 text{fill:black;}#graph-pretty .section-0 span{color:black;}#graph-pretty .node-icon-0{font-size:40px;color:black;}#graph-pretty .section-edge-0{stroke:hsl(60, 100%, 73.5294117647%);}#graph-pretty .edge-depth-0{stroke-width:14;}#graph-pretty .section-0 line{stroke:hsl(240, 100%, 83.5294117647%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-0 rect,#graph-pretty [data-look="neo"].mindmap-node.section-0 path,#graph-pretty [data-look="neo"].mindmap-node.section-0 circle,#graph-pretty [data-look="neo"].mindmap-node.section-0 polygon{fill:hsl(60, 100%, 73.5294117647%);stroke:hsl(60, 100%, 73.5294117647%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-0{stroke:hsl(60, 100%, 73.5294117647%);}#graph-pretty [data-look="neo"].mindmap-node.section-0 text{fill:black;}#graph-pretty .section-1 rect,#graph-pretty .section-1 path,#graph-pretty .section-1 circle,#graph-pretty .section-1 polygon,#graph-pretty .section-1 path{fill:hsl(80, 100%, 76.2745098039%);}#graph-pretty .section-1 text{fill:black;}#graph-pretty .section-1 span{color:black;}#graph-pretty .node-icon-1{font-size:40px;color:black;}#graph-pretty .section-edge-1{stroke:hsl(80, 100%, 76.2745098039%);}#graph-pretty .edge-depth-1{stroke-width:11;}#graph-pretty .section-1 line{stroke:hsl(260, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-1 rect,#graph-pretty [data-look="neo"].mindmap-node.section-1 path,#graph-pretty [data-look="neo"].mindmap-node.section-1 circle,#graph-pretty [data-look="neo"].mindmap-node.section-1 polygon{fill:hsl(80, 100%, 76.2745098039%);stroke:hsl(80, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-1{stroke:hsl(80, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-1 text{fill:black;}#graph-pretty .section-2 rect,#graph-pretty .section-2 path,#graph-pretty .section-2 circle,#graph-pretty .section-2 polygon,#graph-pretty .section-2 path{fill:hsl(270, 100%, 76.2745098039%);}#graph-pretty .section-2 text{fill:#ffffff;}#graph-pretty .section-2 span{color:#ffffff;}#graph-pretty .node-icon-2{font-size:40px;color:#ffffff;}#graph-pretty .section-edge-2{stroke:hsl(270, 100%, 76.2745098039%);}#graph-pretty .edge-depth-2{stroke-width:8;}#graph-pretty .section-2 line{stroke:hsl(90, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-2 rect,#graph-pretty [data-look="neo"].mindmap-node.section-2 path,#graph-pretty [data-look="neo"].mindmap-node.section-2 circle,#graph-pretty [data-look="neo"].mindmap-node.section-2 polygon{fill:hsl(270, 100%, 76.2745098039%);stroke:hsl(270, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-2{stroke:hsl(270, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-2 text{fill:#ffffff;}#graph-pretty .section-3 rect,#graph-pretty .section-3 path,#graph-pretty .section-3 circle,#graph-pretty .section-3 polygon,#graph-pretty .section-3 path{fill:hsl(300, 100%, 76.2745098039%);}#graph-pretty .section-3 text{fill:black;}#graph-pretty .section-3 span{color:black;}#graph-pretty .node-icon-3{font-size:40px;color:black;}#graph-pretty .section-edge-3{stroke:hsl(300, 100%, 76.2745098039%);}#graph-pretty .edge-depth-3{stroke-width:5;}#graph-pretty .section-3 line{stroke:hsl(120, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-3 rect,#graph-pretty [data-look="neo"].mindmap-node.section-3 path,#graph-pretty [data-look="neo"].mindmap-node.section-3 circle,#graph-pretty [data-look="neo"].mindmap-node.section-3 polygon{fill:hsl(300, 100%, 76.2745098039%);stroke:hsl(300, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-3{stroke:hsl(300, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-3 text{fill:black;}#graph-pretty .section-4 rect,#graph-pretty .section-4 path,#graph-pretty .section-4 circle,#graph-pretty .section-4 polygon,#graph-pretty .section-4 path{fill:hsl(330, 100%, 76.2745098039%);}#graph-pretty .section-4 text{fill:black;}#graph-pretty .section-4 span{color:black;}#graph-pretty .node-icon-4{font-size:40px;color:black;}#graph-pretty .section-edge-4{stroke:hsl(330, 100%, 76.2745098039%);}#graph-pretty .edge-depth-4{stroke-width:2;}#graph-pretty .section-4 line{stroke:hsl(150, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-4 rect,#graph-pretty [data-look="neo"].mindmap-node.section-4 path,#graph-pretty [data-look="neo"].mindmap-node.section-4 circle,#graph-pretty [data-look="neo"].mindmap-node.section-4 polygon{fill:hsl(330, 100%, 76.2745098039%);stroke:hsl(330, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-4{stroke:hsl(330, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-4 text{fill:black;}#graph-pretty .section-5 rect,#graph-pretty .section-5 path,#graph-pretty .section-5 circle,#graph-pretty .section-5 polygon,#graph-pretty .section-5 path{fill:hsl(0, 100%, 76.2745098039%);}#graph-pretty .section-5 text{fill:black;}#graph-pretty .section-5 span{color:black;}#graph-pretty .node-icon-5{font-size:40px;color:black;}#graph-pretty .section-edge-5{stroke:hsl(0, 100%, 76.2745098039%);}#graph-pretty .edge-depth-5{stroke-width:-1;}#graph-pretty .section-5 line{stroke:hsl(180, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-5 rect,#graph-pretty [data-look="neo"].mindmap-node.section-5 path,#graph-pretty [data-look="neo"].mindmap-node.section-5 circle,#graph-pretty [data-look="neo"].mindmap-node.section-5 polygon{fill:hsl(0, 100%, 76.2745098039%);stroke:hsl(0, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-5{stroke:hsl(0, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-5 text{fill:black;}#graph-pretty .section-6 rect,#graph-pretty .section-6 path,#graph-pretty .section-6 circle,#graph-pretty .section-6 polygon,#graph-pretty .section-6 path{fill:hsl(30, 100%, 76.2745098039%);}#graph-pretty .section-6 text{fill:black;}#graph-pretty .section-6 span{color:black;}#graph-pretty .node-icon-6{font-size:40px;color:black;}#graph-pretty .section-edge-6{stroke:hsl(30, 100%, 76.2745098039%);}#graph-pretty .edge-depth-6{stroke-width:-4;}#graph-pretty .section-6 line{stroke:hsl(210, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-6 rect,#graph-pretty [data-look="neo"].mindmap-node.section-6 path,#graph-pretty [data-look="neo"].mindmap-node.section-6 circle,#graph-pretty [data-look="neo"].mindmap-node.section-6 polygon{fill:hsl(30, 100%, 76.2745098039%);stroke:hsl(30, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-6{stroke:hsl(30, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-6 text{fill:black;}#graph-pretty .section-7 rect,#graph-pretty .section-7 path,#graph-pretty .section-7 circle,#graph-pretty .section-7 polygon,#graph-pretty .section-7 path{fill:hsl(90, 100%, 76.2745098039%);}#graph-pretty .section-7 text{fill:black;}#graph-pretty .section-7 span{color:black;}#graph-pretty .node-icon-7{font-size:40px;color:black;}#graph-pretty .section-edge-7{stroke:hsl(90, 100%, 76.2745098039%);}#graph-pretty .edge-depth-7{stroke-width:-7;}#graph-pretty .section-7 line{stroke:hsl(270, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-7 rect,#graph-pretty [data-look="neo"].mindmap-node.section-7 path,#graph-pretty [data-look="neo"].mindmap-node.section-7 circle,#graph-pretty [data-look="neo"].mindmap-node.section-7 polygon{fill:hsl(90, 100%, 76.2745098039%);stroke:hsl(90, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-7{stroke:hsl(90, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-7 text{fill:black;}#graph-pretty .section-8 rect,#graph-pretty .section-8 path,#graph-pretty .section-8 circle,#graph-pretty .section-8 polygon,#graph-pretty .section-8 path{fill:hsl(150, 100%, 76.2745098039%);}#graph-pretty .section-8 text{fill:black;}#graph-pretty .section-8 span{color:black;}#graph-pretty .node-icon-8{font-size:40px;color:black;}#graph-pretty .section-edge-8{stroke:hsl(150, 100%, 76.2745098039%);}#graph-pretty .edge-depth-8{stroke-width:-10;}#graph-pretty .section-8 line{stroke:hsl(330, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-8 rect,#graph-pretty [data-look="neo"].mindmap-node.section-8 path,#graph-pretty [data-look="neo"].mindmap-node.section-8 circle,#graph-pretty [data-look="neo"].mindmap-node.section-8 polygon{fill:hsl(150, 100%, 76.2745098039%);stroke:hsl(150, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-8{stroke:hsl(150, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-8 text{fill:black;}#graph-pretty .section-9 rect,#graph-pretty .section-9 path,#graph-pretty .section-9 circle,#graph-pretty .section-9 polygon,#graph-pretty .section-9 path{fill:hsl(180, 100%, 76.2745098039%);}#graph-pretty .section-9 text{fill:black;}#graph-pretty .section-9 span{color:black;}#graph-pretty .node-icon-9{font-size:40px;color:black;}#graph-pretty .section-edge-9{stroke:hsl(180, 100%, 76.2745098039%);}#graph-pretty .edge-depth-9{stroke-width:-13;}#graph-pretty .section-9 line{stroke:hsl(0, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-9 rect,#graph-pretty [data-look="neo"].mindmap-node.section-9 path,#graph-pretty [data-look="neo"].mindmap-node.section-9 circle,#graph-pretty [data-look="neo"].mindmap-node.section-9 polygon{fill:hsl(180, 100%, 76.2745098039%);stroke:hsl(180, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-9{stroke:hsl(180, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-9 text{fill:black;}#graph-pretty .section-10 rect,#graph-pretty .section-10 path,#graph-pretty .section-10 circle,#graph-pretty .section-10 polygon,#graph-pretty .section-10 path{fill:hsl(210, 100%, 76.2745098039%);}#graph-pretty .section-10 text{fill:black;}#graph-pretty .section-10 span{color:black;}#graph-pretty .node-icon-10{font-size:40px;color:black;}#graph-pretty .section-edge-10{stroke:hsl(210, 100%, 76.2745098039%);}#graph-pretty .edge-depth-10{stroke-width:-16;}#graph-pretty .section-10 line{stroke:hsl(30, 100%, 86.2745098039%);stroke-width:3;}#graph-pretty .disabled,#graph-pretty .disabled circle,#graph-pretty .disabled text{fill:lightgray;}#graph-pretty .disabled text{fill:#efefef;}#graph-pretty [data-look="neo"].mindmap-node.section-10 rect,#graph-pretty [data-look="neo"].mindmap-node.section-10 path,#graph-pretty [data-look="neo"].mindmap-node.section-10 circle,#graph-pretty [data-look="neo"].mindmap-node.section-10 polygon{fill:hsl(210, 100%, 76.2745098039%);stroke:hsl(210, 100%, 76.2745098039%);stroke-width:1px;}#graph-pretty [data-look="neo"].section-edge-10{stroke:hsl(210, 100%, 76.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-10 text{fill:black;}#graph-pretty .section-root rect,#graph-pretty .section-root path,#graph-pretty .section-root circle,#graph-pretty .section-root polygon{fill:hsl(240, 100%, 46.2745098039%);}#graph-pretty .section-root text{fill:#ffffff;}#graph-pretty .section-root span{color:#ffffff;}#graph-pretty .icon-container{height:100%;display:flex;justify-content:center;align-items:center;}#graph-pretty .edge{fill:none;}#graph-pretty .mindmap-node-label{dy:1em;alignment-baseline:middle;text-anchor:middle;dominant-baseline:middle;text-align:center;}#graph-pretty [data-look="neo"].mindmap-node{filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].mindmap-node.section-root rect,#graph-pretty [data-look="neo"].mindmap-node.section-root path,#graph-pretty [data-look="neo"].mindmap-node.section-root circle,#graph-pretty [data-look="neo"].mindmap-node.section-root polygon{fill:hsl(240, 100%, 46.2745098039%);}#graph-pretty [data-look="neo"].mindmap-node.section-root .text-inner-tspan{fill:#ffffff;}#graph-pretty .node .neo-node{stroke:#9370DB;}#graph-pretty [data-look="neo"].node rect,#graph-pretty [data-look="neo"].cluster rect,#graph-pretty [data-look="neo"].node polygon{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].node path{stroke:#9370DB;stroke-width:1px;}#graph-pretty [data-look="neo"].node .outer-path{filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].node .neo-line path{stroke:#9370DB;filter:none;}#graph-pretty [data-look="neo"].node circle{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].node circle .state-start{fill:#000000;}#graph-pretty [data-look="neo"].icon-shape .icon{fill:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].icon-shape .icon-neo path{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty :root{--mermaid-font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}</style><g><marker id="graph-pretty_mindmap-pointEnd" class="marker mindmap" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="graph-pretty_mindmap-pointStart" class="marker mindmap" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="graph-pretty_mindmap-pointEnd-margin" class="marker mindmap" viewBox="0 0 11.5 14" refX="11.5" refY="7" markerUnits="userSpaceOnUse" markerWidth="10.5" markerHeight="14" orient="auto"><path d="M 0 0 L 11.5 7 L 0 14 z" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"></path></marker><marker id="graph-pretty_mindmap-pointStart-margin" class="marker mindmap" viewBox="0 0 11.5 14" refX="1" refY="7" markerUnits="userSpaceOnUse" markerWidth="11.5" markerHeight="14" orient="auto"><polygon points="0,7 11.5,14 11.5,0" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"></polygon></marker><g class="subgraphs"></g><g class="edgePaths"><path d="M442.029,237.195L435.411,228.105C428.794,219.016,415.56,200.837,402.325,182.658C389.09,164.479,375.856,146.3,369.238,137.21L362.621,128.121" id="graph-pretty-edge_0_1" class="edge-thickness-normal edge-pattern-solid edge section-edge-0 edge-depth-1" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_0_1" data-points="W3sieCI6NDQyLjAyODgwMDIyODEyNzQ3LCJ5IjoyMzcuMTk0OTA0MTcyNjYzNzR9LHsieCI6NDAyLjMyNDg5NjI0Mzc2NzMsInkiOjE4Mi42NTc5NDAyMTEzNDcxMn0seyJ4IjozNjIuNjIwOTkyMjU5NDA3MSwieSI6MTI4LjEyMDk3NjI1MDAzMDV9XQ==" data-look="classic"></path><path d="M341.392,107.555L335.422,103.493C329.453,99.431,317.515,91.306,305.577,83.182C293.638,75.058,281.7,66.933,275.731,62.871L269.762,58.809" id="graph-pretty-edge_1_2" class="edge-thickness-normal edge-pattern-solid edge section-edge-0 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_1_2" data-points="W3sieCI6MzQxLjM5MTY0NDM1MDkxOTMsInkiOjEwNy41NTUxMjE5NzEwMjI1Mn0seyJ4IjozMDUuNTc2Njc2NjE1NDMwNTMsInkiOjgzLjE4MjA4NTU1MTA4NjA2fSx7IngiOjI2OS43NjE3MDg4Nzk5NDE3NSwieSI6NTguODA5MDQ5MTMxMTQ5NjE0fV0=" data-look="classic"></path><path d="M359.881,102.286L361.976,97.571C364.07,92.856,368.258,83.427,372.446,73.997C376.635,64.568,380.823,55.138,382.917,50.423L385.011,45.709" id="graph-pretty-edge_1_3" class="edge-thickness-normal edge-pattern-solid edge section-edge-0 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_1_3" data-points="W3sieCI6MzU5Ljg4MTQ0NDQ3OTg0NzA2LCJ5IjoxMDIuMjg1NjY5NTk4MzU2NX0seyJ4IjozNzIuNDQ2MzgxMjg5NjQzMSwieSI6NzMuOTk3MTE4MzkwOTkzNjV9LHsieCI6Mzg1LjAxMTMxODA5OTQzOTE3LCJ5Ijo0NS43MDg1NjcxODM2MzA3OX1d" data-look="classic"></path><path d="M339.227,119.576L330.894,121.626C322.562,123.675,305.897,127.773,289.232,131.871C272.567,135.97,255.903,140.068,247.57,142.117L239.238,144.166" id="graph-pretty-edge_1_4" class="edge-thickness-normal edge-pattern-solid edge section-edge-0 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_1_4" data-points="W3sieCI6MzM5LjIyNjUxNjEyNjcyMywieSI6MTE5LjU3NjQxMTAzOTA1NzA5fSx7IngiOjI4OS4yMzIxMjI5NDkzNTY1NSwieSI6MTMxLjg3MTM5NzA5MTU0MDd9LHsieCI6MjM5LjIzNzcyOTc3MTk5MDA1LCJ5IjoxNDQuMTY2MzgzMTQ0MDI0M31d" data-look="classic"></path><path d="M462.045,239.33L471.098,231.244C480.15,223.159,498.256,206.988,516.362,190.817C534.467,174.646,552.573,158.476,561.626,150.39L570.679,142.305" id="graph-pretty-edge_0_5" class="edge-thickness-normal edge-pattern-solid edge section-edge-1 edge-depth-1" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_0_5" data-points="W3sieCI6NDYyLjA0NDc5NzI2NTgyODgzLCJ5IjoyMzkuMzI5NjY1NDQ2MzgwMDN9LHsieCI6NTE2LjM2MTc0NjgwOTgxMjQsInkiOjE5MC44MTcxOTA5NzQxNTUzOH0seyJ4Ijo1NzAuNjc4Njk2MzUzNzk2LCJ5IjoxNDIuMzA0NzE2NTAxOTMwNzN9XQ==" data-look="classic"></path><path d="M596.853,132.93L605.883,133.302C614.913,133.674,632.972,134.418,651.032,135.162C669.091,135.906,687.15,136.65,696.18,137.022L705.21,137.394" id="graph-pretty-edge_5_6" class="edge-thickness-normal edge-pattern-solid edge section-edge-1 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_5_6" data-points="W3sieCI6NTk2Ljg1MzQ5NDA5NDA5MjUsInkiOjEzMi45MzAxNDgzNDY1ODgwM30seyJ4Ijo2NTEuMDMxNTM2Mjg3MDgzNywieSI6MTM1LjE2MjA0NDI2NDAxODczfSx7IngiOjcwNS4yMDk1Nzg0ODAwNzQ4LCJ5IjoxMzcuMzkzOTQwMTgxNDQ5NDR9XQ==" data-look="classic"></path><path d="M585.785,146.792L587.004,151.297C588.224,155.803,590.662,164.814,593.101,173.825C595.54,182.836,597.979,191.848,599.198,196.353L600.418,200.859" id="graph-pretty-edge_5_7" class="edge-thickness-normal edge-pattern-solid edge section-edge-1 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_5_7" data-points="W3sieCI6NTg1Ljc4NDg3NTk1NDM2NTUsInkiOjE0Ni43OTE4Mjc1NjMzNzk5N30seyJ4Ijo1OTMuMTAxMzA4Njg2MDM3OSwieSI6MTczLjgyNTMwNjYyNzIwMjU2fSx7IngiOjYwMC40MTc3NDE0MTc3MTAzLCJ5IjoyMDAuODU4Nzg1NjkxMDI1MTZ9XQ==" data-look="classic"></path><path d="M579.348,117.526L578.543,112.8C577.738,108.074,576.128,98.621,574.518,89.169C572.908,79.717,571.298,70.265,570.494,65.539L569.689,60.813" id="graph-pretty-edge_5_8" class="edge-thickness-normal edge-pattern-solid edge section-edge-1 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_5_8" data-points="W3sieCI6NTc5LjM0NzcyNzkzMTUzMTIsInkiOjExNy41MjU2NzQwODYxMDgxOH0seyJ4Ijo1NzQuNTE4MTU5MDg5OTg5NCwieSI6ODkuMTY5MjA1MTg0NzM4MTl9LHsieCI6NTY5LjY4ODU5MDI0ODQ0NzYsInkiOjYwLjgxMjczNjI4MzM2ODE5Nn1d" data-look="classic"></path><path d="M463.564,257.293L473.89,263.771C484.216,270.249,504.869,283.205,525.521,296.161C546.174,309.117,566.827,322.073,577.153,328.551L587.479,335.029" id="graph-pretty-edge_0_9" class="edge-thickness-normal edge-pattern-solid edge section-edge-2 edge-depth-1" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_0_9" data-points="W3sieCI6NDYzLjU2MzkxODE1ODE1NjUsInkiOjI1Ny4yOTI5Mzg0MzY0NDA3fSx7IngiOjUyNS41MjE0NzAzMDc5NzM5LCJ5IjoyOTYuMTYwOTg1NDgyMTI2MX0seyJ4Ijo1ODcuNDc5MDIyNDU3NzkxMywieSI6MzM1LjAyOTAzMjUyNzgxMTQ3fV0=" data-look="classic"></path><path d="M612.587,334.562L618.446,330.575C624.305,326.588,636.022,318.615,647.74,310.641C659.458,302.668,671.176,294.694,677.035,290.707L682.894,286.72" id="graph-pretty-edge_9_10" class="edge-thickness-normal edge-pattern-solid edge section-edge-2 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_9_10" data-points="W3sieCI6NjEyLjU4Njg3MjA3MzE2MDMsInkiOjMzNC41NjE3Mzk0NjQ1NjJ9LHsieCI6NjQ3Ljc0MDI1MjE3NDU4OCwieSI6MzEwLjY0MTExNjQ3MjA3Nzh9LHsieCI6NjgyLjg5MzYzMjI3NjAxNTgsInkiOjI4Ni43MjA0OTM0Nzk1OTM2fV0=" data-look="classic"></path><path d="M591.145,354.97L587.715,359.511C584.285,364.052,577.425,373.133,570.565,382.215C563.705,391.297,556.846,400.379,553.416,404.92L549.986,409.461" id="graph-pretty-edge_9_11" class="edge-thickness-normal edge-pattern-solid edge section-edge-2 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_9_11" data-points="W3sieCI6NTkxLjE0NDg2MTI4OTM5MjUsInkiOjM1NC45Njk2MjQ5NDU4MDk0fSx7IngiOjU3MC41NjUyNjM5MTg1MTI1LCJ5IjozODIuMjE1Mzk0MzcwOTYxNn0seyJ4Ijo1NDkuOTg1NjY2NTQ3NjMyNiwieSI6NDA5LjQ2MTE2Mzc5NjExMzc0fV0=" data-look="classic"></path><path d="M610.729,353.669L615.051,358.042C619.372,362.415,628.016,371.161,636.659,379.907C645.302,388.652,653.945,397.398,658.266,401.771L662.588,406.144" id="graph-pretty-edge_9_12" class="edge-thickness-normal edge-pattern-solid edge section-edge-2 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_9_12" data-points="W3sieCI6NjEwLjcyOTQzODc3OTcyMzksInkiOjM1My42NjkzNzUxMjc5MzQ1M30seyJ4Ijo2MzYuNjU4NjA0MzA1NDczLCJ5IjozNzkuOTA2NTgzNjQzOTM0Nn0seyJ4Ijo2NjIuNTg3NzY5ODMxMjIyMSwieSI6NDA2LjE0Mzc5MjE1OTkzNDY2fV0=" data-look="classic"></path><path d="M615.156,343.937L625.462,344.583C635.768,345.228,656.379,346.518,676.99,347.808C697.601,349.098,718.213,350.388,728.518,351.033L738.824,351.678" id="graph-pretty-edge_9_13" class="edge-thickness-normal edge-pattern-solid edge section-edge-2 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_9_13" data-points="W3sieCI6NjE1LjE1NjM1MjM4NzI3MTYsInkiOjM0My45Mzc0Mjg4NzUwODEyNX0seyJ4Ijo2NzYuOTkwMTUwNDY3Nzc2MSwieSI6MzQ3LjgwNzk1OTMzOTI5NzJ9LHsieCI6NzM4LjgyMzk0ODU0ODI4MDYsInkiOjM1MS42Nzg0ODk4MDM1MTMyfV0=" data-look="classic"></path><path d="M437.233,255.598L426.17,260.694C415.106,265.791,392.978,275.985,370.85,286.178C348.723,296.371,326.595,306.565,315.531,311.662L304.467,316.758" id="graph-pretty-edge_0_14" class="edge-thickness-normal edge-pattern-solid edge section-edge-3 edge-depth-1" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_0_14" data-points="W3sieCI6NDM3LjIzMzM2NzY3MDM0NywieSI6MjU1LjU5NzY5MzczODE5NzM0fSx7IngiOjM3MC44NTAyNzM3OTU4NzgyNSwieSI6Mjg2LjE3Nzk5ODM3MTI2Nzh9LHsieCI6MzA0LjQ2NzE3OTkyMTQwOTUsInkiOjMxNi43NTgzMDMwMDQzMzgyNX1d" data-look="classic"></path><path d="M300.953,334.116L304.94,338.487C308.927,342.858,316.902,351.599,324.877,360.341C332.851,369.083,340.826,377.824,344.813,382.195L348.801,386.566" id="graph-pretty-edge_14_15" class="edge-thickness-normal edge-pattern-solid edge section-edge-3 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_14_15" data-points="W3sieCI6MzAwLjk1MjU3NDg0NDA0NDkzLCJ5IjozMzQuMTE1OTQ4MzE3ODM5ODd9LHsieCI6MzI0Ljg3NjcxMzc3MDk4ODEsInkiOjM2MC4zNDEwMzE0Njc4MTA0N30seyJ4IjozNDguODAwODUyNjk3OTMxMjUsInkiOjM4Ni41NjYxMTQ2MTc3ODEwN31d" data-look="classic"></path><path d="M275.911,321.611L262.564,320.339C249.217,319.067,222.522,316.523,195.828,313.978C169.134,311.434,142.439,308.89,129.092,307.618L115.745,306.346" id="graph-pretty-edge_14_16" class="edge-thickness-normal edge-pattern-solid edge section-edge-3 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_14_16" data-points="W3sieCI6Mjc1LjkxMDkyOTY1NDc1MywieSI6MzIxLjYxMTE0ODM2NjE4NTU1fSx7IngiOjE5NS44Mjc4Nzk5Nzg5MTkyLCJ5IjozMTMuOTc4NDA5NjU1NjE0OX0seyJ4IjoxMTUuNzQ0ODMwMzAzMDg1NDIsInkiOjMwNi4zNDU2NzA5NDUwNDQyfV0=" data-look="classic"></path><path d="M277.73,330.317L270.781,334.177C263.832,338.037,249.933,345.756,236.035,353.475C222.137,361.194,208.238,368.913,201.289,372.772L194.34,376.632" id="graph-pretty-edge_14_17" class="edge-thickness-normal edge-pattern-solid edge section-edge-3 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_14_17" data-points="W3sieCI6Mjc3LjczMDAxNjMxODc5MzksInkiOjMzMC4zMTc0MDQ3NDY3ODJ9LHsieCI6MjM2LjAzNDkxMjg4Nzk4NjkzLCJ5IjozNTMuNDc0NzI1Njk1NTExNTV9LHsieCI6MTk0LjMzOTgwOTQ1NzE3OTk3LCJ5IjozNzYuNjMyMDQ2NjQ0MjQxMX1d" data-look="classic"></path><path d="M281.147,311.59L277.538,307.33C273.929,303.071,266.712,294.553,259.495,286.034C252.277,277.515,245.06,268.997,241.451,264.738L237.843,260.478" id="graph-pretty-edge_14_18" class="edge-thickness-normal edge-pattern-solid edge section-edge-3 edge-depth-3" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="edge_14_18" data-points="W3sieCI6MjgxLjE0NjgwMDc1NzgyNTksInkiOjMxMS41ODk3NjE0MTA0NDQ4fSx7IngiOjI1OS40OTQ2NjU0NzM3Njk2NiwieSI6Mjg2LjAzNDA1Njc0OTQ3ODZ9LHsieCI6MjM3Ljg0MjUzMDE4OTcxMzQ0LCJ5IjoyNjAuNDc4MzUyMDg4NTEyNDV9XQ==" data-look="classic"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="edge_0_1" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_1_2" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_1_3" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_1_4" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_0_5" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_5_6" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_5_7" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_5_8" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_0_9" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_9_10" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_9_11" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_9_12" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_9_13" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_0_14" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_14_15" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_14_16" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_14_17" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="edge_14_18" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node mindmap-node section-root section--1" id="graph-pretty-node_0" data-look="classic" transform="translate(450.8572876339181, 249.32164364070695)"><circle class="basic label-container" style="" r="70.078125" cx="0" cy="0"></circle><g class="label" style="" transform="translate(-60.078125, -12)"><rect></rect><foreignObject width="120.15625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>mermaid-pretty</p></span></div></foreignObject></g></g><g class="node mindmap-node section-0" id="graph-pretty-node_1" data-look="classic" transform="translate(353.7925048536165, 115.9942367819873)"><path id="graph-pretty-node_1" class="node-bkg node-0" style="" d="M-39.4765625 12
+    v-24
+    q0,-5 5,-5
+    h68.953125
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-68.953125
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-39.4765625" y1="17" x2="39.4765625" y2="17"></line><g class="label" style="" transform="translate(-19.4765625, -12)"><rect></rect><foreignObject width="38.953125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Input</p></span></div></foreignObject></g></g><g class="node mindmap-node section-0" id="graph-pretty-node_2" data-look="classic" transform="translate(257.36084837724457, 50.369934320184825)"><path id="graph-pretty-node_2" class="node-bkg node-0" style="" d="M-33.4453125 12
+    v-24
+    q0,-5 5,-5
+    h56.890625
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-56.890625
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-33.4453125" y1="17" x2="33.4453125" y2="17"></line><g class="label" style="" transform="translate(-13.4453125, -12)"><rect></rect><foreignObject width="26.890625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>File</p></span></div></foreignObject></g></g><g class="node mindmap-node section-0" id="graph-pretty-node_3" data-look="classic" transform="translate(391.10025772566974, 32)"><path id="graph-pretty-node_3" class="node-bkg node-0" style="" d="M-39.5859375 12
+    v-24
+    q0,-5 5,-5
+    h69.171875
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-69.171875
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-39.5859375" y1="17" x2="39.5859375" y2="17"></line><g class="label" style="" transform="translate(-19.5859375, -12)"><rect></rect><foreignObject width="39.171875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Stdin</p></span></div></foreignObject></g></g><g class="node mindmap-node section-0" id="graph-pretty-node_4" data-look="classic" transform="translate(224.6717410450966, 147.7485574010941)"><path id="graph-pretty-node_4" class="node-bkg node-0" style="" d="M-36.796875 12
+    v-24
+    q0,-5 5,-5
+    h63.59375
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-63.59375
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-36.796875" y1="17" x2="36.796875" y2="17"></line><g class="label" style="" transform="translate(-16.796875, -12)"><rect></rect><foreignObject width="33.59375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Pipe</p></span></div></foreignObject></g></g><g class="node mindmap-node section-1" id="graph-pretty-node_5" data-look="classic" transform="translate(581.8662059857068, 132.3127383076038)"><path id="graph-pretty-node_5" class="node-bkg node-0" style="" d="M-46.15625 12
+    v-24
+    q0,-5 5,-5
+    h82.3125
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-82.3125
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-46.15625" y1="17" x2="46.15625" y2="17"></line><g class="label" style="" transform="translate(-26.15625, -12)"><rect></rect><foreignObject width="52.3125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Output</p></span></div></foreignObject></g></g><g class="node mindmap-node section-1" id="graph-pretty-node_6" data-look="classic" transform="translate(720.1968665884606, 138.01135022043366)"><path id="graph-pretty-node_6" class="node-bkg node-0" style="" d="M-36.5390625 12
+    v-24
+    q0,-5 5,-5
+    h63.078125
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-63.078125
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-36.5390625" y1="17" x2="36.5390625" y2="17"></line><g class="label" style="" transform="translate(-16.5390625, -12)"><rect></rect><foreignObject width="33.078125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>SVG</p></span></div></foreignObject></g></g><g class="node mindmap-node section-1" id="graph-pretty-node_7" data-look="classic" transform="translate(604.336411386369, 215.33787494680132)"><path id="graph-pretty-node_7" class="node-bkg node-0" style="" d="M-37.171875 12
+    v-24
+    q0,-5 5,-5
+    h64.34375
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-64.34375
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-37.171875" y1="17" x2="37.171875" y2="17"></line><g class="label" style="" transform="translate(-17.171875, -12)"><rect></rect><foreignObject width="34.34375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>PNG</p></span></div></foreignObject></g></g><g class="node mindmap-node section-1" id="graph-pretty-node_8" data-look="classic" transform="translate(567.170112194272, 46.02567206187257)"><path id="graph-pretty-node_8" class="node-bkg node-0" style="" d="M-60.2421875 12
+    v-24
+    q0,-5 5,-5
+    h110.484375
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-110.484375
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-60.2421875" y1="17" x2="60.2421875" y2="17"></line><g class="label" style="" transform="translate(-40.2421875, -12)"><rect></rect><foreignObject width="80.484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Custom -o</p></span></div></foreignObject></g></g><g class="node mindmap-node section-2" id="graph-pretty-node_9" data-look="classic" transform="translate(600.1856529820298, 343.0003273235452)"><path id="graph-pretty-node_9" class="node-bkg node-0" style="" d="M-50.8515625 12
+    v-24
+    q0,-5 5,-5
+    h91.703125
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-91.703125
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-50.8515625" y1="17" x2="50.8515625" y2="17"></line><g class="label" style="" transform="translate(-30.8515625, -12)"><rect></rect><foreignObject width="61.703125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Themes</p></span></div></foreignObject></g></g><g class="node mindmap-node section-2" id="graph-pretty-node_10" data-look="classic" transform="translate(695.2948513671463, 278.28190562061036)"><path id="graph-pretty-node_10" class="node-bkg node-0" style="" d="M-42.953125 12
+    v-24
+    q0,-5 5,-5
+    h75.90625
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-75.90625
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-42.953125" y1="17" x2="42.953125" y2="17"></line><g class="label" style="" transform="translate(-22.953125, -12)"><rect></rect><foreignObject width="45.90625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Pretty</p></span></div></foreignObject></g></g><g class="node mindmap-node section-2" id="graph-pretty-node_11" data-look="classic" transform="translate(540.9448748549953, 421.43046141837794)"><path id="graph-pretty-node_11" class="node-bkg node-0" style="" d="M-38.015625 12
+    v-24
+    q0,-5 5,-5
+    h66.03125
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-66.03125
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-38.015625" y1="17" x2="38.015625" y2="17"></line><g class="label" style="" transform="translate(-18.015625, -12)"><rect></rect><foreignObject width="36.03125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Dark</p></span></div></foreignObject></g></g><g class="node mindmap-node section-2" id="graph-pretty-node_12" data-look="classic" transform="translate(673.1315556289162, 416.812839964324)"><path id="graph-pretty-node_12" class="node-bkg node-0" style="" d="M-47.5859375 12
+    v-24
+    q0,-5 5,-5
+    h85.171875
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-85.171875
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-47.5859375" y1="17" x2="47.5859375" y2="17"></line><g class="label" style="" transform="translate(-27.5859375, -12)"><rect></rect><foreignObject width="55.171875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Default</p></span></div></foreignObject></g></g><g class="node mindmap-node section-2" id="graph-pretty-node_13" data-look="classic" transform="translate(753.7946479535224, 352.6155913550492)"><path id="graph-pretty-node_13" class="node-bkg node-0" style="" d="M-43.9296875 12
+    v-24
+    q0,-5 5,-5
+    h77.859375
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-77.859375
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-43.9296875" y1="17" x2="43.9296875" y2="17"></line><g class="label" style="" transform="translate(-23.9296875, -12)"><rect></rect><foreignObject width="47.859375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Forest</p></span></div></foreignObject></g></g><g class="node mindmap-node section-3" id="graph-pretty-node_14" data-look="classic" transform="translate(290.8432599578384, 323.03435310182863)"><path id="graph-pretty-node_14" class="node-bkg node-0" style="" d="M-46.484375 12
+    v-24
+    q0,-5 5,-5
+    h82.96875
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-82.96875
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-46.484375" y1="17" x2="46.484375" y2="17"></line><g class="label" style="" transform="translate(-26.484375, -12)"><rect></rect><foreignObject width="52.96875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Styling</p></span></div></foreignObject></g></g><g class="node mindmap-node section-3" id="graph-pretty-node_15" data-look="classic" transform="translate(358.91016758413775, 397.6477098337923)"><path id="graph-pretty-node_15" class="node-bkg node-0" style="" d="M-71.859375 12
+    v-24
+    q0,-5 5,-5
+    h133.71875
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-133.71875
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-71.859375" y1="17" x2="71.859375" y2="17"></line><g class="label" style="" transform="translate(-51.859375, -12)"><rect></rect><foreignObject width="103.71875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Soft shadows</p></span></div></foreignObject></g></g><g class="node mindmap-node section-3" id="graph-pretty-node_16" data-look="classic" transform="translate(100.8125, 304.92246620940114)"><path id="graph-pretty-node_16" class="node-bkg node-0" style="" d="M-85.8125 12
+    v-24
+    q0,-5 5,-5
+    h161.625
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-161.625
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-85.8125" y1="17" x2="85.8125" y2="17"></line><g class="label" style="" transform="translate(-65.8125, -12)"><rect></rect><foreignObject width="131.625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Rounded corners</p></span></div></foreignObject></g></g><g class="node mindmap-node section-3" id="graph-pretty-node_17" data-look="classic" transform="translate(181.22656581813544, 383.9150982891945)"><path id="graph-pretty-node_17" class="node-bkg node-0" style="" d="M-54.75 12
+    v-24
+    q0,-5 5,-5
+    h99.5
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-99.5
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-54.75" y1="17" x2="54.75" y2="17"></line><g class="label" style="" transform="translate(-34.75, -12)"><rect></rect><foreignObject width="69.5" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Inter font</p></span></div></foreignObject></g></g><g class="node mindmap-node section-3" id="graph-pretty-node_18" data-look="classic" transform="translate(228.1460709897009, 249.03376039712862)"><path id="graph-pretty-node_18" class="node-bkg node-0" style="" d="M-69.1484375 12
+    v-24
+    q0,-5 5,-5
+    h128.296875
+    q5,0 5,5
+    v24
+    q0,5 -5,5
+    h-128.296875
+    q-5,0 -5,-5
+    Z"></path><line class="node-line-" x1="-69.1484375" y1="17" x2="69.1484375" y2="17"></line><g class="label" style="" transform="translate(-49.1484375, -12)"><rect></rect><foreignObject width="98.296875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Pastel colors</p></span></div></foreignObject></g></g></g></g><defs><filter id="graph-pretty-drop-shadow" height="130%" width="130%"><feDropShadow dx="4" dy="4" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow></filter></defs><defs><filter id="graph-pretty-drop-shadow-small" height="150%" width="150%"><feDropShadow dx="2" dy="2" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow></filter></defs><style>
+  .mp-root svg { overflow: visible; }
+
+  /* ノード: 柔らかい影 + 繊細な枠線 */
+  .node rect,
+  .node polygon,
+  .node circle,
+  .node ellipse,
+  .node path {
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05))
+      drop-shadow(0 6px 14px rgba(15, 23, 42, 0.06));
+    stroke-width: 1.2px !important;
+  }
+
+  /* 四角ノードは角丸 */
+  .node rect { rx: 10; ry: 10; }
+
+  /* エッジ: 細めで上品に */
+  .edgePath path.path,
+  .flowchart-link {
+    stroke-width: 1.5px !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+  }
+
+  /* 矢印ヘッド */
+  .arrowheadPath,
+  marker path {
+    stroke-width: 0 !important;
+  }
+
+  /* エッジラベル: 白ピル風 */
+  .edgeLabel,
+  .edgeLabel div,
+  .edgeLabel span {
+    background-color: rgba(255, 255, 255, 0.96) !important;
+    color: #334155 !important;
+    font-size: 12px !important;
+  }
+  .edgeLabel {
+    padding: 2px 8px !important;
+    border-radius: 999px !important;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  }
+
+  /* クラスタ（サブグラフ） */
+  .cluster rect {
+    rx: 14 !important;
+    ry: 14 !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04));
+    stroke-dasharray: 0 !important;
+    stroke-width: 1px !important;
+  }
+  .cluster-label .nodeLabel,
+  .cluster text {
+    font-weight: 600 !important;
+    fill: #0F172A !important;
+    color: #0F172A !important;
+  }
+
+  /* ラベル類のフォント統一 */
+  .nodeLabel,
+  .edgeLabel,
+  .cluster text,
+  .actor,
+  text.actor &gt; tspan,
+  .messageText,
+  .loopText,
+  .noteText,
+  .labelText,
+  .sectionTitle,
+  .titleText,
+  .taskText,
+  .grid text {
+    font-family: "Inter", system-ui, sans-serif !important;
+  }
+
+  /* シーケンス図: アクター */
+  .actor {
+    filter: drop-shadow(0 2px 6px rgba(15, 23, 42, 0.08));
+    stroke-width: 1.2px !important;
+  }
+  .actor-line { stroke-width: 1px !important; stroke-dasharray: 2 4 !important; }
+
+  /* ノートに軽い陰影 */
+  .note, g.note rect {
+    filter: drop-shadow(0 2px 6px rgba(234, 179, 8, 0.12));
+    rx: 8 !important;
+    ry: 8 !important;
+  }
+
+  /* ===== class diagram (mermaid v11: path 2 枚重ね構造) ===== */
+  /* 1 枚目 path = 塗り、2 枚目 path = 手書き風アウトライン */
+  .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(1) {
+    fill: #F5F3FF !important;
+  }
+  .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(2) {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.3px !important;
+  }
+  g.classDiagram g.node.default g.basic.label-container {
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 8px 20px rgba(99, 102, 241, 0.12));
+  }
+  /* 区切り線もインディゴ系に */
+  .classDiagram g.divider path {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.2px !important;
+  }
+  /* タイトル（クラス名）をアクセントカラーに（幅計算済みのためサイズは据え置き） */
+  .classDiagram g.label-group .nodeLabel p,
+  .classDiagram g.label-group .nodeLabel span,
+  .classDiagram g.label-group foreignObject div {
+    color: #4338CA !important;
+  }
+  /* members / methods は本文色 */
+  .classDiagram g.members-group .nodeLabel p,
+  .classDiagram g.methods-group .nodeLabel p,
+  .classDiagram g.members-group .nodeLabel span,
+  .classDiagram g.methods-group .nodeLabel span {
+    color: #1E293B !important;
+  }
+  /* relation エッジ */
+  .classDiagram .relation {
+    stroke: #94A3B8 !important;
+    stroke-width: 1.3px !important;
+    stroke-linecap: round !important;
+  }
+
+  /* ===== state diagram ===== */
+  g.stateGroup rect,
+  .node.statediagram-state rect,
+  .node rect.state,
+  rect.state,
+  g.node.statediagram-state &gt; rect,
+  .statediagram-state &gt; rect {
+    rx: 12 !important;
+    ry: 12 !important;
+    fill: #EEF2FF !important;
+    stroke: #C7D2FE !important;
+    stroke-width: 1.2px !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 6px 14px rgba(99, 102, 241, 0.10));
+  }
+  g.stateGroup .title text,
+  .stateLabel,
+  .statediagram-state text,
+  g.node.statediagram-state text {
+    font-weight: 600 !important;
+    fill: #1E293B !important;
+    font-size: 14px !important;
+  }
+  /* 開始ノード: 濃いインディゴ + グロー */
+  circle.start,
+  .node circle.start,
+  g.node.statediagram-state circle.start,
+  g.statediagram-cluster circle.start,
+  [id$="-start"] circle,
+  g.node[id*="start"] &gt; circle {
+    fill: #6366F1 !important;
+    stroke: #FFFFFF !important;
+    stroke-width: 3px !important;
+    r: 10 !important;
+    filter: drop-shadow(0 2px 6px rgba(99, 102, 241, 0.45));
+  }
+  /* 終了ノード: 二重丸、濃い外枠 */
+  circle.end,
+  .node circle.end,
+  [id$="-end"] circle,
+  g.node[id*="end"] &gt; circle {
+    fill: #FFFFFF !important;
+    stroke: #475569 !important;
+    stroke-width: 2px !important;
+  }
+  circle.end-inner,
+  g.node[id*="end"] circle.end-inner {
+    fill: #475569 !important;
+  }
+  .transition,
+  .edgePath .path.transition,
+  path.transition {
+    stroke: #64748B !important;
+    stroke-width: 1.4px !important;
+    stroke-linecap: round !important;
+    opacity: 0.9 !important;
+  }
+  /* トランジション矢印とラベル */
+  .statediagram .edgeLabel {
+    background-color: rgba(255, 255, 255, 0.96) !important;
+  }
+
+  /* ===== ER diagram (mermaid v11: outer-path + row-rect) ===== */
+  /* エンティティ外枠: 塗り＋手書き風アウトラインの 2 枚構造 */
+  .erDiagram g.node.default g.outer-path path:nth-of-type(1) {
+    fill: #EEF2FF !important;
+  }
+  .erDiagram g.node.default g.outer-path path:nth-of-type(2) {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.3px !important;
+  }
+  .erDiagram g.node.default g.outer-path {
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 8px 20px rgba(99, 102, 241, 0.12));
+  }
+  /* 属性行: 白と slate-50 の交互塗り */
+  .erDiagram g.row-rect-odd path:nth-of-type(1) {
+    fill: #FFFFFF !important;
+  }
+  .erDiagram g.row-rect-even path:nth-of-type(1) {
+    fill: #F8FAFC !important;
+  }
+  .erDiagram g.row-rect-odd path:nth-of-type(2),
+  .erDiagram g.row-rect-even path:nth-of-type(2) {
+    stroke: #E2E8F0 !important;
+    stroke-width: 1px !important;
+  }
+  /* エンティティ名: 幅計算済みのため色のみ上書き */
+  .erDiagram g.label.name .nodeLabel p,
+  .erDiagram g.label.name .nodeLabel span,
+  .erDiagram g.label.name foreignObject div {
+    color: #4338CA !important;
+    font-weight: 700 !important;
+  }
+  /* 属性テキスト */
+  .erDiagram g.label.attribute-type .nodeLabel p,
+  .erDiagram g.label.attribute-name .nodeLabel p,
+  .erDiagram g.label.attribute-comment .nodeLabel p {
+    color: #334155 !important;
+  }
+  .erDiagram g.label.attribute-keys .nodeLabel p {
+    color: #6366F1 !important;
+    font-weight: 600 !important;
+  }
+  /* リレーション線 */
+  .erDiagram .relationshipLine {
+    stroke: #94A3B8 !important;
+    stroke-width: 1.3px !important;
+  }
+
+  /* ===== quadrant ===== */
+  .quadrant-external-border-rect {
+    rx: 10 !important;
+    ry: 10 !important;
+    stroke-width: 1.2px !important;
+    filter: drop-shadow(0 2px 8px rgba(15, 23, 42, 0.06));
+  }
+  .quadrant-title {
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    fill: #0F172A !important;
+  }
+  .quadrant-point text,
+  text.quadrant-point-text {
+    font-weight: 500 !important;
+    fill: #0F172A !important;
+  }
+  circle.quadrant-point,
+  .quadrant-point circle {
+    r: 7 !important;
+    fill: #6366F1 !important;
+    stroke: #FFFFFF !important;
+    stroke-width: 2.5px !important;
+    filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.35));
+  }
+
+  /* ===== pie (洗練された Chart.js 風) ===== */
+  g[id^="pie"] .pieCircle,
+  .pieCircle {
+    stroke: #FFFFFF !important;
+    stroke-width: 4px !important;
+    stroke-linejoin: round !important;
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04))
+      drop-shadow(0 14px 32px rgba(15, 23, 42, 0.10));
+  }
+  .pieOuterCircle {
+    stroke: transparent !important;
+    fill: transparent !important;
+  }
+  .pieTitleText {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    fill: #0F172A !important;
+    letter-spacing: -0.2px !important;
+  }
+  text.slice {
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    fill: #FFFFFF !important;
+    paint-order: stroke;
+    stroke: rgba(15, 23, 42, 0.35);
+    stroke-width: 0.5px;
+    letter-spacing: -0.2px !important;
+  }
+  /* 凡例を丸いドット風に */
+  .legend rect {
+    rx: 10 !important;
+    ry: 10 !important;
+    stroke: transparent !important;
+    width: 10 !important;
+    height: 10 !important;
+    filter: drop-shadow(0 1px 1px rgba(15, 23, 42, 0.12));
+  }
+  .legend text, text.legend {
+    font-size: 13px !important;
+    fill: #1E293B !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.1px !important;
+  }
+
+  /* ===== mindmap ===== */
+  .mindmap-node &gt; rect,
+  .mindmap-node &gt; circle,
+  .mindmap-node &gt; ellipse,
+  .mindmap-node &gt; polygon,
+  .mindmap-node &gt; path {
+    stroke-width: 0 !important;
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06))
+      drop-shadow(0 8px 20px rgba(15, 23, 42, 0.08));
+  }
+  .mindmap-node [class^="node-line"] {
+    stroke-width: 2px !important;
+    stroke-linecap: round !important;
+    opacity: 0.35 !important;
+  }
+  /* エッジ（ブランチの線）を色とトーンで統一 */
+  g.edge path,
+  .edge path,
+  .section-edge-0, .section-edge-1, .section-edge-2, .section-edge-3,
+  .section-edge-4, .section-edge-5, .section-edge-6, .section-edge-7 {
+    stroke-width: 1.4px !important;
+    stroke-linecap: round !important;
+    opacity: 0.7 !important;
+  }
+  /* ルートノードを際立たせる */
+  g.mindmap-node.section-root circle,
+  g.mindmap-node.section-root rect,
+  g.mindmap-node.section-root ellipse,
+  g.mindmap-node.section--1 circle,
+  g.mindmap-node.section--1 rect {
+    fill: #6366F1 !important;
+    filter: drop-shadow(0 6px 18px rgba(99, 102, 241, 0.35));
+  }
+  g.mindmap-node text,
+  g.mindmap-node .nodeLabel,
+  g.mindmap-node .nodeLabel span {
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+  }
+
+  /* ===== timeline ===== */
+  .timeline-node rect,
+  g.timeline-node &gt; rect,
+  g.timeline-node foreignObject {
+    filter: drop-shadow(0 3px 10px rgba(15, 23, 42, 0.10));
+  }
+  .timeline-node .node-bkg,
+  g.timeline-node rect {
+    rx: 12 !important;
+    ry: 12 !important;
+    stroke-width: 0 !important;
+  }
+  .timeline-node text,
+  .timeline-node .nodeLabel,
+  .timeline-node .nodeLabel span,
+  g.timeline-node text,
+  g.timeline-node .nodeLabel,
+  g.timeline-node .nodeLabel span,
+  g.timeline-node foreignObject div,
+  g.timeline-node foreignObject span {
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+    font-size: 14px !important;
+    letter-spacing: 0.2px !important;
+  }
+  /* タイムラインの縦接続線: 視認できる濃さにする */
+  .lineWrapper line,
+  [class^="node-line"] {
+    stroke: #64748B !important;
+    stroke-width: 1.3px !important;
+    stroke-dasharray: 3 3 !important;
+    stroke-linecap: round !important;
+    opacity: 0.85 !important;
+  }
+  .sectionTitle {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    fill: #0F172A !important;
+  }
+  .titleText {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    fill: #0F172A !important;
+  }
+  /* タイムライン軸線 */
+  line.timeline-path,
+  #arrowhead path {
+    stroke: #94A3B8 !important;
+    fill: #94A3B8 !important;
+    stroke-width: 1.5px !important;
+  }
+
+  /* ===== journey (モダンなフラット + 立体感) ===== */
+  .task-line,
+  .actor-line {
+    opacity: 0.85 !important;
+    stroke: #64748B !important;
+    stroke-dasharray: 3 3 !important;
+    stroke-width: 1.2px !important;
+    stroke-linecap: round !important;
+  }
+  .task rect,
+  g.task &gt; rect {
+    rx: 14 !important;
+    ry: 14 !important;
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04))
+      drop-shadow(0 10px 24px rgba(15, 23, 42, 0.08));
+    stroke-width: 0 !important;
+  }
+  .task-type-0 text,
+  .task text {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    fill: #0F172A !important;
+    letter-spacing: -0.1px !important;
+  }
+  /* 顔バッジ: ビビッドな amber-400 ソリッド + 深めの影で立体感 */
+  circle.face,
+  .face {
+    fill: #FBBF24 !important;
+    stroke: none !important;
+    r: 18 !important;
+    filter:
+      drop-shadow(0 2px 4px rgba(217, 119, 6, 0.25))
+      drop-shadow(0 8px 16px rgba(217, 119, 6, 0.20));
+  }
+  .mouth {
+    stroke: #78350F !important;
+    stroke-width: 2.2px !important;
+    stroke-linecap: round !important;
+    fill: transparent !important;
+  }
+  .eyes {
+    fill: #78350F !important;
+    stroke: none !important;
+  }
+  /* アクター（凡例）ドット: 統一パレットで上品に */
+  circle.actor-0 { fill: #818CF8 !important; }
+  circle.actor-1 { fill: #34D399 !important; }
+  circle.actor-2 { fill: #F472B6 !important; }
+  circle.actor-3 { fill: #FBBF24 !important; }
+  circle.actor-4 { fill: #60A5FA !important; }
+  circle.actor-5 { fill: #A78BFA !important; }
+  circle.actor-0, circle.actor-1, circle.actor-2,
+  circle.actor-3, circle.actor-4, circle.actor-5 {
+    stroke: #FFFFFF !important;
+    stroke-width: 2px !important;
+    filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.14));
+  }
+  .legend text {
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    fill: #1E293B !important;
+    letter-spacing: 0.1px !important;
+  }
+  /* セクションバーはやや濃く、タスクは淡く。立体感を出す */
+  .section-type-0 { fill: #C7D2FE !important; }
+  .section-type-1 { fill: #DDD6FE !important; }
+  .section-type-2 { fill: #FBCFE8 !important; }
+  .section-type-3 { fill: #FDE68A !important; }
+  .section-type-4 { fill: #A7F3D0 !important; }
+  .section-type-5 { fill: #A5F3FC !important; }
+  .task-type-0 { fill: #EEF2FF !important; }
+  .task-type-1 { fill: #F5F3FF !important; }
+  .task-type-2 { fill: #FDF2F8 !important; }
+  .task-type-3 { fill: #FFFBEB !important; }
+  .task-type-4 { fill: #ECFDF5 !important; }
+  .task-type-5 { fill: #ECFEFF !important; }
+  g[class*="section-type"] &gt; rect,
+  .section-type-0, .section-type-1, .section-type-2,
+  .section-type-3, .section-type-4, .section-type-5 {
+    stroke-width: 0 !important;
+  }
+  .journey-section text {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    fill: #0F172A !important;
+    letter-spacing: -0.1px !important;
+  }
+
+  /* ===== gantt ===== */
+  /* 背景の暗いグレーを消す */
+  .mermaid &gt; svg &gt; g &gt; rect:first-child,
+  rect.background,
+  rect.section,
+  rect.sectionBar {
+    fill: #FFFFFF !important;
+    stroke: transparent !important;
+  }
+  g.section0 rect.section, g.section1 rect.section,
+  g.section2 rect.section, g.section3 rect.section {
+    fill: transparent !important;
+  }
+  .grid .tick line {
+    stroke: #E2E8F0 !important;
+    stroke-dasharray: 2 3 !important;
+  }
+  .grid path { stroke: transparent !important; }
+  .grid text {
+    fill: #64748B !important;
+    font-size: 11px !important;
+  }
+  /* タスクバー: ソフトなパステルに */
+  .task0, .task2 { fill: #C7D2FE !important; stroke: #818CF8 !important; }
+  .task1, .task3 { fill: #DDD6FE !important; stroke: #A78BFA !important; }
+  .task-type-0, .task-type-1, .task-type-2, .task-type-3,
+  rect.task0, rect.task1, rect.task2, rect.task3 {
+    stroke-width: 1px !important;
+    rx: 6 !important;
+    ry: 6 !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06));
+  }
+  .done0, .done1, .done2, .done3 {
+    fill: #A7F3D0 !important;
+    stroke: #34D399 !important;
+  }
+  .crit0, .crit1, .crit2, .crit3,
+  .active0, .active1, .active2, .active3 {
+    fill: #FECACA !important;
+    stroke: #F87171 !important;
+  }
+  .taskText, .taskTextOutsideRight, .taskTextOutsideLeft {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    fill: #0F172A !important;
+  }
+  .sectionTitle0, .sectionTitle1, .sectionTitle2, .sectionTitle3,
+  text.sectionTitle {
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    fill: #0F172A !important;
+  }
+  line.today {
+    stroke: #F43F5E !important;
+    stroke-width: 2px !important;
+    stroke-dasharray: 4 4 !important;
+  }
+
+  /* ===== gitgraph ===== */
+  .branch-label rect, .commit-label rect, .tag-label rect {
+    rx: 8 !important;
+    ry: 8 !important;
+    stroke-width: 0 !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.08));
+  }
+  .branch-label text {
+    font-weight: 600 !important;
+    fill: #FFFFFF !important;
+  }
+  .tag-label text {
+    font-weight: 600 !important;
+    font-size: 12px !important;
+  }
+  .commit-label text {
+    font-size: 11px !important;
+    fill: #334155 !important;
+  }
+  /* ブランチ線を立体的に */
+  .branch0, .branch1, .branch2, .branch3,
+  .branch4, .branch5, .branch6, .branch7 {
+    stroke-width: 4px !important;
+    stroke-linecap: round !important;
+  }
+  /* コミット点 */
+  circle.commit, .commit {
+    stroke-width: 3px !important;
+    stroke: #FFFFFF !important;
+  }
+</style></svg>

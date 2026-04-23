@@ -1,0 +1,581 @@
+<svg id="graph-pretty" width="364.890625" xmlns="http://www.w3.org/2000/svg" class="classDiagram" style="max-width: none;" viewBox="-16 -17 364.890625 637" role="graphics-document document" aria-roledescription="class" height="637"><style>#graph-pretty{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#graph-pretty .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#graph-pretty .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#graph-pretty .error-icon{fill:#552222;}#graph-pretty .error-text{fill:#552222;stroke:#552222;}#graph-pretty .edge-thickness-normal{stroke-width:1px;}#graph-pretty .edge-thickness-thick{stroke-width:3.5px;}#graph-pretty .edge-pattern-solid{stroke-dasharray:0;}#graph-pretty .edge-thickness-invisible{stroke-width:0;fill:none;}#graph-pretty .edge-pattern-dashed{stroke-dasharray:3;}#graph-pretty .edge-pattern-dotted{stroke-dasharray:2;}#graph-pretty .marker{fill:#333333;stroke:#333333;}#graph-pretty .marker.cross{stroke:#333333;}#graph-pretty svg{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;}#graph-pretty p{margin:0;}#graph-pretty g.classGroup text{fill:#9370DB;stroke:none;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:10px;}#graph-pretty g.classGroup text .title{font-weight:bolder;}#graph-pretty .cluster-label text{fill:#333;}#graph-pretty .cluster-label span{color:#333;}#graph-pretty .cluster-label span p{background-color:transparent;}#graph-pretty .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#graph-pretty .cluster text{fill:#333;}#graph-pretty .cluster span{color:#333;}#graph-pretty .nodeLabel,#graph-pretty .edgeLabel{color:#131300;}#graph-pretty .noteLabel .nodeLabel,#graph-pretty .noteLabel .edgeLabel{color:black;}#graph-pretty .edgeLabel .label rect{fill:#ECECFF;}#graph-pretty .label text{fill:#131300;}#graph-pretty .labelBkg{background:#ECECFF;}#graph-pretty .edgeLabel .label span{background:#ECECFF;}#graph-pretty .classTitle{font-weight:bolder;}#graph-pretty .node rect,#graph-pretty .node circle,#graph-pretty .node ellipse,#graph-pretty .node polygon,#graph-pretty .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1;}#graph-pretty .divider{stroke:#9370DB;stroke-width:1;}#graph-pretty g.clickable{cursor:pointer;}#graph-pretty g.classGroup rect{fill:#ECECFF;stroke:#9370DB;}#graph-pretty g.classGroup line{stroke:#9370DB;stroke-width:1;}#graph-pretty .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5;}#graph-pretty .classLabel .label{fill:#9370DB;font-size:10px;}#graph-pretty .relation{stroke:#333333;stroke-width:1;fill:none;}#graph-pretty .dashed-line{stroke-dasharray:3;}#graph-pretty .dotted-line{stroke-dasharray:1 2;}#graph-pretty [id$="-compositionStart"],#graph-pretty .composition{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-compositionEnd"],#graph-pretty .composition{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-dependencyStart"],#graph-pretty .dependency{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-dependencyEnd"],#graph-pretty .dependency{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-extensionStart"],#graph-pretty .extension{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-extensionEnd"],#graph-pretty .extension{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-aggregationStart"],#graph-pretty .aggregation{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-aggregationEnd"],#graph-pretty .aggregation{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-lollipopStart"],#graph-pretty .lollipop{fill:#ECECFF!important;stroke:#333333!important;stroke-width:1;}#graph-pretty [id$="-lollipopEnd"],#graph-pretty .lollipop{fill:#ECECFF!important;stroke:#333333!important;stroke-width:1;}#graph-pretty .edgeTerminals{font-size:11px;line-height:initial;}#graph-pretty .classTitleText{text-anchor:middle;font-size:18px;fill:#333;}#graph-pretty .edgeLabel[data-look="neo"]{background-color:rgba(232,232,232, 0.8);text-align:center;}#graph-pretty .edgeLabel[data-look="neo"] p{background-color:rgba(232,232,232, 0.8);}#graph-pretty .edgeLabel[data-look="neo"] rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#graph-pretty .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#graph-pretty .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#graph-pretty .node .neo-node{stroke:#9370DB;}#graph-pretty [data-look="neo"].node rect,#graph-pretty [data-look="neo"].cluster rect,#graph-pretty [data-look="neo"].node polygon{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].node path{stroke:#9370DB;stroke-width:1px;}#graph-pretty [data-look="neo"].node .outer-path{filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].node .neo-line path{stroke:#9370DB;filter:none;}#graph-pretty [data-look="neo"].node circle{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].node circle .state-start{fill:#000000;}#graph-pretty [data-look="neo"].icon-shape .icon{fill:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty [data-look="neo"].icon-shape .icon-neo path{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#graph-pretty :root{--mermaid-font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}</style><g><defs><marker id="graph-pretty_class-aggregationStart" class="marker aggregation class" refX="18" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="graph-pretty_class-aggregationEnd" class="marker aggregation class" refX="1" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="graph-pretty_class-aggregationStart-margin" class="marker aggregation class" refX="15" refY="7" markerWidth="190" markerHeight="240" orient="auto" markerUnits="userSpaceOnUse"><path d="M 18,7 L9,13 L1,7 L9,1 Z" style="stroke-width: 2;"></path></marker></defs><defs><marker id="graph-pretty_class-aggregationEnd-margin" class="marker aggregation class" refX="1" refY="7" markerWidth="20" markerHeight="28" orient="auto" markerUnits="userSpaceOnUse"><path d="M 18,7 L9,13 L1,7 L9,1 Z" style="stroke-width: 2;"></path></marker></defs><defs><marker id="graph-pretty_class-extensionStart" class="marker extension class" refX="18" refY="7" markerWidth="190" markerHeight="240" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1,7 L18,13 V 1 Z"></path></marker></defs><defs><marker id="graph-pretty_class-extensionEnd" class="marker extension class" refX="1" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 1,1 V 13 L18,7 Z"></path></marker></defs><marker id="graph-pretty_class-extensionStart-margin" class="marker extension class" refX="18" refY="7" markerWidth="20" markerHeight="28" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 20 14"><polygon points="10,7 18,13 18,1" style="stroke-width: 2; stroke-dasharray: 0;"></polygon></marker><defs><marker id="graph-pretty_class-extensionEnd-margin" class="marker extension class" refX="9" refY="7" markerWidth="20" markerHeight="28" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 20 14"><polygon points="10,1 10,13 18,7" style="stroke-width: 2; stroke-dasharray: 0;"></polygon></marker></defs><defs><marker id="graph-pretty_class-compositionStart" class="marker composition class" refX="18" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="graph-pretty_class-compositionEnd" class="marker composition class" refX="1" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="graph-pretty_class-compositionStart-margin" class="marker composition class" refX="15" refY="7" markerWidth="190" markerHeight="240" orient="auto" markerUnits="userSpaceOnUse"><path viewBox="0 0 15 15" d="M 18,7 L9,13 L1,7 L9,1 Z" style="stroke-width: 0;"></path></marker></defs><defs><marker id="graph-pretty_class-compositionEnd-margin" class="marker composition class" refX="3.5" refY="7" markerWidth="20" markerHeight="28" orient="auto" markerUnits="userSpaceOnUse"><path d="M 18,7 L9,13 L1,7 L9,1 Z" style="stroke-width: 0;"></path></marker></defs><defs><marker id="graph-pretty_class-dependencyStart" class="marker dependency class" refX="6" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 5,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="graph-pretty_class-dependencyEnd" class="marker dependency class" refX="13" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><defs><marker id="graph-pretty_class-dependencyStart-margin" class="marker dependency class" refX="4" refY="7" markerWidth="190" markerHeight="240" orient="auto" markerUnits="userSpaceOnUse"><path d="M 5,7 L9,13 L1,7 L9,1 Z" style="stroke-width: 0;"></path></marker></defs><defs><marker id="graph-pretty_class-dependencyEnd-margin" class="marker dependency class" refX="16" refY="7" markerWidth="20" markerHeight="28" orient="auto" markerUnits="userSpaceOnUse"><path d="M 18,7 L9,13 L14,7 L9,1 Z" style="stroke-width: 0;"></path></marker></defs><defs><marker id="graph-pretty_class-lollipopStart" class="marker lollipop class" refX="13" refY="7" markerWidth="190" markerHeight="240" orient="auto"><circle fill="transparent" cx="7" cy="7" r="6"></circle></marker></defs><defs><marker id="graph-pretty_class-lollipopEnd" class="marker lollipop class" refX="1" refY="7" markerWidth="190" markerHeight="240" orient="auto"><circle fill="transparent" cx="7" cy="7" r="6"></circle></marker></defs><defs><marker id="graph-pretty_class-lollipopStart-margin" class="marker lollipop class" refX="13" refY="7" markerWidth="190" markerHeight="240" orient="auto" markerUnits="userSpaceOnUse"><circle fill="transparent" cx="7" cy="7" r="6" stroke-width="2"></circle></marker></defs><defs><marker id="graph-pretty_class-lollipopEnd-margin" class="marker lollipop class" refX="1" refY="7" markerWidth="190" markerHeight="240" orient="auto" markerUnits="userSpaceOnUse"><circle fill="transparent" cx="7" cy="7" r="6" stroke-width="2"></circle></marker></defs><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M97.726,189.396L94.94,192.83C92.154,196.264,86.583,203.132,83.797,212.233C81.012,221.333,81.012,232.667,81.012,238.333L81.012,244" id="graph-pretty-id_Animal_Dog_1" class="edge-thickness-normal edge-pattern-solid relation" style=";;;" data-edge="true" data-et="edge" data-id="id_Animal_Dog_1" data-points="W3sieCI6MTA4LjU5MjgyMzA5MzIyMDMzLCJ5IjoxNzZ9LHsieCI6ODEuMDExNzE4NzUsInkiOjIxMH0seyJ4Ijo4MS4wMTE3MTg3NSwieSI6MjQ0fV0=" data-look="classic" marker-start="url(#graph-pretty_class-extensionStart)"></path><path d="M255.743,189.396L258.529,192.83C261.314,196.264,266.886,203.132,269.671,212.233C272.457,221.333,272.457,232.667,272.457,238.333L272.457,244" id="graph-pretty-id_Animal_Cat_2" class="edge-thickness-normal edge-pattern-solid relation" style=";;;" data-edge="true" data-et="edge" data-id="id_Animal_Cat_2" data-points="W3sieCI6MjQ0Ljg3NTkyNjkwNjc3OTY4LCJ5IjoxNzZ9LHsieCI6MjcyLjQ1NzAzMTI1LCJ5IjoyMTB9LHsieCI6MjcyLjQ1NzAzMTI1LCJ5IjoyNDR9XQ==" data-look="classic" marker-start="url(#graph-pretty_class-extensionStart)"></path><path d="M81.012,388L81.012,396.667C81.012,405.333,81.012,422.667,81.012,439C81.012,455.333,81.012,470.667,81.012,478.333L81.012,486" id="graph-pretty-id_Dog_Leash_3" class="edge-thickness-normal edge-pattern-dashed relation" style=";;;" data-edge="true" data-et="edge" data-id="id_Dog_Leash_3" data-points="W3sieCI6ODEuMDExNzE4NzUsInkiOjM4OH0seyJ4Ijo4MS4wMTE3MTg3NSwieSI6NDQwfSx7IngiOjgxLjAxMTcxODc1LCJ5Ijo0OTJ9XQ==" data-look="classic" marker-end="url(#graph-pretty_class-dependencyEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="id_Animal_Dog_1" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="id_Animal_Cat_2" transform="translate(-8, -9)"><foreignObject width="16" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(81.01171875, 440)"><g class="label" data-id="id_Dog_Leash_3" transform="translate(-13.3828125, -27)"><foreignObject width="26.765625" height="54"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>uses</p></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="graph-pretty-classId-Animal-0" data-look="classic" transform="translate(176.734375, 92)"><g class="basic label-container outer-path"><path d="M-104.19140625 -84 L104.19140625 -84 L104.19140625 84 L-104.19140625 84" stroke="none" stroke-width="0" fill="#ECECFF" style=""></path><path d="M-104.19140625 -84 C-31.835223478307768 -84, 40.520959293384465 -84, 104.19140625 -84 M-104.19140625 -84 C-52.483396956449894 -84, -0.7753876628997887 -84, 104.19140625 -84 M104.19140625 -84 C104.19140625 -23.901716639363563, 104.19140625 36.19656672127287, 104.19140625 84 M104.19140625 -84 C104.19140625 -42.6258009209562, 104.19140625 -1.2516018419124038, 104.19140625 84 M104.19140625 84 C52.05751183839287 84, -0.07638257321426067 84, -104.19140625 84 M104.19140625 84 C31.564480408720016 84, -41.06244543255997 84, -104.19140625 84 M-104.19140625 84 C-104.19140625 43.75114539985054, -104.19140625 3.502290799701086, -104.19140625 -84 M-104.19140625 84 C-104.19140625 36.83702215383164, -104.19140625 -10.32595569233672, -104.19140625 -84" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="annotation-group text" transform="translate(0, -60)"></g><g class="label-group text" transform="translate(-27.2421875, -60)"><g class="label" style="font-weight: bolder" transform="translate(0,-12)"><foreignObject width="54.484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 101px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>Animal</p></span></div></foreignObject></g></g><g class="members-group text" transform="translate(-92.19140625, -12)"><g class="label" style="" transform="translate(0,-12)"><foreignObject width="101.6875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 157px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+String name</p></span></div></foreignObject></g><g class="label" style="" transform="translate(0,12)"><foreignObject width="61.78125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 117px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+int age</p></span></div></foreignObject></g></g><g class="methods-group text" transform="translate(-92.19140625, 60)"><g class="label" style="" transform="translate(0,-12)"><foreignObject width="157.140625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 212px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+makeSound() : void</p></span></div></foreignObject></g></g><g class="divider" style=""><path d="M-104.19140625 -36 C-20.891605360634813 -35.999600255894954, 62.408195528730374 -35.999200511789915, 104.19140625 -35.999 M-104.19140625 -36 C-36.92001953438631 -35.999677174014934, 30.351367181227374 -35.999354348029875, 104.19140625 -35.999" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="divider" style=""><path d="M-104.19140625 36 C-43.75740043034955 36.000290014349524, 16.676605389300903 36.00058002869905, 104.19140625 36.001 M-104.19140625 36 C-58.14512958601904 36.00022096964769, -12.098852922038077 36.00044193929539, 104.19140625 36.001" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g></g><g class="node default" id="graph-pretty-classId-Dog-1" data-look="classic" transform="translate(81.01171875, 316)"><g class="basic label-container outer-path"><path d="M-73.01171875 -72 L73.01171875 -72 L73.01171875 72 L-73.01171875 72" stroke="none" stroke-width="0" fill="#ECECFF" style=""></path><path d="M-73.01171875 -72 C-20.7722345473882 -72, 31.467249655223597 -72, 73.01171875 -72 M-73.01171875 -72 C-18.36464617632717 -72, 36.28242639734566 -72, 73.01171875 -72 M73.01171875 -72 C73.01171875 -21.510601377398928, 73.01171875 28.978797245202145, 73.01171875 72 M73.01171875 -72 C73.01171875 -14.95009480766393, 73.01171875 42.09981038467214, 73.01171875 72 M73.01171875 72 C17.957787038830126 72, -37.09614467233975 72, -73.01171875 72 M73.01171875 72 C38.034146636257816 72, 3.056574522515632 72, -73.01171875 72 M-73.01171875 72 C-73.01171875 18.20236595984823, -73.01171875 -35.59526808030354, -73.01171875 -72 M-73.01171875 72 C-73.01171875 28.439114568444225, -73.01171875 -15.12177086311155, -73.01171875 -72" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="annotation-group text" transform="translate(0, -48)"></g><g class="label-group text" transform="translate(-15.7421875, -48)"><g class="label" style="font-weight: bolder" transform="translate(0,-12)"><foreignObject width="31.484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 81px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>Dog</p></span></div></foreignObject></g></g><g class="members-group text" transform="translate(-61.01171875, 0)"><g class="label" style="" transform="translate(0,-12)"><foreignObject width="103.921875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 159px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+String breed</p></span></div></foreignObject></g></g><g class="methods-group text" transform="translate(-61.01171875, 48)"><g class="label" style="" transform="translate(0,-12)"><foreignObject width="106.28125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 162px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+fetch() : void</p></span></div></foreignObject></g></g><g class="divider" style=""><path d="M-73.01171875 -24 C-24.238249511429487 -23.9996659887613, 24.535219727141026 -23.9993319775226, 73.01171875 -23.999 M-73.01171875 -24 C-29.71706243686078 -23.999703508854097, 13.577593876278442 -23.999407017708194, 73.01171875 -23.999" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="divider" style=""><path d="M-73.01171875 24 C-16.24110567779003 24.000388777404808, 40.52950739441994 24.000777554809613, 73.01171875 24.001 M-73.01171875 24 C-28.67137041990234 24.00030365227041, 15.668977910195323 24.00060730454082, 73.01171875 24.001" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g></g><g class="node default" id="graph-pretty-classId-Cat-2" data-look="classic" transform="translate(272.45703125, 316)"><g class="basic label-container outer-path"><path d="M-68.43359375 -72 L68.43359375 -72 L68.43359375 72 L-68.43359375 72" stroke="none" stroke-width="0" fill="#ECECFF" style=""></path><path d="M-68.43359375 -72 C-37.86049521455969 -72, -7.287396679119382 -72, 68.43359375 -72 M-68.43359375 -72 C-34.127550694609134 -72, 0.17849236078173192 -72, 68.43359375 -72 M68.43359375 -72 C68.43359375 -28.184462124084668, 68.43359375 15.631075751830664, 68.43359375 72 M68.43359375 -72 C68.43359375 -31.626968832518656, 68.43359375 8.746062334962687, 68.43359375 72 M68.43359375 72 C26.789207837860843 72, -14.855178074278314 72, -68.43359375 72 M68.43359375 72 C25.021258389221778 72, -18.391076971556444 72, -68.43359375 72 M-68.43359375 72 C-68.43359375 36.62380990176673, -68.43359375 1.2476198035334534, -68.43359375 -72 M-68.43359375 72 C-68.43359375 31.927775732403923, -68.43359375 -8.144448535192154, -68.43359375 -72" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="annotation-group text" transform="translate(0, -48)"></g><g class="label-group text" transform="translate(-13.4921875, -48)"><g class="label" style="font-weight: bolder" transform="translate(0,-12)"><foreignObject width="26.984375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 76px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>Cat</p></span></div></foreignObject></g></g><g class="members-group text" transform="translate(-56.43359375, 0)"><g class="label" style="" transform="translate(0,-12)"><foreignObject width="96.28125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 152px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+bool indoor</p></span></div></foreignObject></g></g><g class="methods-group text" transform="translate(-56.43359375, 48)"><g class="label" style="" transform="translate(0,-12)"><foreignObject width="99.375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 155px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+purr() : void</p></span></div></foreignObject></g></g><g class="divider" style=""><path d="M-68.43359375 -24 C-15.547676720123832 -23.999613596816037, 37.33824030975234 -23.999227193632077, 68.43359375 -23.999 M-68.43359375 -24 C-33.362222503316225 -23.99974375617789, 1.7091487433675496 -23.999487512355778, 68.43359375 -23.999" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="divider" style=""><path d="M-68.43359375 24 C-35.178453352454135 24.000242973798212, -1.923312954908269 24.000485947596427, 68.43359375 24.001 M-68.43359375 24 C-32.235273760459656 24.000264477707557, 3.963046229080689 24.00052895541511, 68.43359375 24.001" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g></g><g class="node default" id="graph-pretty-classId-Leash-3" data-look="classic" transform="translate(81.01171875, 552)"><g class="basic label-container outer-path"><path d="M-52.61328125 -60 L52.61328125 -60 L52.61328125 60 L-52.61328125 60" stroke="none" stroke-width="0" fill="#ECECFF" style=""></path><path d="M-52.61328125 -60 C-23.11299095986854 -60, 6.38729933026292 -60, 52.61328125 -60 M-52.61328125 -60 C-19.641709850711912 -60, 13.329861548576176 -60, 52.61328125 -60 M52.61328125 -60 C52.61328125 -18.779130047600418, 52.61328125 22.441739904799164, 52.61328125 60 M52.61328125 -60 C52.61328125 -15.994797840543185, 52.61328125 28.01040431891363, 52.61328125 60 M52.61328125 60 C28.834925769265375 60, 5.05657028853075 60, -52.61328125 60 M52.61328125 60 C12.921001892907093 60, -26.771277464185815 60, -52.61328125 60 M-52.61328125 60 C-52.61328125 19.845285790798634, -52.61328125 -20.30942841840273, -52.61328125 -60 M-52.61328125 60 C-52.61328125 31.850471481017664, -52.61328125 3.7009429620353274, -52.61328125 -60" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="annotation-group text" transform="translate(0, -36)"></g><g class="label-group text" transform="translate(-23.4765625, -36)"><g class="label" style="font-weight: bolder" transform="translate(0,-12)"><foreignObject width="46.953125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 95px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>Leash</p></span></div></foreignObject></g></g><g class="members-group text" transform="translate(-40.61328125, 12)"><g class="label" style="" transform="translate(0,-12)"><foreignObject width="57.75" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 113px; text-align: center;"><span class="nodeLabel markdown-node-label" style=""><p>+length</p></span></div></foreignObject></g></g><g class="methods-group text" transform="translate(-40.61328125, 60)"></g><g class="divider" style=""><path d="M-52.61328125 -12 C-12.122698299293901 -11.99961520568582, 28.367884651412197 -11.99923041137164, 52.61328125 -11.999 M-52.61328125 -12 C-25.502051220078954 -11.999742353742384, 1.609178809842092 -11.999484707484768, 52.61328125 -11.999" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g><g class="divider" style=""><path d="M-52.61328125 36 C-17.71491552303231 36.00033164977452, 17.18345020393538 36.000663299549046, 52.61328125 36.001 M-52.61328125 36 C-27.287513053853388 36.000240678471236, -1.9617448577067762 36.00048135694247, 52.61328125 36.001" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0" style=""></path></g></g></g></g></g><defs><filter id="graph-pretty-drop-shadow" height="130%" width="130%"><feDropShadow dx="4" dy="4" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow></filter></defs><defs><filter id="graph-pretty-drop-shadow-small" height="150%" width="150%"><feDropShadow dx="2" dy="2" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow></filter></defs><style>
+  .mp-root svg { overflow: visible; }
+
+  /* ノード: 柔らかい影 + 繊細な枠線 */
+  .node rect,
+  .node polygon,
+  .node circle,
+  .node ellipse,
+  .node path {
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05))
+      drop-shadow(0 6px 14px rgba(15, 23, 42, 0.06));
+    stroke-width: 1.2px !important;
+  }
+
+  /* 四角ノードは角丸 */
+  .node rect { rx: 10; ry: 10; }
+
+  /* エッジ: 細めで上品に */
+  .edgePath path.path,
+  .flowchart-link {
+    stroke-width: 1.5px !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+  }
+
+  /* 矢印ヘッド */
+  .arrowheadPath,
+  marker path {
+    stroke-width: 0 !important;
+  }
+
+  /* エッジラベル: 白ピル風 */
+  .edgeLabel,
+  .edgeLabel div,
+  .edgeLabel span {
+    background-color: rgba(255, 255, 255, 0.96) !important;
+    color: #334155 !important;
+    font-size: 12px !important;
+  }
+  .edgeLabel {
+    padding: 2px 8px !important;
+    border-radius: 999px !important;
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  }
+
+  /* クラスタ（サブグラフ） */
+  .cluster rect {
+    rx: 14 !important;
+    ry: 14 !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04));
+    stroke-dasharray: 0 !important;
+    stroke-width: 1px !important;
+  }
+  .cluster-label .nodeLabel,
+  .cluster text {
+    font-weight: 600 !important;
+    fill: #0F172A !important;
+    color: #0F172A !important;
+  }
+
+  /* ラベル類のフォント統一 */
+  .nodeLabel,
+  .edgeLabel,
+  .cluster text,
+  .actor,
+  text.actor &gt; tspan,
+  .messageText,
+  .loopText,
+  .noteText,
+  .labelText,
+  .sectionTitle,
+  .titleText,
+  .taskText,
+  .grid text {
+    font-family: "Inter", system-ui, sans-serif !important;
+  }
+
+  /* シーケンス図: アクター */
+  .actor {
+    filter: drop-shadow(0 2px 6px rgba(15, 23, 42, 0.08));
+    stroke-width: 1.2px !important;
+  }
+  .actor-line { stroke-width: 1px !important; stroke-dasharray: 2 4 !important; }
+
+  /* ノートに軽い陰影 */
+  .note, g.note rect {
+    filter: drop-shadow(0 2px 6px rgba(234, 179, 8, 0.12));
+    rx: 8 !important;
+    ry: 8 !important;
+  }
+
+  /* ===== class diagram (mermaid v11: path 2 枚重ね構造) ===== */
+  /* 1 枚目 path = 塗り、2 枚目 path = 手書き風アウトライン */
+  .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(1) {
+    fill: #F5F3FF !important;
+  }
+  .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(2) {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.3px !important;
+  }
+  g.classDiagram g.node.default g.basic.label-container {
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 8px 20px rgba(99, 102, 241, 0.12));
+  }
+  /* 区切り線もインディゴ系に */
+  .classDiagram g.divider path {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.2px !important;
+  }
+  /* タイトル（クラス名）をアクセントカラーに（幅計算済みのためサイズは据え置き） */
+  .classDiagram g.label-group .nodeLabel p,
+  .classDiagram g.label-group .nodeLabel span,
+  .classDiagram g.label-group foreignObject div {
+    color: #4338CA !important;
+  }
+  /* members / methods は本文色 */
+  .classDiagram g.members-group .nodeLabel p,
+  .classDiagram g.methods-group .nodeLabel p,
+  .classDiagram g.members-group .nodeLabel span,
+  .classDiagram g.methods-group .nodeLabel span {
+    color: #1E293B !important;
+  }
+  /* relation エッジ */
+  .classDiagram .relation {
+    stroke: #94A3B8 !important;
+    stroke-width: 1.3px !important;
+    stroke-linecap: round !important;
+  }
+
+  /* ===== state diagram ===== */
+  g.stateGroup rect,
+  .node.statediagram-state rect,
+  .node rect.state,
+  rect.state,
+  g.node.statediagram-state &gt; rect,
+  .statediagram-state &gt; rect {
+    rx: 12 !important;
+    ry: 12 !important;
+    fill: #EEF2FF !important;
+    stroke: #C7D2FE !important;
+    stroke-width: 1.2px !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 6px 14px rgba(99, 102, 241, 0.10));
+  }
+  g.stateGroup .title text,
+  .stateLabel,
+  .statediagram-state text,
+  g.node.statediagram-state text {
+    font-weight: 600 !important;
+    fill: #1E293B !important;
+    font-size: 14px !important;
+  }
+  /* 開始ノード: 濃いインディゴ + グロー */
+  circle.start,
+  .node circle.start,
+  g.node.statediagram-state circle.start,
+  g.statediagram-cluster circle.start,
+  [id$="-start"] circle,
+  g.node[id*="start"] &gt; circle {
+    fill: #6366F1 !important;
+    stroke: #FFFFFF !important;
+    stroke-width: 3px !important;
+    r: 10 !important;
+    filter: drop-shadow(0 2px 6px rgba(99, 102, 241, 0.45));
+  }
+  /* 終了ノード: 二重丸、濃い外枠 */
+  circle.end,
+  .node circle.end,
+  [id$="-end"] circle,
+  g.node[id*="end"] &gt; circle {
+    fill: #FFFFFF !important;
+    stroke: #475569 !important;
+    stroke-width: 2px !important;
+  }
+  circle.end-inner,
+  g.node[id*="end"] circle.end-inner {
+    fill: #475569 !important;
+  }
+  .transition,
+  .edgePath .path.transition,
+  path.transition {
+    stroke: #64748B !important;
+    stroke-width: 1.4px !important;
+    stroke-linecap: round !important;
+    opacity: 0.9 !important;
+  }
+  /* トランジション矢印とラベル */
+  .statediagram .edgeLabel {
+    background-color: rgba(255, 255, 255, 0.96) !important;
+  }
+
+  /* ===== ER diagram (mermaid v11: outer-path + row-rect) ===== */
+  /* エンティティ外枠: 塗り＋手書き風アウトラインの 2 枚構造 */
+  .erDiagram g.node.default g.outer-path path:nth-of-type(1) {
+    fill: #EEF2FF !important;
+  }
+  .erDiagram g.node.default g.outer-path path:nth-of-type(2) {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.3px !important;
+  }
+  .erDiagram g.node.default g.outer-path {
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 8px 20px rgba(99, 102, 241, 0.12));
+  }
+  /* 属性行: 白と slate-50 の交互塗り */
+  .erDiagram g.row-rect-odd path:nth-of-type(1) {
+    fill: #FFFFFF !important;
+  }
+  .erDiagram g.row-rect-even path:nth-of-type(1) {
+    fill: #F8FAFC !important;
+  }
+  .erDiagram g.row-rect-odd path:nth-of-type(2),
+  .erDiagram g.row-rect-even path:nth-of-type(2) {
+    stroke: #E2E8F0 !important;
+    stroke-width: 1px !important;
+  }
+  /* エンティティ名: 幅計算済みのため色のみ上書き */
+  .erDiagram g.label.name .nodeLabel p,
+  .erDiagram g.label.name .nodeLabel span,
+  .erDiagram g.label.name foreignObject div {
+    color: #4338CA !important;
+    font-weight: 700 !important;
+  }
+  /* 属性テキスト */
+  .erDiagram g.label.attribute-type .nodeLabel p,
+  .erDiagram g.label.attribute-name .nodeLabel p,
+  .erDiagram g.label.attribute-comment .nodeLabel p {
+    color: #334155 !important;
+  }
+  .erDiagram g.label.attribute-keys .nodeLabel p {
+    color: #6366F1 !important;
+    font-weight: 600 !important;
+  }
+  /* リレーション線 */
+  .erDiagram .relationshipLine {
+    stroke: #94A3B8 !important;
+    stroke-width: 1.3px !important;
+  }
+
+  /* ===== quadrant ===== */
+  .quadrant-external-border-rect {
+    rx: 10 !important;
+    ry: 10 !important;
+    stroke-width: 1.2px !important;
+    filter: drop-shadow(0 2px 8px rgba(15, 23, 42, 0.06));
+  }
+  .quadrant-title {
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    fill: #0F172A !important;
+  }
+  .quadrant-point text,
+  text.quadrant-point-text {
+    font-weight: 500 !important;
+    fill: #0F172A !important;
+  }
+  circle.quadrant-point,
+  .quadrant-point circle {
+    r: 7 !important;
+    fill: #6366F1 !important;
+    stroke: #FFFFFF !important;
+    stroke-width: 2.5px !important;
+    filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.35));
+  }
+
+  /* ===== pie (洗練された Chart.js 風) ===== */
+  g[id^="pie"] .pieCircle,
+  .pieCircle {
+    stroke: #FFFFFF !important;
+    stroke-width: 4px !important;
+    stroke-linejoin: round !important;
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04))
+      drop-shadow(0 14px 32px rgba(15, 23, 42, 0.10));
+  }
+  .pieOuterCircle {
+    stroke: transparent !important;
+    fill: transparent !important;
+  }
+  .pieTitleText {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    fill: #0F172A !important;
+    letter-spacing: -0.2px !important;
+  }
+  text.slice {
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    fill: #FFFFFF !important;
+    paint-order: stroke;
+    stroke: rgba(15, 23, 42, 0.35);
+    stroke-width: 0.5px;
+    letter-spacing: -0.2px !important;
+  }
+  /* 凡例を丸いドット風に */
+  .legend rect {
+    rx: 10 !important;
+    ry: 10 !important;
+    stroke: transparent !important;
+    width: 10 !important;
+    height: 10 !important;
+    filter: drop-shadow(0 1px 1px rgba(15, 23, 42, 0.12));
+  }
+  .legend text, text.legend {
+    font-size: 13px !important;
+    fill: #1E293B !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.1px !important;
+  }
+
+  /* ===== mindmap ===== */
+  .mindmap-node &gt; rect,
+  .mindmap-node &gt; circle,
+  .mindmap-node &gt; ellipse,
+  .mindmap-node &gt; polygon,
+  .mindmap-node &gt; path {
+    stroke-width: 0 !important;
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06))
+      drop-shadow(0 8px 20px rgba(15, 23, 42, 0.08));
+  }
+  .mindmap-node [class^="node-line"] {
+    stroke-width: 2px !important;
+    stroke-linecap: round !important;
+    opacity: 0.35 !important;
+  }
+  /* エッジ（ブランチの線）を色とトーンで統一 */
+  g.edge path,
+  .edge path,
+  .section-edge-0, .section-edge-1, .section-edge-2, .section-edge-3,
+  .section-edge-4, .section-edge-5, .section-edge-6, .section-edge-7 {
+    stroke-width: 1.4px !important;
+    stroke-linecap: round !important;
+    opacity: 0.7 !important;
+  }
+  /* ルートノードを際立たせる */
+  g.mindmap-node.section-root circle,
+  g.mindmap-node.section-root rect,
+  g.mindmap-node.section-root ellipse,
+  g.mindmap-node.section--1 circle,
+  g.mindmap-node.section--1 rect {
+    fill: #6366F1 !important;
+    filter: drop-shadow(0 6px 18px rgba(99, 102, 241, 0.35));
+  }
+  g.mindmap-node text,
+  g.mindmap-node .nodeLabel,
+  g.mindmap-node .nodeLabel span {
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+  }
+
+  /* ===== timeline ===== */
+  .timeline-node rect,
+  g.timeline-node &gt; rect,
+  g.timeline-node foreignObject {
+    filter: drop-shadow(0 3px 10px rgba(15, 23, 42, 0.10));
+  }
+  .timeline-node .node-bkg,
+  g.timeline-node rect {
+    rx: 12 !important;
+    ry: 12 !important;
+    stroke-width: 0 !important;
+  }
+  .timeline-node text,
+  .timeline-node .nodeLabel,
+  .timeline-node .nodeLabel span,
+  g.timeline-node text,
+  g.timeline-node .nodeLabel,
+  g.timeline-node .nodeLabel span,
+  g.timeline-node foreignObject div,
+  g.timeline-node foreignObject span {
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+    font-size: 14px !important;
+    letter-spacing: 0.2px !important;
+  }
+  /* タイムラインの縦接続線: 視認できる濃さにする */
+  .lineWrapper line,
+  [class^="node-line"] {
+    stroke: #64748B !important;
+    stroke-width: 1.3px !important;
+    stroke-dasharray: 3 3 !important;
+    stroke-linecap: round !important;
+    opacity: 0.85 !important;
+  }
+  .sectionTitle {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    fill: #0F172A !important;
+  }
+  .titleText {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    fill: #0F172A !important;
+  }
+  /* タイムライン軸線 */
+  line.timeline-path,
+  #arrowhead path {
+    stroke: #94A3B8 !important;
+    fill: #94A3B8 !important;
+    stroke-width: 1.5px !important;
+  }
+
+  /* ===== journey (モダンなフラット + 立体感) ===== */
+  .task-line,
+  .actor-line {
+    opacity: 0.85 !important;
+    stroke: #64748B !important;
+    stroke-dasharray: 3 3 !important;
+    stroke-width: 1.2px !important;
+    stroke-linecap: round !important;
+  }
+  .task rect,
+  g.task &gt; rect {
+    rx: 14 !important;
+    ry: 14 !important;
+    filter:
+      drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04))
+      drop-shadow(0 10px 24px rgba(15, 23, 42, 0.08));
+    stroke-width: 0 !important;
+  }
+  .task-type-0 text,
+  .task text {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    fill: #0F172A !important;
+    letter-spacing: -0.1px !important;
+  }
+  /* 顔バッジ: ビビッドな amber-400 ソリッド + 深めの影で立体感 */
+  circle.face,
+  .face {
+    fill: #FBBF24 !important;
+    stroke: none !important;
+    r: 18 !important;
+    filter:
+      drop-shadow(0 2px 4px rgba(217, 119, 6, 0.25))
+      drop-shadow(0 8px 16px rgba(217, 119, 6, 0.20));
+  }
+  .mouth {
+    stroke: #78350F !important;
+    stroke-width: 2.2px !important;
+    stroke-linecap: round !important;
+    fill: transparent !important;
+  }
+  .eyes {
+    fill: #78350F !important;
+    stroke: none !important;
+  }
+  /* アクター（凡例）ドット: 統一パレットで上品に */
+  circle.actor-0 { fill: #818CF8 !important; }
+  circle.actor-1 { fill: #34D399 !important; }
+  circle.actor-2 { fill: #F472B6 !important; }
+  circle.actor-3 { fill: #FBBF24 !important; }
+  circle.actor-4 { fill: #60A5FA !important; }
+  circle.actor-5 { fill: #A78BFA !important; }
+  circle.actor-0, circle.actor-1, circle.actor-2,
+  circle.actor-3, circle.actor-4, circle.actor-5 {
+    stroke: #FFFFFF !important;
+    stroke-width: 2px !important;
+    filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.14));
+  }
+  .legend text {
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    fill: #1E293B !important;
+    letter-spacing: 0.1px !important;
+  }
+  /* セクションバーはやや濃く、タスクは淡く。立体感を出す */
+  .section-type-0 { fill: #C7D2FE !important; }
+  .section-type-1 { fill: #DDD6FE !important; }
+  .section-type-2 { fill: #FBCFE8 !important; }
+  .section-type-3 { fill: #FDE68A !important; }
+  .section-type-4 { fill: #A7F3D0 !important; }
+  .section-type-5 { fill: #A5F3FC !important; }
+  .task-type-0 { fill: #EEF2FF !important; }
+  .task-type-1 { fill: #F5F3FF !important; }
+  .task-type-2 { fill: #FDF2F8 !important; }
+  .task-type-3 { fill: #FFFBEB !important; }
+  .task-type-4 { fill: #ECFDF5 !important; }
+  .task-type-5 { fill: #ECFEFF !important; }
+  g[class*="section-type"] &gt; rect,
+  .section-type-0, .section-type-1, .section-type-2,
+  .section-type-3, .section-type-4, .section-type-5 {
+    stroke-width: 0 !important;
+  }
+  .journey-section text {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    fill: #0F172A !important;
+    letter-spacing: -0.1px !important;
+  }
+
+  /* ===== gantt ===== */
+  /* 背景の暗いグレーを消す */
+  .mermaid &gt; svg &gt; g &gt; rect:first-child,
+  rect.background,
+  rect.section,
+  rect.sectionBar {
+    fill: #FFFFFF !important;
+    stroke: transparent !important;
+  }
+  g.section0 rect.section, g.section1 rect.section,
+  g.section2 rect.section, g.section3 rect.section {
+    fill: transparent !important;
+  }
+  .grid .tick line {
+    stroke: #E2E8F0 !important;
+    stroke-dasharray: 2 3 !important;
+  }
+  .grid path { stroke: transparent !important; }
+  .grid text {
+    fill: #64748B !important;
+    font-size: 11px !important;
+  }
+  /* タスクバー: ソフトなパステルに */
+  .task0, .task2 { fill: #C7D2FE !important; stroke: #818CF8 !important; }
+  .task1, .task3 { fill: #DDD6FE !important; stroke: #A78BFA !important; }
+  .task-type-0, .task-type-1, .task-type-2, .task-type-3,
+  rect.task0, rect.task1, rect.task2, rect.task3 {
+    stroke-width: 1px !important;
+    rx: 6 !important;
+    ry: 6 !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06));
+  }
+  .done0, .done1, .done2, .done3 {
+    fill: #A7F3D0 !important;
+    stroke: #34D399 !important;
+  }
+  .crit0, .crit1, .crit2, .crit3,
+  .active0, .active1, .active2, .active3 {
+    fill: #FECACA !important;
+    stroke: #F87171 !important;
+  }
+  .taskText, .taskTextOutsideRight, .taskTextOutsideLeft {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    fill: #0F172A !important;
+  }
+  .sectionTitle0, .sectionTitle1, .sectionTitle2, .sectionTitle3,
+  text.sectionTitle {
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    fill: #0F172A !important;
+  }
+  line.today {
+    stroke: #F43F5E !important;
+    stroke-width: 2px !important;
+    stroke-dasharray: 4 4 !important;
+  }
+
+  /* ===== gitgraph ===== */
+  .branch-label rect, .commit-label rect, .tag-label rect {
+    rx: 8 !important;
+    ry: 8 !important;
+    stroke-width: 0 !important;
+    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.08));
+  }
+  .branch-label text {
+    font-weight: 600 !important;
+    fill: #FFFFFF !important;
+  }
+  .tag-label text {
+    font-weight: 600 !important;
+    font-size: 12px !important;
+  }
+  .commit-label text {
+    font-size: 11px !important;
+    fill: #334155 !important;
+  }
+  /* ブランチ線を立体的に */
+  .branch0, .branch1, .branch2, .branch3,
+  .branch4, .branch5, .branch6, .branch7 {
+    stroke-width: 4px !important;
+    stroke-linecap: round !important;
+  }
+  /* コミット点 */
+  circle.commit, .commit {
+    stroke-width: 3px !important;
+    stroke: #FFFFFF !important;
+  }
+</style></svg>

@@ -1,20 +1,15 @@
 # Catalog
 
-`mermaid-pretty` の `pretty` テーマで描画した全 12 種類のダイアグラムを、
-Mermaid の `default` テーマと並べた before/after カタログ。
+`mermaid-pretty` の `pretty` テーマと素の Mermaid を並べた before/after カタログ。
+各セクションの上は ```` ```mermaid ```` ブロック（GitHub が素の Mermaid で描画）、下は `mmp` が出力した PNG。
 
-- Before = `mmp file.mmd -t default`（素の Mermaid）
-- After  = `mmp file.mmd`（`pretty` テーマ、既定）
+> `pretty` テーマは `mmp file.mmd` の既定。素の Mermaid は `mmp file.mmd -t default` に相当。
 
 ---
 
 ## Flowchart
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/flowchart.png) | ![](images/after/flowchart.png) |
-
-<details><summary>Source — <a href="../../examples/flowchart.mmd"><code>examples/flowchart.mmd</code></a></summary>
+**Before — `mermaid` default (GitHub によるライブ描画):**
 
 ```mermaid
 flowchart LR
@@ -32,17 +27,17 @@ flowchart LR
     end
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/flowchart.png)
+
+Source: [`examples/flowchart.mmd`](../../examples/flowchart.mmd) · [SVG](images/flowchart.svg)
 
 ---
 
 ## Sequence
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/sequence.png) | ![](images/after/sequence.png) |
-
-<details><summary>Source — <a href="../../examples/sequence.mmd"><code>examples/sequence.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 sequenceDiagram
@@ -56,17 +51,17 @@ sequenceDiagram
     Note over U,A: Session established
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/sequence.png)
+
+Source: [`examples/sequence.mmd`](../../examples/sequence.mmd) · [SVG](images/sequence.svg)
 
 ---
 
 ## Class
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/class.png) | ![](images/after/class.png) |
-
-<details><summary>Source — <a href="../../examples/class.mmd"><code>examples/class.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 classDiagram
@@ -91,17 +86,17 @@ classDiagram
     }
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/class.png)
+
+Source: [`examples/class.mmd`](../../examples/class.mmd) · [SVG](images/class.svg)
 
 ---
 
 ## State
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/state.png) | ![](images/after/state.png) |
-
-<details><summary>Source — <a href="../../examples/state.mmd"><code>examples/state.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 stateDiagram-v2
@@ -114,17 +109,17 @@ stateDiagram-v2
     Error --> [*]: abort
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/state.png)
+
+Source: [`examples/state.mmd`](../../examples/state.mmd) · [SVG](images/state.svg)
 
 ---
 
 ## ER
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/er.png) | ![](images/after/er.png) |
-
-<details><summary>Source — <a href="../../examples/er.mmd"><code>examples/er.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 erDiagram
@@ -153,17 +148,17 @@ erDiagram
     }
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/er.png)
+
+Source: [`examples/er.mmd`](../../examples/er.mmd) · [SVG](images/er.svg)
 
 ---
 
 ## Gantt
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/gantt.png) | ![](images/after/gantt.png) |
-
-<details><summary>Source — <a href="../../examples/gantt.mmd"><code>examples/gantt.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 gantt
@@ -181,17 +176,17 @@ gantt
     Release            :crit,    l2,   after l1, 2d
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/gantt.png)
+
+Source: [`examples/gantt.mmd`](../../examples/gantt.mmd) · [SVG](images/gantt.svg)
 
 ---
 
 ## Pie
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/pie.png) | ![](images/after/pie.png) |
-
-<details><summary>Source — <a href="../../examples/pie.mmd"><code>examples/pie.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 pie showData
@@ -203,17 +198,17 @@ pie showData
     "Email"   : 6.2
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/pie.png)
+
+Source: [`examples/pie.mmd`](../../examples/pie.mmd) · [SVG](images/pie.svg)
 
 ---
 
 ## Mindmap
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/mindmap.png) | ![](images/after/mindmap.png) |
-
-<details><summary>Source — <a href="../../examples/mindmap.mmd"><code>examples/mindmap.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 mindmap
@@ -238,17 +233,17 @@ mindmap
       Pastel colors
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/mindmap.png)
+
+Source: [`examples/mindmap.mmd`](../../examples/mindmap.mmd) · [SVG](images/mindmap.svg)
 
 ---
 
 ## Timeline
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/timeline.png) | ![](images/after/timeline.png) |
-
-<details><summary>Source — <a href="../../examples/timeline.mmd"><code>examples/timeline.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 timeline
@@ -263,17 +258,17 @@ timeline
     2016 : TikTok
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/timeline.png)
+
+Source: [`examples/timeline.mmd`](../../examples/timeline.mmd) · [SVG](images/timeline.svg)
 
 ---
 
 ## Journey
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/journey.png) | ![](images/after/journey.png) |
-
-<details><summary>Source — <a href="../../examples/journey.mmd"><code>examples/journey.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 journey
@@ -291,17 +286,17 @@ journey
       Relax: 5: Me
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/journey.png)
+
+Source: [`examples/journey.mmd`](../../examples/journey.mmd) · [SVG](images/journey.svg)
 
 ---
 
 ## GitGraph
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/gitgraph.png) | ![](images/after/gitgraph.png) |
-
-<details><summary>Source — <a href="../../examples/gitgraph.mmd"><code>examples/gitgraph.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 gitGraph
@@ -316,17 +311,17 @@ gitGraph
     commit id: "hotfix"
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/gitgraph.png)
+
+Source: [`examples/gitgraph.mmd`](../../examples/gitgraph.mmd) · [SVG](images/gitgraph.svg)
 
 ---
 
 ## Quadrant
 
-| Before (default) | After (pretty) |
-|---|---|
-| ![](images/before/quadrant.png) | ![](images/after/quadrant.png) |
-
-<details><summary>Source — <a href="../../examples/quadrant.mmd"><code>examples/quadrant.mmd</code></a></summary>
+**Before:**
 
 ```mermaid
 quadrantChart
@@ -345,7 +340,11 @@ quadrantChart
     Campaign F: [0.35, 0.78]
 ```
 
-</details>
+**After — `pretty`:**
+
+![](images/quadrant.png)
+
+Source: [`examples/quadrant.mmd`](../../examples/quadrant.mmd) · [SVG](images/quadrant.svg)
 
 ---
 
@@ -353,7 +352,6 @@ quadrantChart
 
 ```bash
 for f in flowchart sequence class state er gantt pie mindmap timeline journey gitgraph quadrant; do
-  mmp "examples/${f}.mmd" -t default -o "docs/catalog/images/before/${f}"
-  mmp "examples/${f}.mmd"            -o "docs/catalog/images/after/${f}"
+  mmp "examples/${f}.mmd" -o "docs/catalog/images/${f}"
 done
 ```

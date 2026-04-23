@@ -1,4 +1,9 @@
-<svg id="graph-pretty" width="1400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 296" style="max-width: none;" role="graphics-document document" aria-roledescription="gantt" height="296"><style>#graph-pretty{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;fill:#1E293B;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#graph-pretty .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#graph-pretty .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#graph-pretty .error-icon{fill:#F8FAFC;}#graph-pretty .error-text{fill:#070503;stroke:#070503;}#graph-pretty .edge-thickness-normal{stroke-width:1px;}#graph-pretty .edge-thickness-thick{stroke-width:3.5px;}#graph-pretty .edge-pattern-solid{stroke-dasharray:0;}#graph-pretty .edge-thickness-invisible{stroke-width:0;fill:none;}#graph-pretty .edge-pattern-dashed{stroke-dasharray:3;}#graph-pretty .edge-pattern-dotted{stroke-dasharray:2;}#graph-pretty .marker{fill:#94A3B8;stroke:#94A3B8;}#graph-pretty .marker.cross{stroke:#94A3B8;}#graph-pretty svg{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;}#graph-pretty p{margin:0;}#graph-pretty .mermaid-main-font{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .exclude-range{fill:#F8FAFC;}#graph-pretty .section{stroke:none;opacity:0.2;}#graph-pretty .section0{fill:#FFFFFF;}#graph-pretty .section2{fill:#F1F5F9;}#graph-pretty .section1,#graph-pretty .section3{fill:#F8FAFC;opacity:0.2;}#graph-pretty .sectionTitle0{fill:#0F172A;}#graph-pretty .sectionTitle1{fill:#0F172A;}#graph-pretty .sectionTitle2{fill:#0F172A;}#graph-pretty .sectionTitle3{fill:#0F172A;}#graph-pretty .sectionTitle{text-anchor:start;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .grid .tick{stroke:#E2E8F0;opacity:0.8;shape-rendering:crispEdges;}#graph-pretty .grid .tick text{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;fill:#1E293B;}#graph-pretty .grid path{stroke-width:0;}#graph-pretty .today{fill:none;stroke:#F43F5E;stroke-width:2px;}#graph-pretty .task{stroke-width:2;}#graph-pretty .taskText{text-anchor:middle;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .taskTextOutsideRight{fill:#0F172A;text-anchor:start;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .taskTextOutsideLeft{fill:#0F172A;text-anchor:end;}#graph-pretty .task.clickable{cursor:pointer;}#graph-pretty .taskText.clickable{cursor:pointer;fill:#4F46E5!important;font-weight:bold;}#graph-pretty .taskTextOutsideLeft.clickable{cursor:pointer;fill:#4F46E5!important;font-weight:bold;}#graph-pretty .taskTextOutsideRight.clickable{cursor:pointer;fill:#4F46E5!important;font-weight:bold;}#graph-pretty .taskText0,#graph-pretty .taskText1,#graph-pretty .taskText2,#graph-pretty .taskText3{fill:#0F172A;}#graph-pretty .task0,#graph-pretty .task1,#graph-pretty .task2,#graph-pretty .task3{fill:#C7D2FE;stroke:#818CF8;}#graph-pretty .taskTextOutside0,#graph-pretty .taskTextOutside2{fill:#334155;}#graph-pretty .taskTextOutside1,#graph-pretty .taskTextOutside3{fill:#334155;}#graph-pretty .active0,#graph-pretty .active1,#graph-pretty .active2,#graph-pretty .active3{fill:#A5B4FC;stroke:#6366F1;}#graph-pretty .activeText0,#graph-pretty .activeText1,#graph-pretty .activeText2,#graph-pretty .activeText3{fill:#0F172A!important;}#graph-pretty .done0,#graph-pretty .done1,#graph-pretty .done2,#graph-pretty .done3{stroke:#34D399;fill:#A7F3D0;stroke-width:2;}#graph-pretty .doneText0,#graph-pretty .doneText1,#graph-pretty .doneText2,#graph-pretty .doneText3{fill:#0F172A!important;}#graph-pretty .doneText0.taskTextOutsideLeft,#graph-pretty .doneText0.taskTextOutsideRight,#graph-pretty .doneText1.taskTextOutsideLeft,#graph-pretty .doneText1.taskTextOutsideRight,#graph-pretty .doneText2.taskTextOutsideLeft,#graph-pretty .doneText2.taskTextOutsideRight,#graph-pretty .doneText3.taskTextOutsideLeft,#graph-pretty .doneText3.taskTextOutsideRight{fill:#334155!important;}#graph-pretty .crit0,#graph-pretty .crit1,#graph-pretty .crit2,#graph-pretty .crit3{stroke:#F87171;fill:#FECACA;stroke-width:2;}#graph-pretty .activeCrit0,#graph-pretty .activeCrit1,#graph-pretty .activeCrit2,#graph-pretty .activeCrit3{stroke:#F87171;fill:#A5B4FC;stroke-width:2;}#graph-pretty .doneCrit0,#graph-pretty .doneCrit1,#graph-pretty .doneCrit2,#graph-pretty .doneCrit3{stroke:#F87171;fill:#A7F3D0;stroke-width:2;cursor:pointer;shape-rendering:crispEdges;}#graph-pretty .milestone{transform:rotate(45deg) scale(0.8,0.8);}#graph-pretty .milestoneText{font-style:italic;}#graph-pretty .doneCritText0,#graph-pretty .doneCritText1,#graph-pretty .doneCritText2,#graph-pretty .doneCritText3{fill:#0F172A!important;}#graph-pretty .doneCritText0.taskTextOutsideLeft,#graph-pretty .doneCritText0.taskTextOutsideRight,#graph-pretty .doneCritText1.taskTextOutsideLeft,#graph-pretty .doneCritText1.taskTextOutsideRight,#graph-pretty .doneCritText2.taskTextOutsideLeft,#graph-pretty .doneCritText2.taskTextOutsideRight,#graph-pretty .doneCritText3.taskTextOutsideLeft,#graph-pretty .doneCritText3.taskTextOutsideRight{fill:#334155!important;}#graph-pretty .vert{stroke:navy;}#graph-pretty .vertText{font-size:15px;text-anchor:middle;fill:navy!important;}#graph-pretty .activeCritText0,#graph-pretty .activeCritText1,#graph-pretty .activeCritText2,#graph-pretty .activeCritText3{fill:#0F172A!important;}#graph-pretty .titleText{text-anchor:middle;font-size:18px;fill:#0F172A;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}#graph-pretty .node .neo-node{stroke:#CBD5E1;}#graph-pretty [data-look="neo"].node rect,#graph-pretty [data-look="neo"].cluster rect,#graph-pretty [data-look="neo"].node polygon{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node path{stroke:url(#graph-pretty-gradient);stroke-width:1px;}#graph-pretty [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node .neo-line path{stroke:#CBD5E1;filter:none;}#graph-pretty [data-look="neo"].node circle{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node circle .state-start{fill:#000000;}#graph-pretty [data-look="neo"].icon-shape .icon{fill:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].icon-shape .icon-neo path{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty :root{--mermaid-font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}</style><g></g><g class="grid" transform="translate(75, 246)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><path class="domain" stroke="currentColor" d="M0,-211V0H1250V-211"></path><g class="tick" opacity="1" transform="translate(93,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-05</text></g><g class="tick" opacity="1" transform="translate(255,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-12</text></g><g class="tick" opacity="1" transform="translate(417,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-19</text></g><g class="tick" opacity="1" transform="translate(579,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-04-26</text></g><g class="tick" opacity="1" transform="translate(741,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-03</text></g><g class="tick" opacity="1" transform="translate(903,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-10</text></g><g class="tick" opacity="1" transform="translate(1065,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-17</text></g><g class="tick" opacity="1" transform="translate(1227,0)"><line stroke="currentColor" y2="-211"></line><text fill="#000" y="3" dy="1em" stroke="none" font-size="10" style="text-anchor: middle;">2026-05-24</text></g></g><g><rect x="0" y="48" width="1362.5" height="28" class="section section0"></rect><rect x="0" y="76" width="1362.5" height="28" class="section section0"></rect><rect x="0" y="104" width="1362.5" height="28" class="section section0"></rect><rect x="0" y="132" width="1362.5" height="28" class="section section1"></rect><rect x="0" y="160" width="1362.5" height="28" class="section section1"></rect><rect x="0" y="188" width="1362.5" height="28" class="section section2"></rect><rect x="0" y="216" width="1362.5" height="28" class="section section2"></rect></g><g><rect id="graph-pretty-des1" rx="3" ry="3" x="75" y="50" width="139" height="22" transform-origin="144.5px 61px" class="task done0"></rect><rect id="graph-pretty-des2" rx="3" ry="3" x="237" y="78" width="116" height="22" transform-origin="295px 89px" class="task done0"></rect><rect id="graph-pretty-des3" rx="3" ry="3" x="399" y="106" width="162" height="22" transform-origin="480px 117px" class="task active0"></rect><rect id="graph-pretty-b1" rx="3" ry="3" x="515" y="134" width="324" height="22" transform-origin="677px 145px" class="task task1"></rect><rect id="graph-pretty-b2" rx="3" ry="3" x="839" y="162" width="324" height="22" transform-origin="1001px 173px" class="task task1"></rect><rect id="graph-pretty-l1" rx="3" ry="3" x="1163" y="190" width="116" height="22" transform-origin="1221px 201px" class="task task2"></rect><rect id="graph-pretty-l2" rx="3" ry="3" x="1279" y="218" width="46" height="22" transform-origin="1302px 229px" class="task crit2"></rect><text id="graph-pretty-des1-text" font-size="11" x="144.5" y="64.5" class="taskText taskText0  doneText0 width-48.59375">Research           </text><text id="graph-pretty-des2-text" font-size="11" x="295" y="92.5" class="taskText taskText0  doneText0 width-60.125">Wireframes         </text><text id="graph-pretty-des3-text" font-size="11" x="480" y="120.5" class="taskText taskText0 activeText0 width-69.375">Visual design      </text><text id="graph-pretty-b1-text" font-size="11" x="677" y="148.5" class="taskText taskText1  width-17.578125">API                </text><text id="graph-pretty-b2-text" font-size="11" x="1001" y="176.5" class="taskText taskText1  width-46.375">Frontend           </text><text id="graph-pretty-l1-text" font-size="11" x="1221" y="204.5" class="taskText taskText2  width-15.625">QA                 </text><text id="graph-pretty-l2-text" font-size="11" x="1302" y="232.5" class="taskText taskText2  critText2 width-40.921875">Release            </text></g><g><text dy="0em" x="10" y="92" font-size="11" class="sectionTitle sectionTitle0"><tspan alignment-baseline="central" x="10">Design</tspan></text><text dy="0em" x="10" y="162" font-size="11" class="sectionTitle sectionTitle1"><tspan alignment-baseline="central" x="10">Build</tspan></text><text dy="0em" x="10" y="218" font-size="11" class="sectionTitle sectionTitle2"><tspan alignment-baseline="central" x="10">Launch</tspan></text></g><g class="today"><line x1="607" x2="607" y1="25" y2="271" class="today"></line></g><text x="700" y="25" class="titleText">Product Roadmap Q2</text><style>
+<svg id="graph-pretty" width="416" xmlns="http://www.w3.org/2000/svg" style="max-width: none;" viewBox="-108 -37.20000076293945 416 177.95965576171875" role="graphics-document document" aria-roledescription="gitGraph" height="177.95965576171875"><style>#graph-pretty{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;fill:#1E293B;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#graph-pretty .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#graph-pretty .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#graph-pretty .error-icon{fill:#F0FDFA;}#graph-pretty .error-text{fill:#0f0205;stroke:#0f0205;}#graph-pretty .edge-thickness-normal{stroke-width:1px;}#graph-pretty .edge-thickness-thick{stroke-width:3.5px;}#graph-pretty .edge-pattern-solid{stroke-dasharray:0;}#graph-pretty .edge-thickness-invisible{stroke-width:0;fill:none;}#graph-pretty .edge-pattern-dashed{stroke-dasharray:3;}#graph-pretty .edge-pattern-dotted{stroke-dasharray:2;}#graph-pretty .marker{fill:#94A3B8;stroke:#94A3B8;}#graph-pretty .marker.cross{stroke:#94A3B8;}#graph-pretty svg{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:14px;}#graph-pretty p{margin:0;}#graph-pretty .commit-id,#graph-pretty .commit-msg,#graph-pretty .branch-label{fill:lightgrey;color:lightgrey;font-family:'trebuchet ms',verdana,arial,sans-serif;font-family:var(--mermaid-font-family);}#graph-pretty .branch-label0{fill:#FFFFFF;}#graph-pretty .commit0{stroke:#818CF8;fill:#818CF8;}#graph-pretty .commit-highlight0{stroke:rgb(241.8684210526, 221.2330827067, 18.6315789472);fill:rgb(241.8684210526, 221.2330827067, 18.6315789472);}#graph-pretty .label0{fill:#818CF8;}#graph-pretty .arrow0{stroke:#818CF8;}#graph-pretty .branch-label1{fill:#FFFFFF;}#graph-pretty .commit1{stroke:#F472B6;fill:#F472B6;}#graph-pretty .commit-highlight1{stroke:rgb(41.1809210525, 238.3190789474, 135.2006578947);fill:rgb(41.1809210525, 238.3190789474, 135.2006578947);}#graph-pretty .label1{fill:#F472B6;}#graph-pretty .arrow1{stroke:#F472B6;}#graph-pretty .branch-label2{fill:#FFFFFF;}#graph-pretty .commit2{stroke:#34D399;fill:#34D399;}#graph-pretty .commit-highlight2{stroke:rgb(230.8623481781, 143.6376518218, 175.4554655869);fill:rgb(230.8623481781, 143.6376518218, 175.4554655869);}#graph-pretty .label2{fill:#34D399;}#graph-pretty .arrow2{stroke:#34D399;}#graph-pretty .branch-label3{fill:#FFFFFF;}#graph-pretty .commit3{stroke:#FBBF24;fill:#FBBF24;}#graph-pretty .commit-highlight3{stroke:rgb(98.3609865472, 141.2757847534, 252.1390134529);fill:rgb(98.3609865472, 141.2757847534, 252.1390134529);}#graph-pretty .label3{fill:#FBBF24;}#graph-pretty .arrow3{stroke:#FBBF24;}#graph-pretty .branch-label4{fill:#FFFFFF;}#graph-pretty .commit4{stroke:#60A5FA;fill:#60A5FA;}#graph-pretty .commit-highlight4{stroke:rgb(248.3384146342, 156.4085365854, 43.1615853659);fill:rgb(248.3384146342, 156.4085365854, 43.1615853659);}#graph-pretty .label4{fill:#60A5FA;}#graph-pretty .arrow4{stroke:#60A5FA;}#graph-pretty .branch-label5{fill:#FFFFFF;}#graph-pretty .commit5{stroke:#A78BFA;fill:#A78BFA;}#graph-pretty .commit-highlight5{stroke:rgb(180.7272727275, 238.2314049588, 10.2685950413);fill:rgb(180.7272727275, 238.2314049588, 10.2685950413);}#graph-pretty .label5{fill:#A78BFA;}#graph-pretty .arrow5{stroke:#A78BFA;}#graph-pretty .branch-label6{fill:#FFFFFF;}#graph-pretty .commit6{stroke:#FB923C;fill:#FB923C;}#graph-pretty .commit-highlight6{stroke:rgb(75.1884422109, 172.0100502511, 251.311557789);fill:rgb(75.1884422109, 172.0100502511, 251.311557789);}#graph-pretty .label6{fill:#FB923C;}#graph-pretty .arrow6{stroke:#FB923C;}#graph-pretty .branch-label7{fill:#FFFFFF;}#graph-pretty .commit7{stroke:#2DD4BF;fill:#2DD4BF;}#graph-pretty .commit-highlight7{stroke:rgb(232.9901185771, 147.5098814231, 158.2588932808);fill:rgb(232.9901185771, 147.5098814231, 158.2588932808);}#graph-pretty .label7{fill:#2DD4BF;}#graph-pretty .arrow7{stroke:#2DD4BF;}#graph-pretty .branch-label8{fill:#FFFFFF;}#graph-pretty .commit8{stroke:#818CF8;fill:#818CF8;}#graph-pretty .commit-highlight8{stroke:rgb(241.8684210526, 221.2330827067, 18.6315789472);fill:rgb(241.8684210526, 221.2330827067, 18.6315789472);}#graph-pretty .label8{fill:#818CF8;}#graph-pretty .arrow8{stroke:#818CF8;}#graph-pretty .branch-label9{fill:#FFFFFF;}#graph-pretty .commit9{stroke:#F472B6;fill:#F472B6;}#graph-pretty .commit-highlight9{stroke:rgb(41.1809210525, 238.3190789474, 135.2006578947);fill:rgb(41.1809210525, 238.3190789474, 135.2006578947);}#graph-pretty .label9{fill:#F472B6;}#graph-pretty .arrow9{stroke:#F472B6;}#graph-pretty .branch-label10{fill:#FFFFFF;}#graph-pretty .commit10{stroke:#34D399;fill:#34D399;}#graph-pretty .commit-highlight10{stroke:rgb(230.8623481781, 143.6376518218, 175.4554655869);fill:rgb(230.8623481781, 143.6376518218, 175.4554655869);}#graph-pretty .label10{fill:#34D399;}#graph-pretty .arrow10{stroke:#34D399;}#graph-pretty .branch-label11{fill:#FFFFFF;}#graph-pretty .commit11{stroke:#FBBF24;fill:#FBBF24;}#graph-pretty .commit-highlight11{stroke:rgb(98.3609865472, 141.2757847534, 252.1390134529);fill:rgb(98.3609865472, 141.2757847534, 252.1390134529);}#graph-pretty .label11{fill:#FBBF24;}#graph-pretty .arrow11{stroke:#FBBF24;}#graph-pretty .branch{stroke-width:1;stroke:#94A3B8;stroke-dasharray:2;}#graph-pretty .commit-label{font-size:10px;fill:#334155;}#graph-pretty .commit-label-bkg{font-size:10px;fill:#FFFFFF;opacity:0.5;}#graph-pretty .tag-label{font-size:10px;fill:#0F172A;}#graph-pretty .tag-label-bkg{fill:#FDE68A;stroke:#FBBF24;}#graph-pretty .tag-hole{fill:#1E293B;}#graph-pretty .commit-merge{stroke:#EEF2FF;fill:#EEF2FF;}#graph-pretty .commit-reverse{stroke:#EEF2FF;fill:#EEF2FF;stroke-width:3;}#graph-pretty .commit-highlight-inner{stroke:#EEF2FF;fill:#EEF2FF;}#graph-pretty .arrow{stroke-width:8;stroke-linecap:round;fill:none;}#graph-pretty .gitTitleText{text-anchor:middle;font-size:18px;fill:#1E293B;}#graph-pretty .node .neo-node{stroke:#A5B4FC;}#graph-pretty [data-look="neo"].node rect,#graph-pretty [data-look="neo"].cluster rect,#graph-pretty [data-look="neo"].node polygon{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node path{stroke:url(#graph-pretty-gradient);stroke-width:1px;}#graph-pretty [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node .neo-line path{stroke:#A5B4FC;filter:none;}#graph-pretty [data-look="neo"].node circle{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].node circle .state-start{fill:#000000;}#graph-pretty [data-look="neo"].icon-shape .icon{fill:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty [data-look="neo"].icon-shape .icon-neo path{stroke:url(#graph-pretty-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#graph-pretty :root{--mermaid-font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}</style><g></g><defs><linearGradient id="graph-pretty-gradient" gradientUnits="objectBoundingBox" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#A5B4FC" stop-opacity="1"></stop><stop offset="100%" stop-color="hsl(327.2727272727, 33.3333333333%, 87.0588235294%)" stop-opacity="1"></stop></linearGradient></defs><g class="commit-bullets"></g><g class="commit-labels"></g><g><line x1="0" y1="-2" x2="300" y2="-2" class="branch branch0"></line><rect class="branchLabelBkg label0" style="" rx="4" ry="4" x="-65.796875" y="1.5" width="49.796875" height="21" transform="translate(-19, -14)"></rect><g class="branchLabel"><g class="label branch-label0" transform="translate(-75.796875, -12.5)"><text><tspan xml:space="preserve" dy="1em" x="0" class="row">main</tspan></text></g></g><line x1="0" y1="88" x2="300" y2="88" class="branch branch1"></line><rect class="branchLabelBkg label1" style="" rx="4" ry="4" x="-81" y="1.5" width="65" height="21" transform="translate(-19, 76)"></rect><g class="branchLabel"><g class="label branch-label1" transform="translate(-91, 77.5)"><text><tspan xml:space="preserve" dy="1em" x="0" class="row">feature</tspan></text></g></g></g><g class="commit-arrows"><path d="M 10 -2 L 60 -2" class="arrow arrow0"></path><path d="M 60 -2 L 60 68 A 20 20, 0, 0, 0, 80 88 L 110 88" class="arrow arrow1"></path><path d="M 110 88 L 160 88" class="arrow arrow1"></path><path d="M 60 -2 L 210 -2" class="arrow arrow0"></path><path d="M 160 88 L 190 88 A 20 20, 0, 0, 0, 210 68 L 210 -2" class="arrow arrow1"></path><path d="M 210 -2 L 260 -2" class="arrow arrow0"></path></g><g class="commit-bullets"><circle cx="10" cy="-2" r="10" class="commit init commit0"></circle><circle cx="60" cy="-2" r="10" class="commit readme commit0"></circle><circle cx="110" cy="88" r="10" class="commit wip commit1"></circle><circle cx="160" cy="88" r="10" class="commit polish commit1"></circle><circle cx="210" cy="-2" r="10" class="commit 4-143cfad commit0"></circle><circle cx="210" cy="-2" r="6" class="commit commit-merge 4-143cfad commit0"></circle><circle cx="260" cy="-2" r="10" class="commit hotfix commit0"></circle></g><g class="commit-labels"><g transform="translate(-16.631875, 14.770624999999999) rotate(-45, 0, -2)"><rect class="commit-label-bkg" x="0.984375" y="11.5" width="18.03125" height="16"></rect><text x="2.984375" y="23" class="commit-label">init</text></g><g transform="translate(-24.9265625, 22.1921875) rotate(-45, 50, -2)"><rect class="commit-label-bkg" x="40.0703125" y="11.5" width="39.859375" height="16"></rect><text x="42.0703125" y="23" class="commit-label">readme</text></g><g transform="translate(-17.659062499999997, 15.689687500000002) rotate(-45, 100, 88)"><rect class="commit-label-bkg" x="99.6328125" y="101.5" width="20.734375" height="16.041015625"></rect><text x="101.6328125" y="113" class="commit-label">wip</text></g><g transform="translate(-21.999375, 19.573124999999997) rotate(-45, 150, 88)"><rect class="commit-label-bkg" x="143.921875" y="101.5" width="32.15625" height="16.041015625"></rect><text x="145.921875" y="113" class="commit-label">polish</text></g><polygon class="tag-label-bkg" points="189.1171875,-19.2  
+      189.1171875,-23.2
+      197.1171875,-29.2
+      222.8828125,-29.2
+      222.8828125,-13.2
+      197.1171875,-13.2"></polygon><circle cy="-21.2" cx="193.1171875" r="1.5" class="tag-hole"></circle><text y="-18" class="tag-label" x="201.1171875">v0.1</text><g transform="translate(-21.381875, 19.020625000000003) rotate(-45, 250, -2)"><rect class="commit-label-bkg" x="244.734375" y="11.5" width="30.53125" height="16"></rect><text x="246.734375" y="23" class="commit-label">hotfix</text></g></g><style>
   .mp-root svg { overflow: visible; }
 
   /* ノード: 柔らかい影 + 繊細な枠線 */
@@ -15,6 +20,36 @@
 
   /* 四角ノードは角丸 */
   .node rect { rx: 10; ry: 10; }
+
+  /* ===== flowchart: 形状ごとに色分け ===== */
+  /* 長方形 → インディゴ */
+  .flowchart g.node.default rect.basic.label-container {
+    fill: #EEF2FF !important;
+    stroke: #A5B4FC !important;
+    stroke-width: 1.5px !important;
+  }
+  /* ひし形（判断） → 琥珀 */
+  .flowchart g.node.default polygon.label-container {
+    fill: #FEF3C7 !important;
+    stroke: #FBBF24 !important;
+    stroke-width: 1.5px !important;
+  }
+  /* 円柱/丸角（DB, パスで描画） → エメラルド */
+  .flowchart g.node.default g.basic.label-container.outer-path path:nth-of-type(1),
+  .flowchart g.node.default .basic.label-container.outer-path path:nth-of-type(1) {
+    fill: #ECFDF5 !important;
+  }
+  .flowchart g.node.default g.basic.label-container.outer-path path:nth-of-type(2),
+  .flowchart g.node.default .basic.label-container.outer-path path:nth-of-type(2) {
+    stroke: #6EE7B7 !important;
+    stroke-width: 1.5px !important;
+  }
+  /* サブグラフ（クラスタ） → ラベンダーがかった背景 */
+  .flowchart g.cluster rect {
+    fill: #F5F3FF !important;
+    stroke: #C4B5FD !important;
+    stroke-dasharray: 4 4 !important;
+  }
 
   /* エッジ: 細めで上品に */
   .edgePath path.path,
@@ -76,12 +111,38 @@
     font-family: "Inter", system-ui, sans-serif !important;
   }
 
-  /* シーケンス図: アクター */
+  /* シーケンス図: アクターをインディゴのピルに */
+  rect.actor,
   .actor {
-    filter: drop-shadow(0 2px 6px rgba(15, 23, 42, 0.08));
-    stroke-width: 1.2px !important;
+    fill: #EEF2FF !important;
+    stroke: #A5B4FC !important;
+    stroke-width: 1.5px !important;
+    rx: 10 !important;
+    ry: 10 !important;
+    filter: drop-shadow(0 2px 6px rgba(99, 102, 241, 0.14));
   }
-  .actor-line { stroke-width: 1px !important; stroke-dasharray: 2 4 !important; }
+  .actor-line {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.5px !important;
+    stroke-dasharray: 2 4 !important;
+  }
+  /* アクティベーション（呼び出し中の縦棒）をアクセント色に */
+  rect.activation0, rect.activation1, rect.activation2 {
+    fill: #E0E7FF !important;
+    stroke: #818CF8 !important;
+  }
+  /* メッセージ矢印を少しだけコントラスト上げる */
+  .messageLine0, .messageLine1, line.messageLine0, line.messageLine1, path.messageLine0, path.messageLine1 {
+    stroke: #6366F1 !important;
+    stroke-width: 1.5px !important;
+  }
+  /* ループ/オプト/alt ラベルボックス */
+  rect.labelBox {
+    fill: #EEF2FF !important;
+    stroke: #A5B4FC !important;
+    rx: 6 !important;
+    ry: 6 !important;
+  }
 
   /* ノートに軽い陰影 */
   .note, g.note rect {
@@ -93,19 +154,19 @@
   /* ===== class diagram (mermaid v11: path 2 枚重ね構造) ===== */
   /* 1 枚目 path = 塗り、2 枚目 path = 手書き風アウトライン */
   .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(1) {
-    fill: #F5F3FF !important;
+    fill: #E0E7FF !important;
   }
   .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(2) {
-    stroke: #C7D2FE !important;
-    stroke-width: 1.3px !important;
+    stroke: #818CF8 !important;
+    stroke-width: 1.8px !important;
   }
-  g.classDiagram g.node.default g.basic.label-container {
-    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 8px 20px rgba(99, 102, 241, 0.12));
+  .classDiagram g.node.default g.basic.label-container {
+    filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.06)) drop-shadow(0 12px 28px rgba(99, 102, 241, 0.20));
   }
-  /* 区切り線もインディゴ系に */
+  /* 区切り線もインディゴ系、すこし濃く */
   .classDiagram g.divider path {
-    stroke: #C7D2FE !important;
-    stroke-width: 1.2px !important;
+    stroke: #A5B4FC !important;
+    stroke-width: 1.4px !important;
   }
   /* タイトル（クラス名）をアクセントカラーに（幅計算済みのためサイズは据え置き） */
   .classDiagram g.label-group .nodeLabel p,
@@ -491,17 +552,20 @@
   }
 
   /* ===== gantt ===== */
-  /* 背景の暗いグレーを消す */
+  /* 背景のグレーを消し、セクションごとに淡いパステル帯を敷く */
   .mermaid &gt; svg &gt; g &gt; rect:first-child,
   rect.background,
-  rect.section,
   rect.sectionBar {
     fill: #FFFFFF !important;
     stroke: transparent !important;
   }
-  g.section0 rect.section, g.section1 rect.section,
-  g.section2 rect.section, g.section3 rect.section {
-    fill: transparent !important;
+  rect.section0, rect.section2,
+  g.section0 rect.section, g.section2 rect.section {
+    fill: #EEF2FF !important;
+  }
+  rect.section1, rect.section3,
+  g.section1 rect.section, g.section3 rect.section {
+    fill: #FDF2F8 !important;
   }
   .grid .tick line {
     stroke: #E2E8F0 !important;

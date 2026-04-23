@@ -12,20 +12,20 @@ export const prettyTheme = {
     fontSize: "14px",
     primaryColor: "#EEF2FF",
     primaryTextColor: "#1E293B",
-    primaryBorderColor: "#C7D2FE",
+    primaryBorderColor: "#A5B4FC",
     lineColor: "#94A3B8",
-    secondaryColor: "#F1F5F9",
-    tertiaryColor: "#F8FAFC",
+    secondaryColor: "#FDF2F8",
+    tertiaryColor: "#F0FDFA",
     background: "#FFFFFF",
-    mainBkg: "#FFFFFF",
-    secondBkg: "#F8FAFC",
-    nodeBorder: "#CBD5E1",
-    clusterBkg: "#F8FAFC",
-    clusterBorder: "#E2E8F0",
+    mainBkg: "#EEF2FF",
+    secondBkg: "#FDF2F8",
+    nodeBorder: "#A5B4FC",
+    clusterBkg: "#F5F3FF",
+    clusterBorder: "#C7D2FE",
     titleColor: "#0F172A",
     edgeLabelBackground: "#FFFFFF",
-    actorBkg: "#FFFFFF",
-    actorBorder: "#CBD5E1",
+    actorBkg: "#EEF2FF",
+    actorBorder: "#A5B4FC",
     actorTextColor: "#1E293B",
     actorLineColor: "#94A3B8",
     signalColor: "#475569",
@@ -240,6 +240,36 @@ export const prettyCss = `
   /* 四角ノードは角丸 */
   .node rect { rx: 10; ry: 10; }
 
+  /* ===== flowchart: 形状ごとに色分け ===== */
+  /* 長方形 → インディゴ */
+  .flowchart g.node.default rect.basic.label-container {
+    fill: #EEF2FF !important;
+    stroke: #A5B4FC !important;
+    stroke-width: 1.5px !important;
+  }
+  /* ひし形（判断） → 琥珀 */
+  .flowchart g.node.default polygon.label-container {
+    fill: #FEF3C7 !important;
+    stroke: #FBBF24 !important;
+    stroke-width: 1.5px !important;
+  }
+  /* 円柱/丸角（DB, パスで描画） → エメラルド */
+  .flowchart g.node.default g.basic.label-container.outer-path path:nth-of-type(1),
+  .flowchart g.node.default .basic.label-container.outer-path path:nth-of-type(1) {
+    fill: #ECFDF5 !important;
+  }
+  .flowchart g.node.default g.basic.label-container.outer-path path:nth-of-type(2),
+  .flowchart g.node.default .basic.label-container.outer-path path:nth-of-type(2) {
+    stroke: #6EE7B7 !important;
+    stroke-width: 1.5px !important;
+  }
+  /* サブグラフ（クラスタ） → ラベンダーがかった背景 */
+  .flowchart g.cluster rect {
+    fill: #F5F3FF !important;
+    stroke: #C4B5FD !important;
+    stroke-dasharray: 4 4 !important;
+  }
+
   /* エッジ: 細めで上品に */
   .edgePath path.path,
   .flowchart-link {
@@ -300,12 +330,38 @@ export const prettyCss = `
     font-family: "Inter", system-ui, sans-serif !important;
   }
 
-  /* シーケンス図: アクター */
+  /* シーケンス図: アクターをインディゴのピルに */
+  rect.actor,
   .actor {
-    filter: drop-shadow(0 2px 6px rgba(15, 23, 42, 0.08));
-    stroke-width: 1.2px !important;
+    fill: #EEF2FF !important;
+    stroke: #A5B4FC !important;
+    stroke-width: 1.5px !important;
+    rx: 10 !important;
+    ry: 10 !important;
+    filter: drop-shadow(0 2px 6px rgba(99, 102, 241, 0.14));
   }
-  .actor-line { stroke-width: 1px !important; stroke-dasharray: 2 4 !important; }
+  .actor-line {
+    stroke: #C7D2FE !important;
+    stroke-width: 1.5px !important;
+    stroke-dasharray: 2 4 !important;
+  }
+  /* アクティベーション（呼び出し中の縦棒）をアクセント色に */
+  rect.activation0, rect.activation1, rect.activation2 {
+    fill: #E0E7FF !important;
+    stroke: #818CF8 !important;
+  }
+  /* メッセージ矢印を少しだけコントラスト上げる */
+  .messageLine0, .messageLine1, line.messageLine0, line.messageLine1, path.messageLine0, path.messageLine1 {
+    stroke: #6366F1 !important;
+    stroke-width: 1.5px !important;
+  }
+  /* ループ/オプト/alt ラベルボックス */
+  rect.labelBox {
+    fill: #EEF2FF !important;
+    stroke: #A5B4FC !important;
+    rx: 6 !important;
+    ry: 6 !important;
+  }
 
   /* ノートに軽い陰影 */
   .note, g.note rect {
@@ -317,19 +373,19 @@ export const prettyCss = `
   /* ===== class diagram (mermaid v11: path 2 枚重ね構造) ===== */
   /* 1 枚目 path = 塗り、2 枚目 path = 手書き風アウトライン */
   .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(1) {
-    fill: #F5F3FF !important;
+    fill: #E0E7FF !important;
   }
   .classDiagram g.node.default g.basic.label-container.outer-path path:nth-of-type(2) {
-    stroke: #C7D2FE !important;
-    stroke-width: 1.3px !important;
+    stroke: #818CF8 !important;
+    stroke-width: 1.8px !important;
   }
-  g.classDiagram g.node.default g.basic.label-container {
-    filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.05)) drop-shadow(0 8px 20px rgba(99, 102, 241, 0.12));
+  .classDiagram g.node.default g.basic.label-container {
+    filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.06)) drop-shadow(0 12px 28px rgba(99, 102, 241, 0.20));
   }
-  /* 区切り線もインディゴ系に */
+  /* 区切り線もインディゴ系、すこし濃く */
   .classDiagram g.divider path {
-    stroke: #C7D2FE !important;
-    stroke-width: 1.2px !important;
+    stroke: #A5B4FC !important;
+    stroke-width: 1.4px !important;
   }
   /* タイトル（クラス名）をアクセントカラーに（幅計算済みのためサイズは据え置き） */
   .classDiagram g.label-group .nodeLabel p,
@@ -715,17 +771,20 @@ export const prettyCss = `
   }
 
   /* ===== gantt ===== */
-  /* 背景の暗いグレーを消す */
+  /* 背景のグレーを消し、セクションごとに淡いパステル帯を敷く */
   .mermaid > svg > g > rect:first-child,
   rect.background,
-  rect.section,
   rect.sectionBar {
     fill: #FFFFFF !important;
     stroke: transparent !important;
   }
-  g.section0 rect.section, g.section1 rect.section,
-  g.section2 rect.section, g.section3 rect.section {
-    fill: transparent !important;
+  rect.section0, rect.section2,
+  g.section0 rect.section, g.section2 rect.section {
+    fill: #EEF2FF !important;
+  }
+  rect.section1, rect.section3,
+  g.section1 rect.section, g.section3 rect.section {
+    fill: #FDF2F8 !important;
   }
   .grid .tick line {
     stroke: #E2E8F0 !important;

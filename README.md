@@ -10,8 +10,8 @@ This package is not published to npm yet. Install from this repository:
 
 ```bash
 # Clone + install + link globally
-git clone https://github.com/O6lvl4/mermaid-pretty.git
-cd mermaid-pretty
+git clone https://github.com/O6lvl4/premaid.git
+cd premaid
 npm install
 npm run build
 npm link   # exposes `premaid` on your PATH
@@ -28,7 +28,7 @@ npx tsx src/cli.ts examples/flowchart.mmd
 To install directly from GitHub (no clone):
 
 ```bash
-npm install -g github:O6lvl4/mermaid-pretty
+npm install -g github:O6lvl4/premaid
 ```
 
 ## Usage

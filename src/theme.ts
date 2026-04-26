@@ -326,12 +326,12 @@ export const prettyCss = `
     stroke-width: 0 !important;
   }
 
-  /* エッジラベル: 白ピル風（labelBkg div を実体ピルとして扱う） */
-  .edgeLabel { background-color: transparent !important; }
-  .edgeLabel foreignObject { overflow: visible !important; }
-  .edgeLabel rect { fill: transparent !important; opacity: 0 !important; }
-  .edgeLabel .labelBkg,
-  .edgeLabel foreignObject div.labelBkg {
+  /* エッジラベル: 白ピル風（flowchart のみ。ER/state/class は記号と被るので除外） */
+  .flowchart .edgeLabel { background-color: transparent !important; }
+  .flowchart .edgeLabel foreignObject { overflow: visible !important; }
+  .flowchart .edgeLabel rect { fill: transparent !important; opacity: 0 !important; }
+  .flowchart .edgeLabel .labelBkg,
+  .flowchart .edgeLabel foreignObject div.labelBkg {
     background-color: rgba(255, 255, 255, 0.96) !important;
     color: #334155 !important;
     font-size: 12px !important;
@@ -342,12 +342,13 @@ export const prettyCss = `
     white-space: nowrap !important;
     box-sizing: content-box !important;
   }
-  .edgeLabel .labelBkg span,
-  .edgeLabel .labelBkg p {
+  .flowchart .edgeLabel .labelBkg span,
+  .flowchart .edgeLabel .labelBkg p {
     background-color: transparent !important;
     color: #334155 !important;
     margin: 0 !important;
   }
+  /* ER/state/class はピル化せずデフォルトの素な背景のまま（記号と干渉しないように） */
 
   /* クラスタ（サブグラフ） */
   .cluster rect {

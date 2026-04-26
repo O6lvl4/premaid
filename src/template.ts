@@ -70,6 +70,31 @@ ${fontLink}
         const overrideStyle = document.createElementNS("http://www.w3.org/2000/svg", "style");
         overrideStyle.textContent = ${JSON.stringify(opts.injectedCss)};
         svgEl.appendChild(overrideStyle);
+        // ===== ピル型ラベルの可視幅を一律に拡張する汎用ポストプロセッサ =====
+        // SVG <rect> は CSS padding が効かないため、rect の x/y/width/height を
+        // 直接膨らませてテキストに対する余白を確保する。
+        // text-anchor:middle で中心配置されている前提で対称に拡張する。
+        const expandRect = (rect, padX, padY) => {
+          const x = parseFloat(rect.getAttribute("x") || "0");
+          const y = parseFloat(rect.getAttribute("y") || "0");
+          const w = parseFloat(rect.getAttribute("width") || "0");
+          const h = parseFloat(rect.getAttribute("height") || "0");
+          if (!isFinite(w) || !isFinite(h) || w <= 0 || h <= 0) return;
+          rect.setAttribute("x", String(x - padX));
+          rect.setAttribute("y", String(y - padY));
+          rect.setAttribute("width", String(w + padX * 2));
+          rect.setAttribute("height", String(h + padY * 2));
+        };
+        // (selector, padX, padY)
+        const padRules = [
+          ["rect.branchLabelBkg", 12, 5],
+          ["rect.commit-label-bkg", 8, 3],
+          ["rect.tag-label-bkg", 10, 4],
+          ["rect.labelBox", 12, 5],
+        ];
+        padRules.forEach(([sel, px, py]) => {
+          svgEl.querySelectorAll(sel).forEach((r) => expandRect(r, px, py));
+        });
         // width="100%" 指定（timeline など）だと inline-block 親で潰れるため
         // viewBox の実寸を SVG に焼き付けて正しい物理サイズで描画する
         const widthAttr = svgEl.getAttribute("width");

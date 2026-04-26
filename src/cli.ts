@@ -47,7 +47,7 @@ const program = new Command();
 program
   .name("premaid")
   .description("Render beautiful Mermaid diagrams from the command line")
-  .version("0.1.0")
+  .version("0.1.1")
   .argument(
     "[file]",
     "Mermaid source file. If omitted, reads from stdin (or prompts when attached to a TTY)."

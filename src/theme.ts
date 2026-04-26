@@ -114,9 +114,9 @@ export const prettyTheme = {
     pieStrokeWidth: "2px",
     pieOuterStrokeWidth: "0px",
     pieOuterStrokeColor: "transparent",
-    pieTitleTextSize: "18px",
+    pieTitleTextSize: "20px",
     pieTitleTextColor: "#0F172A",
-    pieSectionTextSize: "13px",
+    pieSectionTextSize: "14px",
     pieSectionTextColor: "#FFFFFF",
     pieLegendTextSize: "13px",
     pieLegendTextColor: "#334155",
@@ -159,12 +159,39 @@ export const prettyTheme = {
     cScalePeer10: "#FAF5FF",
     cScalePeer11: "#FEF2F2",
   },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
-  gantt: { barHeight: 22, barGap: 6 },
-  mindmap: { padding: 14, maxNodeWidth: 200 },
-  timeline: { padding: 14, disableMulticolor: false },
+  flowchart: {
+    curve: "basis",
+    padding: 20,
+    nodeSpacing: 56,
+    rankSpacing: 64,
+    htmlLabels: true,
+    useMaxWidth: false,
+  },
+  sequence: {
+    actorMargin: 72,
+    boxMargin: 16,
+    noteMargin: 16,
+    messageMargin: 42,
+    boxTextMargin: 8,
+    mirrorActors: true,
+    useMaxWidth: false,
+  },
+  gantt: {
+    barHeight: 28,
+    barGap: 10,
+    topPadding: 60,
+    leftPadding: 96,
+    rightPadding: 32,
+    sectionFontSize: 13,
+    fontSize: 12,
+    gridLineStartPadding: 36,
+  },
+  mindmap: { padding: 20, maxNodeWidth: 220 },
+  timeline: { padding: 22, disableMulticolor: false },
   journey: { useMaxWidth: false },
+  class: { padding: 14, useMaxWidth: false },
+  state: { padding: 16, useMaxWidth: false },
+  er: { entityPadding: 22, minEntityWidth: 120, minEntityHeight: 80, useMaxWidth: false },
 };
 
 export const darkTheme = {
@@ -218,8 +245,23 @@ export const darkTheme = {
     pie11: "#2DD4BF",
     pie12: "#C084FC",
   },
-  flowchart: { curve: "basis", padding: 16, htmlLabels: true, useMaxWidth: false },
-  sequence: { actorMargin: 60, boxMargin: 12, noteMargin: 12, useMaxWidth: false },
+  flowchart: {
+    curve: "basis",
+    padding: 20,
+    nodeSpacing: 56,
+    rankSpacing: 64,
+    htmlLabels: true,
+    useMaxWidth: false,
+  },
+  sequence: {
+    actorMargin: 72,
+    boxMargin: 16,
+    noteMargin: 16,
+    messageMargin: 42,
+    boxTextMargin: 8,
+    mirrorActors: true,
+    useMaxWidth: false,
+  },
 };
 
 export const prettyCss = `
@@ -238,7 +280,7 @@ export const prettyCss = `
   }
 
   /* 四角ノードは角丸 */
-  .node rect { rx: 10; ry: 10; }
+  .node rect { rx: 12; ry: 12; }
 
   /* ===== flowchart: 形状ごとに色分け ===== */
   /* 長方形 → インディゴ */
@@ -293,15 +335,16 @@ export const prettyCss = `
     font-size: 12px !important;
   }
   .edgeLabel {
-    padding: 2px 8px !important;
+    padding: 4px 10px !important;
     border-radius: 999px !important;
     box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    line-height: 1.2 !important;
   }
 
   /* クラスタ（サブグラフ） */
   .cluster rect {
-    rx: 14 !important;
-    ry: 14 !important;
+    rx: 18 !important;
+    ry: 18 !important;
     filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04));
     stroke-dasharray: 0 !important;
     stroke-width: 1px !important;
@@ -336,8 +379,8 @@ export const prettyCss = `
     fill: #EEF2FF !important;
     stroke: #A5B4FC !important;
     stroke-width: 1.5px !important;
-    rx: 10 !important;
-    ry: 10 !important;
+    rx: 12 !important;
+    ry: 12 !important;
     filter: drop-shadow(0 2px 6px rgba(99, 102, 241, 0.14));
   }
   .actor-line {
@@ -366,8 +409,12 @@ export const prettyCss = `
   /* ノートに軽い陰影 */
   .note, g.note rect {
     filter: drop-shadow(0 2px 6px rgba(234, 179, 8, 0.12));
-    rx: 8 !important;
-    ry: 8 !important;
+    rx: 10 !important;
+    ry: 10 !important;
+  }
+  .noteText, g.note text {
+    font-size: 13px !important;
+    font-weight: 500 !important;
   }
 
   /* ===== class diagram (mermaid v11: path 2 枚重ね構造) ===== */
@@ -414,8 +461,8 @@ export const prettyCss = `
   rect.state,
   g.node.statediagram-state > rect,
   .statediagram-state > rect {
-    rx: 12 !important;
-    ry: 12 !important;
+    rx: 14 !important;
+    ry: 14 !important;
     fill: #EEF2FF !important;
     stroke: #C7D2FE !important;
     stroke-width: 1.2px !important;
@@ -572,11 +619,11 @@ export const prettyCss = `
   }
   /* 凡例を丸いドット風に */
   .legend rect {
-    rx: 10 !important;
-    ry: 10 !important;
+    rx: 6 !important;
+    ry: 6 !important;
     stroke: transparent !important;
-    width: 10 !important;
-    height: 10 !important;
+    width: 12 !important;
+    height: 12 !important;
     filter: drop-shadow(0 1px 1px rgba(15, 23, 42, 0.12));
   }
   .legend text, text.legend {
@@ -636,8 +683,8 @@ export const prettyCss = `
   }
   .timeline-node .node-bkg,
   g.timeline-node rect {
-    rx: 12 !important;
-    ry: 12 !important;
+    rx: 14 !important;
+    ry: 14 !important;
     stroke-width: 0 !important;
   }
   .timeline-node text,
@@ -692,8 +739,8 @@ export const prettyCss = `
   }
   .task rect,
   g.task > rect {
-    rx: 14 !important;
-    ry: 14 !important;
+    rx: 16 !important;
+    ry: 16 !important;
     filter:
       drop-shadow(0 1px 2px rgba(15, 23, 42, 0.04))
       drop-shadow(0 10px 24px rgba(15, 23, 42, 0.08));
@@ -801,8 +848,8 @@ export const prettyCss = `
   .task-type-0, .task-type-1, .task-type-2, .task-type-3,
   rect.task0, rect.task1, rect.task2, rect.task3 {
     stroke-width: 1px !important;
-    rx: 6 !important;
-    ry: 6 !important;
+    rx: 8 !important;
+    ry: 8 !important;
     filter: drop-shadow(0 1px 2px rgba(15, 23, 42, 0.06));
   }
   .done0, .done1, .done2, .done3 {

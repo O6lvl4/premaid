@@ -33,7 +33,7 @@ ${fontLink}
     -moz-osx-font-smoothing: grayscale;
   }
   .mp-root {
-    padding: 48px;
+    padding: 40px;
     display: inline-block;
     box-sizing: border-box;
   }

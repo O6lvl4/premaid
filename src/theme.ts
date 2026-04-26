@@ -841,13 +841,30 @@ export const prettyCss = `
     fill: #FFFFFF !important;
     stroke: transparent !important;
   }
-  rect.section0, rect.section2,
-  g.section0 rect.section, g.section2 rect.section {
+  /* セクション層の境界を明確にするため別系統の色相を使う */
+  rect.section0,
+  g.section0 rect.section {
     fill: #EEF2FF !important;
   }
-  rect.section1, rect.section3,
-  g.section1 rect.section, g.section3 rect.section {
+  rect.section1,
+  g.section1 rect.section {
+    fill: #F5F3FF !important;
+  }
+  rect.section2,
+  g.section2 rect.section {
     fill: #FDF2F8 !important;
+  }
+  rect.section3,
+  g.section3 rect.section {
+    fill: #FFFBEB !important;
+  }
+  /* 各セクション帯の境界線を細い区切り線として見せる */
+  rect.section0,
+  rect.section1,
+  rect.section2,
+  rect.section3 {
+    stroke: rgba(15, 23, 42, 0.08) !important;
+    stroke-width: 1px !important;
   }
   .grid .tick line {
     stroke: #E2E8F0 !important;

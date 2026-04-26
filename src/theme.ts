@@ -335,10 +335,19 @@ export const prettyCss = `
     font-size: 12px !important;
   }
   .edgeLabel {
-    padding: 4px 10px !important;
+    padding: 4px 14px !important;
+    margin: 0 6px !important;
     border-radius: 999px !important;
     box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
     line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+  .edgeLabel foreignObject {
+    overflow: visible !important;
+  }
+  .edgeLabel foreignObject > div,
+  .edgeLabel foreignObject > div > span {
+    padding: 0 4px !important;
   }
 
   /* クラスタ（サブグラフ） */

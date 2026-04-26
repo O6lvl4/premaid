@@ -710,14 +710,21 @@ export const prettyCss = `
     font-size: 14px !important;
     letter-spacing: 0.2px !important;
   }
-  /* タイムラインの縦接続線: 視認できる濃さにする */
-  .lineWrapper line,
+  /* タイムラインの縦接続線: 視認できる濃さにする（破線属性付きの縦線のみ） */
+  .lineWrapper line[stroke-dasharray],
   [class^="node-line"] {
     stroke: #64748B !important;
     stroke-width: 1.3px !important;
     stroke-dasharray: 3 3 !important;
     stroke-linecap: round !important;
     opacity: 0.85 !important;
+  }
+  /* 横軸（dasharray を持たない実線ライン）は破線化せず実線で残す */
+  .lineWrapper line:not([stroke-dasharray]) {
+    stroke: #94A3B8 !important;
+    stroke-width: 1.5px !important;
+    stroke-linecap: round !important;
+    fill: none !important;
   }
   .sectionTitle {
     font-weight: 700 !important;

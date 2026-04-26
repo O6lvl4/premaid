@@ -95,6 +95,13 @@ ${fontLink}
         padRules.forEach(([sel, px, py]) => {
           svgEl.querySelectorAll(sel).forEach((r) => expandRect(r, px, py));
         });
+        // ラベル無しのエッジに対して Mermaid が生成する空 edgeLabel を非表示にする
+        // (空 .labelBkg にも padding/背景が適用されて空ピルとして見えてしまうため)
+        svgEl.querySelectorAll("g.edgeLabel").forEach((g) => {
+          if (!g.textContent || !g.textContent.trim()) {
+            g.style.display = "none";
+          }
+        });
         // width="100%" 指定（timeline など）だと inline-block 親で潰れるため
         // viewBox の実寸を SVG に焼き付けて正しい物理サイズで描画する
         const widthAttr = svgEl.getAttribute("width");

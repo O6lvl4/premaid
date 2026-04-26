@@ -326,7 +326,10 @@ export const prettyCss = `
     stroke-width: 0 !important;
   }
 
-  /* エッジラベル: 白ピル風（flowchart のみ。ER/state/class は記号と被るので除外） */
+  /* エッジラベル: 白ピル風（flowchart のみ。ER/state/class は記号と被るので除外）
+     foreignObject の width/height はテキスト寸で固定されるため、
+     padding/border-radius は post-render で foreignObject ごと拡張して付ける（template.ts）。
+     ここでは見た目（背景・文字色・縁・影）のみ定義する。 */
   .flowchart .edgeLabel { background-color: transparent !important; }
   .flowchart .edgeLabel foreignObject { overflow: visible !important; }
   .flowchart .edgeLabel rect { fill: transparent !important; opacity: 0 !important; }
@@ -335,12 +338,17 @@ export const prettyCss = `
     background-color: rgba(255, 255, 255, 0.96) !important;
     color: #334155 !important;
     font-size: 12px !important;
-    padding: 5px 20px !important;
+    padding: 0 !important;
     border-radius: 999px !important;
     box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
     line-height: 1.2 !important;
     white-space: nowrap !important;
-    box-sizing: content-box !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
   }
   .flowchart .edgeLabel .labelBkg span,
   .flowchart .edgeLabel .labelBkg p {

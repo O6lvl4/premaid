@@ -102,6 +102,34 @@ ${fontLink}
             g.style.display = "none";
           }
         });
+        // ===== flowchart のエッジラベルのピル余白を確保する =====
+        // Mermaid は foreignObject をテキスト実寸で固定するため、CSS padding が
+        // クリップされて水平方向だけ詰まる。foreignObject ごと拡張し、ラベル <g> の
+        // transform を補正して、x 方向に大きく y 方向に控えめなピルにする。
+        if (svgEl.classList.contains("flowchart")) {
+          const padX = 16;
+          const padY = 4;
+          svgEl.querySelectorAll("g.edgeLabel").forEach((g) => {
+            if (g.style.display === "none") return;
+            const fo = g.querySelector("foreignObject");
+            const labelG = g.querySelector("g.label");
+            if (!fo || !labelG) return;
+            const w = parseFloat(fo.getAttribute("width") || "0");
+            const h = parseFloat(fo.getAttribute("height") || "0");
+            if (!isFinite(w) || !isFinite(h) || w <= 0 || h <= 0) return;
+            fo.setAttribute("width", String(w + padX * 2));
+            fo.setAttribute("height", String(h + padY * 2));
+            // ラベル <g> の元 transform: translate(-w/2, -h/2) を新サイズに合わせ直す
+            const m = /translate\\(\\s*(-?[\\d.]+)\\s*,\\s*(-?[\\d.]+)\\s*\\)/.exec(
+              labelG.getAttribute("transform") || ""
+            );
+            if (m) {
+              const tx = parseFloat(m[1]) - padX;
+              const ty = parseFloat(m[2]) - padY;
+              labelG.setAttribute("transform", "translate(" + tx + ", " + ty + ")");
+            }
+          });
+        }
         // width="100%" 指定（timeline など）だと inline-block 親で潰れるため
         // viewBox の実寸を SVG に焼き付けて正しい物理サイズで描画する
         const widthAttr = svgEl.getAttribute("width");

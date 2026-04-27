@@ -335,12 +335,12 @@ export const prettyCss = `
   .flowchart .edgeLabel rect { fill: transparent !important; opacity: 0 !important; }
   .flowchart .edgeLabel .labelBkg,
   .flowchart .edgeLabel foreignObject div.labelBkg {
-    background-color: rgba(255, 255, 255, 0.96) !important;
+    background-color: rgba(255, 255, 255, 0.65) !important;
     color: #334155 !important;
     font-size: 12px !important;
     padding: 0 !important;
     border-radius: 999px !important;
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.05) inset;
     line-height: 1.2 !important;
     white-space: nowrap !important;
     box-sizing: border-box !important;
